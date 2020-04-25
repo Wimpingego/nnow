@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "powered=false": { "model": "nnow:block/example_pressure_plate" },
+        "powered=true": { "model": "nnow:block/example_pressure_plate_down" }
+    }
+}

@@ -1,0 +1,75 @@
+{	
+	"item.nnow.coin_0": "Wooden Coin",
+	"item.nnow.coin_1": "Iron Coin",
+	"item.nnow.coin_2": "Gold Coin",
+	"item.nnow.coin_3": "Diamond Coin",
+	"item.nnow.coin_4": "Emerald Coin",
+	"item.nnow.coin_c": "Choclolate Coin",
+	
+	"item.nnow.redstone_nugget": "Redstone Nugget",
+	"item.nnow.lapis_nugget": "Lapis Nugget",
+	"item.nnow.quartz_nugget": "Quartz Nugget",
+	"item.nnow.diamond_nugget": "Diamond Nugget",
+	"item.nnow.emerald_nugget": "Emerald Nugget",
+	"item.nnow.coal_nugget": "Coal Nugget",
+
+	"block.nnow.ags_block": "Anti Gravity Sand",
+	"block.nnow.agrs_block": "Anti Gravity Red Sand",
+	"block.nnow.agg_block": "Anti Gravity Gravel",
+
+	"block.nnow.gravel_slab": "Gravel Slab",
+	"block.nnow.dirt_slab": "Dirt Slab",
+	"block.nnow.coarsedirt_slab": "Coarse Dirt Slab",
+	"block.nnow.sand_slab": "Sand Slab",
+	"block.nnow.redsand_slab": "Red Sand Slab",
+	"block.nnow.bookshelf_slab": "Bookshelf Slab",
+	"block.nnow.path_slab": "Path Slab",	
+	"block.nnow.grass_slab": "Grass Slab (WIP)",	
+
+	"block.nnow.gravel_stairs": "Gravel Stairs",
+	"block.nnow.coarsedirt_stairs": "Coarse Dirt Stairs",		
+	"block.nnow.dirt_stairs": "Dirt Stairs",	
+	"block.nnow.sand_stairs": "Sand Stairs",	
+	"block.nnow.redsand_stairs": "Red Sand Stairs",	
+	"block.nnow.bookshelf_stairs": "Bookshelf Stairs",	
+	"block.nnow.path_stairs": "Path Stairs",		
+	"block.nnow.grass_stairs": "Grass Stairs (WIP)",
+
+	"block.nnow.bookshelf_chest": "Bookshelf Chest",
+	
+	"block.nnow.barley_crop": "Barley Seeds",
+	"item.nnow.barley": "Barley",
+	"block.nnow.pepper_crop": "Pepper Seeds",
+	"item.nnow.pepper": "Pepper",
+		
+	"block.nnow.iron_berry_bush": "Iron Berry Bush",
+	"block.nnow.gold_berry_bush": "Gold Berry Bush",
+	"block.nnow.coal_berry_bush": "Coal Berry Bush",
+	"block.nnow.redstone_berry_bush": "Redstone Berry Bush",
+	"block.nnow.lapis_berry_bush": "Lapis Berry Bush",
+	"block.nnow.quartz_berry_bush": "Quartz Berry Bush",
+	"block.nnow.emerald_berry_bush": "Emerald Berry Bush",
+	"block.nnow.diamond_berry_bush": "Diamond Berry Bush",
+	"block.nnow.frost_berry_bush": "Frost Berry Bush",
+	
+	"container.bookshelf_chest": "Bookshelf Chest",	
+	
+	"itemGroup.nnowtab": "Never Needed Or Wanted",
+	
+	"item.nnow.magnet": "Derpy Magnet",
+	"item.nnow.magnet.line1": "Magnet is active: %s",
+	"item.nnow.magnet.line2": "Works while in player inventory",
+	"item.nnow.magnet.line3": "Attraction range set to: %s",
+	
+	"item.nnow.viagra": "Villager Intense Area Growing Range Attachment",
+	"item.nnow.viagra.line1": "Only works when in your main hand",
+	"item.nnow.viagra.line2": "Range in blocks: %s",
+	
+	"item.nnow.poking_stick": "Poking Stick",
+	"item.nnow.poking_stick.line1": "Who knows what this does but why not try pocking things with it",
+	
+	"block.nnow.example_button": "Example Button",	
+	"block.nnow.example_pressure_plate": "Example Pressure Plate",
+	"block.nnow.example_fence": "Example Fence"
+	
+}

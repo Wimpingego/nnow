@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "OCO",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:bookshelf"
+        },
+        "O": {
+            "item": "minecraft:oak_planks"
+        },
+        "C": {
+            "item": "minecraft:chest"
+        }
+    },
+    "result": {
+        "item": "nnow:bookshelf_chest",
+        "count": 1
+    }
+}

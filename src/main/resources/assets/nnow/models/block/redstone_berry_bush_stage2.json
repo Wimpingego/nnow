@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "nnow:blocks/redstone_berry_bush_stage2"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "nnow:lapis_nugget"
+        }
+    },
+    "result": {
+        "item": "minecraft:lapis_lazuli",
+        "count": 1
+    }
+}

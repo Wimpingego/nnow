@@ -1,0 +1,12 @@
+{
+	"variants": {
+		"age=0": { "model": "nnow:block/pepper_stage0" },
+		"age=1": { "model": "nnow:block/pepper_stage0" },
+		"age=2": { "model": "nnow:block/pepper_stage1" },
+		"age=3": { "model": "nnow:block/pepper_stage1" },
+		"age=4": { "model": "nnow:block/pepper_stage1" },
+		"age=5": { "model": "nnow:block/pepper_stage2" },
+		"age=6": { "model": "nnow:block/pepper_stage2" },
+		"age=7": { "model": "nnow:block/pepper_stage3" }
+	}
+}
