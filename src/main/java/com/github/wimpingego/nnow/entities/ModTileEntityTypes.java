@@ -3,6 +3,7 @@ package com.github.wimpingego.nnow.entities;
 import com.github.wimpingego.nnow.NNOW;
 import com.github.wimpingego.nnow.init.BlockList;
 import com.github.wimpingego.nnow.tileentity.BookshelfChestTileEntity;
+import com.github.wimpingego.nnow.tileentity.SafeChestTileEntity;
 
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.fml.RegistryObject;
@@ -19,4 +20,10 @@ public class ModTileEntityTypes {
 	public static final RegistryObject<TileEntityType<BookshelfChestTileEntity>> BOOKSHELF_CHEST = TILE_ENTITY_TYPES
 			.register("bookshelf_chest", () -> TileEntityType.Builder
 					.create(BookshelfChestTileEntity::new, BlockList.BOOKSHELF_CHEST.get()).build(null));	
+	
+	public static final RegistryObject<TileEntityType<SafeChestTileEntity>> SAFE_CHEST = TILE_ENTITY_TYPES
+			.register("safe_chest", () -> TileEntityType.Builder
+					.create(SafeChestTileEntity::new, BlockList.SAFE_CHEST.get()).build(null));	
+
+
 }

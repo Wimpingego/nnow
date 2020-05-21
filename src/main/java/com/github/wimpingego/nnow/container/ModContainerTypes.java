@@ -14,5 +14,8 @@ public class ModContainerTypes {
 			ForgeRegistries.CONTAINERS, NNOW.MOD_ID);
 
 	public static final RegistryObject<ContainerType<BookshelfChestContainer>> BOOKSHELF_CHEST = CONTAINER_TYPES
-			.register("bookshelf_chest", () -> IForgeContainerType.create(BookshelfChestContainer::new));	
+			.register("bookshelf_chest", () -> IForgeContainerType.create(BookshelfChestContainer::new));
+	
+	public static final RegistryObject<ContainerType<SafeChestContainer>> SAFE_CHEST = CONTAINER_TYPES
+			.register("safe_chest", () -> IForgeContainerType.create(SafeChestContainer::new));	
 }

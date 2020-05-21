@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "nnow:coin_3"
+        },
+        {
+            "item": "nnow:coin_3"
+        },
+        {
+            "item": "nnow:coin_3"
+        },
+        {
+            "item": "nnow:coin_3"
+        },
+        {
+            "item": "nnow:coin_3"
+        },
+        {
+            "item": "nnow:coin_3"
+        },
+        {
+            "item": "nnow:coin_3"
+        },
+        {
+            "item": "nnow:coin_3"
+        }
+    ],
+    "result": {
+        "item": "nnow:coin_8",
+        "count": 1
+    }
+}

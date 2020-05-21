@@ -4,7 +4,14 @@
 	"item.nnow.coin_2": "Gold Coin",
 	"item.nnow.coin_3": "Diamond Coin",
 	"item.nnow.coin_4": "Emerald Coin",
-	"item.nnow.coin_c": "Choclolate Coin",
+	"item.nnow.coin_5": "Wooden Coin Pile",
+	"item.nnow.coin_6": "Iron Coin Pile",
+	"item.nnow.coin_7": "Gold Coin Pile",
+	"item.nnow.coin_8": "Diamond Coin Pile",
+	"item.nnow.coin_9": "Emerald Coin Pile",
+	"item.nnow.coin_c": "Chocolate Coin",
+
+	"item.nnow.stone_pebble": "Stone Pebble",
 	
 	"item.nnow.redstone_nugget": "Redstone Nugget",
 	"item.nnow.lapis_nugget": "Lapis Nugget",
@@ -12,10 +19,14 @@
 	"item.nnow.diamond_nugget": "Diamond Nugget",
 	"item.nnow.emerald_nugget": "Emerald Nugget",
 	"item.nnow.coal_nugget": "Coal Nugget",
+	"item.nnow.ice_nugget": "Ice Nugget",
+	"item.nnow.fire_nugget": "Fire Nugget",
+	"item.nnow.wooden_nugget": "Wooden Nugget",
 
 	"block.nnow.ags_block": "Anti Gravity Sand",
 	"block.nnow.agrs_block": "Anti Gravity Red Sand",
 	"block.nnow.agg_block": "Anti Gravity Gravel",
+	"block.nnow.dark_glass_block": "Dark Glass",
 
 	"block.nnow.gravel_slab": "Gravel Slab",
 	"block.nnow.dirt_slab": "Dirt Slab",
@@ -36,25 +47,34 @@
 	"block.nnow.grass_stairs": "Grass Stairs (WIP)",
 
 	"block.nnow.bookshelf_chest": "Bookshelf Chest",
-	
+	"block.nnow.safe_chest": "Safe Vault",
+	"block.nnow.beekeeper_block": "Beekeeper Workstation",
+	"block.nnow.trap_block": "Monster Trap",
+		
+	"block.nnow.end_lantern": "End Lantern",		
+		
 	"block.nnow.barley_crop": "Barley Seeds",
 	"item.nnow.barley": "Barley",
 	"block.nnow.pepper_crop": "Pepper Seeds",
 	"item.nnow.pepper": "Pepper",
 		
-	"block.nnow.iron_berry_bush": "Iron Berry Bush",
-	"block.nnow.gold_berry_bush": "Gold Berry Bush",
-	"block.nnow.coal_berry_bush": "Coal Berry Bush",
-	"block.nnow.redstone_berry_bush": "Redstone Berry Bush",
-	"block.nnow.lapis_berry_bush": "Lapis Berry Bush",
-	"block.nnow.quartz_berry_bush": "Quartz Berry Bush",
-	"block.nnow.emerald_berry_bush": "Emerald Berry Bush",
-	"block.nnow.diamond_berry_bush": "Diamond Berry Bush",
-	"block.nnow.frost_berry_bush": "Frost Berry Bush",
+	"block.nnow.iron_berry_bush": "Iron Berries",
+	"block.nnow.gold_berry_bush": "Gold Berries",
+	"block.nnow.coal_berry_bush": "Coal Berries",
+	"block.nnow.redstone_berry_bush": "Redstone Berries",
+	"block.nnow.lapis_berry_bush": "Lapis Berries",
+	"block.nnow.quartz_berry_bush": "Quartz Berries",
+	"block.nnow.emerald_berry_bush": "Emerald Berries",
+	"block.nnow.diamond_berry_bush": "Diamond Berries",
+	"block.nnow.ice_berry_bush": "Ice Berries",
+	"block.nnow.xp_berry_bush": "XP Berries",
+	"block.nnow.fire_berry_bush": "Fire Berries",
+	"block.nnow.wooden_berry_bush": "Wooden Berries",
 	
 	"container.bookshelf_chest": "Bookshelf Chest",	
-	
-	"itemGroup.nnowtab": "Never Needed Or Wanted",
+	"container.safe_chest": "Safe Valut",
+		
+	"itemGroup.NNOWTab": "Never Needed Or Wanted",
 	
 	"item.nnow.magnet": "Derpy Magnet",
 	"item.nnow.magnet.line1": "Magnet is active: %s",
@@ -67,6 +87,12 @@
 	
 	"item.nnow.poking_stick": "Poking Stick",
 	"item.nnow.poking_stick.line1": "Who knows what this does but why not try pocking things with it",
+	
+	"entity.minecraft.villager.nnow.old_derpy": "Old Derpy",
+	"entity.minecraft.villager.nnow.banker": "Banker",
+	"entity.minecraft.villager.nnow.beekeeper": "Beekeeper",
+	"entity.minecraft.villager.nnow.monster_trapper": "Monster Trapper",
+	"entity.minecraft.villager.nnow.end_trader": "End Trader",
 	
 	"block.nnow.example_button": "Example Button",	
 	"block.nnow.example_pressure_plate": "Example Pressure Plate",

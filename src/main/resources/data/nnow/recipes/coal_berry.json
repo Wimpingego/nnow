@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "S",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "nnow:coal_nugget"
+        },
+        "S": {
+            "item": "minecraft:sweet_berries"
+        }
+    },
+    "result": {
+        "item": "nnow:coal_berry",
+        "count": 1
+    }
+}

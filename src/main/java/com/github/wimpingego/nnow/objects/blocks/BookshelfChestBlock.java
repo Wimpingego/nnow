@@ -2,6 +2,7 @@ package com.github.wimpingego.nnow.objects.blocks;
 
 import com.github.wimpingego.nnow.entities.ModTileEntityTypes;
 import com.github.wimpingego.nnow.tileentity.BookshelfChestTileEntity;
+import com.github.wimpingego.nnow.util.ModConfigs;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -14,6 +15,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.world.IWorldReader;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.network.NetworkHooks;
 
@@ -22,6 +24,8 @@ public class BookshelfChestBlock extends Block {
 	public BookshelfChestBlock(Properties properties) {
 		super(properties);
 	}
+	
+	int value = ModConfigs.ENCHANT_POWER.get();
 
 	@Override
 	public boolean hasTileEntity(BlockState state) {
@@ -54,5 +58,11 @@ public class BookshelfChestBlock extends Block {
 				InventoryHelper.dropItems(worldIn, pos, ((BookshelfChestTileEntity) te).getItems());
 			}
 		}
+	}
+
+	@Override
+	public float getEnchantPowerBonus(BlockState state, IWorldReader world, BlockPos pos)
+	{
+        return value;
 	}
 }

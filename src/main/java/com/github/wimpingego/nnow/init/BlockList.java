@@ -4,16 +4,24 @@ import com.github.wimpingego.nnow.NNOW;
 import com.github.wimpingego.nnow.objects.blocks.AGSBlock;
 import com.github.wimpingego.nnow.objects.blocks.BookshelfChestBlock;
 import com.github.wimpingego.nnow.objects.blocks.CustomStairsBlock;
-import com.github.wimpingego.nnow.objects.blocks.bushs.CoalBerryBush;
-import com.github.wimpingego.nnow.objects.blocks.bushs.DiamondBerryBush;
-import com.github.wimpingego.nnow.objects.blocks.bushs.EmeraldBerryBush;
-import com.github.wimpingego.nnow.objects.blocks.bushs.FrostberryBush;
-import com.github.wimpingego.nnow.objects.blocks.bushs.GoldBerryBush;
-import com.github.wimpingego.nnow.objects.blocks.bushs.IronBerryBush;
-import com.github.wimpingego.nnow.objects.blocks.bushs.LapisBerryBush;
-import com.github.wimpingego.nnow.objects.blocks.bushs.QuartzBerryBush;
-import com.github.wimpingego.nnow.objects.blocks.bushs.RedstoneBerryBush;
-import com.github.wimpingego.nnow.objects.blocks.crops.CropBlock;
+import com.github.wimpingego.nnow.objects.blocks.DarkGlass;
+import com.github.wimpingego.nnow.objects.blocks.EndLantern;
+import com.github.wimpingego.nnow.objects.blocks.SafeChestBlock;
+import com.github.wimpingego.nnow.objects.blocks.TrapBlock;
+import com.github.wimpingego.nnow.objects.blocks.BeekeeperBlock;
+import com.github.wimpingego.nnow.objects.bushs.CoalBerryBush;
+import com.github.wimpingego.nnow.objects.bushs.DiamondBerryBush;
+import com.github.wimpingego.nnow.objects.bushs.EmeraldBerryBush;
+import com.github.wimpingego.nnow.objects.bushs.ExperienceBerryBush;
+import com.github.wimpingego.nnow.objects.bushs.FireBerryBush;
+import com.github.wimpingego.nnow.objects.bushs.IceberryBush;
+import com.github.wimpingego.nnow.objects.bushs.GoldBerryBush;
+import com.github.wimpingego.nnow.objects.bushs.IronBerryBush;
+import com.github.wimpingego.nnow.objects.bushs.LapisBerryBush;
+import com.github.wimpingego.nnow.objects.bushs.QuartzBerryBush;
+import com.github.wimpingego.nnow.objects.bushs.RedstoneBerryBush;
+import com.github.wimpingego.nnow.objects.bushs.WoodenBerryBush;
+import com.github.wimpingego.nnow.objects.crops.CropBlock;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -42,6 +50,18 @@ public class BlockList {
 	public static final RegistryObject<Block> AGRS_BLOCK = BLOCKS.register("agrs_block",
 			() -> new AGSBlock(Block.Properties.from(Blocks.RED_SAND)));
 	
+	public static final RegistryObject<Block> DARK_GLASS_BLOCK = BLOCKS.register("dark_glass_block",
+			() -> new DarkGlass());
+	
+	public static final RegistryObject<Block> BEEKEEPER_BLOCK = BLOCKS.register("beekeeper_block",
+			() -> new BeekeeperBlock<Object>(Block.Properties.from(Blocks.BOOKSHELF).lightValue(4).harvestTool(ToolType.AXE)));
+	
+	public static final RegistryObject<Block> TRAP_BLOCK = BLOCKS.register("trap_block",
+			() -> new TrapBlock<Object>(Block.Properties.from(Blocks.IRON_BLOCK).harvestTool(ToolType.PICKAXE)));
+	
+	public static final RegistryObject<Block> END_LANTERN = BLOCKS.register("end_lantern",
+			() -> new EndLantern(Block.Properties.from(Blocks.LANTERN)));
+	
 	//Stairs
 	
 	public static final RegistryObject<Block> GRAVEL_STAIRS = BLOCKS.register("gravel_stairs",
@@ -61,12 +81,6 @@ public class BlockList {
 	
 	public static final RegistryObject<Block> BOOKSHELF_STAIRS = BLOCKS.register("bookshelf_stairs",
 			() -> new CustomStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.BOOKSHELF).harvestTool(ToolType.AXE)));			
-	
-	//public static final RegistryObject<Block> GRASS_STAIRS = BLOCKS.register("grass_stairs",
-			//() -> new CustomStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.GRASS_BLOCK).harvestTool(ToolType.SHOVEL)));
-	
-	//public static final RegistryObject<Block> PATH_STAIRS = BLOCKS.register("path_stairs",
-			//() -> new CustomStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.GRASS_PATH).harvestTool(ToolType.SHOVEL)));	
 	
 	//Slabs
 	
@@ -88,19 +102,16 @@ public class BlockList {
 	public static final RegistryObject<Block> BOOKSHELF_SLAB = BLOCKS.register("bookshelf_slab",
 			() -> new SlabBlock(Block.Properties.from(Blocks.BOOKSHELF).harvestTool(ToolType.AXE)));		
 	
-	//public static final RegistryObject<Block> GRASS_SLAB = BLOCKS.register("grass_slab",
-			//() -> new SlabBlock(Block.Properties.from(Blocks.GRASS_BLOCK).harvestTool(ToolType.SHOVEL)));		
-	
-	//public static final RegistryObject<Block> PATH_SLAB = BLOCKS.register("path_slab",
-			//() -> new SlabBlock(Block.Properties.from(Blocks.GRASS_PATH).harvestTool(ToolType.SHOVEL)));	
-	
 	//Chests
 	public static final RegistryObject<Block> BOOKSHELF_CHEST = BLOCKS.register("bookshelf_chest",
 			() -> new BookshelfChestBlock(Block.Properties.from(Blocks.BOOKSHELF).hardnessAndResistance(2.5f, 600.0f).harvestTool(ToolType.AXE)));
 	
+	public static final RegistryObject<Block> SAFE_CHEST = BLOCKS.register("safe_chest",
+			() -> new SafeChestBlock(Block.Properties.from(Blocks.IRON_BLOCK).hardnessAndResistance(2.5f, 600.0f).harvestTool(ToolType.PICKAXE)));
+	
 	//No Item Blocks
 	
-	public static final DeferredRegister<Block> NO_ITEM_BLOCK = new DeferredRegister<>(ForgeRegistries.BLOCKS, NNOW.MOD_ID);		
+	public static final DeferredRegister<Block> NO_ITEM_BLOCK = new DeferredRegister<>(ForgeRegistries.BLOCKS, NNOW.MOD_ID);
 	
 	//Crops
 	public static final RegistryObject<Block> PEPPER_CROP = NO_ITEM_BLOCK.register("pepper_crop",
@@ -134,8 +145,17 @@ public class BlockList {
 	public static final RegistryObject<Block> LAPISBERRY_BUSH = NO_ITEM_BLOCK.register("lapis_berry_bush",
 			() -> new LapisBerryBush(Block.Properties.from(Blocks.SWEET_BERRY_BUSH).tickRandomly()));	
 	
-	public static final RegistryObject<Block> FROSTBERRY_BUSH = NO_ITEM_BLOCK.register("frost_berry_bush",
-			() -> new  FrostberryBush(Block.Properties.from(Blocks.SWEET_BERRY_BUSH).tickRandomly()));	
+	public static final RegistryObject<Block> ICEBERRY_BUSH = NO_ITEM_BLOCK.register("ice_berry_bush",
+			() -> new  IceberryBush(Block.Properties.from(Blocks.SWEET_BERRY_BUSH).tickRandomly()));	
+	
+	public static final RegistryObject<Block> XP_BUSH = NO_ITEM_BLOCK.register("xp_berry_bush",
+			() -> new  ExperienceBerryBush(Block.Properties.from(Blocks.SWEET_BERRY_BUSH).tickRandomly()));	
+	
+	public static final RegistryObject<Block> FIREBERRY_BUSH = NO_ITEM_BLOCK.register("fire_berry_bush",
+			() -> new  FireBerryBush(Block.Properties.from(Blocks.SWEET_BERRY_BUSH).tickRandomly()));	
+	
+	public static final RegistryObject<Block> WOODENBERRY_BUSH = NO_ITEM_BLOCK.register("wooden_berry_bush",
+			() -> new  WoodenBerryBush(Block.Properties.from(Blocks.SWEET_BERRY_BUSH).tickRandomly()));	
 	
 	//Example	
 	

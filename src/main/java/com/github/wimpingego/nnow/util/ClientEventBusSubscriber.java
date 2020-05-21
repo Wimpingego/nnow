@@ -2,6 +2,7 @@ package com.github.wimpingego.nnow.util;
 
 import com.github.wimpingego.nnow.NNOW;
 import com.github.wimpingego.nnow.client.gui.BookshelfChestScreen;
+import com.github.wimpingego.nnow.client.gui.SafeChestScreen;
 import com.github.wimpingego.nnow.container.ModContainerTypes;
 
 import net.minecraft.client.gui.ScreenManager;
@@ -20,6 +21,6 @@ public class ClientEventBusSubscriber {
 	@SubscribeEvent
 	public static void clientSetup(FMLClientSetupEvent event) {
 		ScreenManager.registerFactory(ModContainerTypes.BOOKSHELF_CHEST.get(), BookshelfChestScreen::new);
-	}
-
+		ScreenManager.registerFactory(ModContainerTypes.SAFE_CHEST.get(), SafeChestScreen::new);
+		}
 }

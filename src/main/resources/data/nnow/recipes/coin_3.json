@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "nnow:coin_8"
+        }
+    ],
+    "result": {
+        "item": "nnow:coin_3",
+        "count": 8
+    }
+}

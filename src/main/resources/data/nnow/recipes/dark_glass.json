@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "G",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:black_dye"
+        },
+        "G": {
+            "item": "minecraft:glass"
+        }
+    },
+    "result": {
+        "item": "nnow:dark_glass_block",
+        "count": 1
+    }
+}

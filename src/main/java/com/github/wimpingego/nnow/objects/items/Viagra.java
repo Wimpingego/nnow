@@ -1,9 +1,9 @@
 package com.github.wimpingego.nnow.objects.items;
 import java.util.List;
 
+import com.github.wimpingego.nnow.util.GrowingUtil;
 import com.github.wimpingego.nnow.util.ModConfigs;
 import com.github.wimpingego.nnow.util.helpers.KeyboardHelper;
-import com.github.wimpingego.nnow.util.plus.GrowingUtil;
 
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;

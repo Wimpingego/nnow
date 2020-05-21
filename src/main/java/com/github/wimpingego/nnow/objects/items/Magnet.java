@@ -3,10 +3,10 @@ package com.github.wimpingego.nnow.objects.items;
 
 import java.util.List;
 
+import com.github.wimpingego.nnow.util.EnableUtil;
+import com.github.wimpingego.nnow.util.MagnetRangeUtil;
 import com.github.wimpingego.nnow.util.ModConfigs;
 import com.github.wimpingego.nnow.util.helpers.KeyboardHelper;
-import com.github.wimpingego.nnow.util.plus.EnableUtil;
-import com.github.wimpingego.nnow.util.plus.MagnetRangeUtil;
 
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
@@ -59,7 +59,7 @@ public class Magnet extends Item
 			List<ItemEntity> items = entity.world.getEntitiesWithinAABB(ItemEntity.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
 			for(ItemEntity e: items)
 			{
-				if(!player.isShiftKeyDown() && !e.getPersistentData().getBoolean("PreventRemoteMovement"))
+				//if(KeyboardHelper.isHoldingShift() && !e.getPersistentData().getBoolean("PreventRemoteMovement"))
 				{						
 					double factor = 0.035;
 					e.addVelocity((x - e.getPosX()) * factor, (y - e.getPosY()+1.25) * factor, (z - e.getPosZ()) * factor);
@@ -70,7 +70,7 @@ public class Magnet extends Item
 			List<ExperienceOrbEntity> xp = entity.world.getEntitiesWithinAABB(ExperienceOrbEntity.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
 			for(ExperienceOrbEntity orb: xp)
 			{
-				if(!player.isShiftKeyDown())
+				//if(!player.isShiftKeyDown())
 				{						
 					double factor = 0.035;
 					orb.addVelocity((x - orb.getPosX()) * factor, (y - orb.getPosY()+1.25) * factor, (z - orb.getPosZ()) * factor);
@@ -82,16 +82,16 @@ public class Magnet extends Item
 	@Override
     public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity player, Hand hand)
     {
-		//ItemStack stack = player.getHeldItem(hand);	
+		ItemStack stack = player.getHeldItem(hand);	
 		
-		if(!world.isRemote && !(player.isShiftKeyDown()))
-        {
-            EnableUtil.changeEnabled(player, hand);
-           //player.sendMessage(new TranslationTextComponent("item.nnow.magnet.line1", EnableUtil.isEnabled(stack)).applyTextStyle(TextFormatting.GREEN));
-            return new ActionResult<ItemStack>(ActionResultType.SUCCESS, player.getHeldItem(hand));
-        }		
+		//if(!world.isRemote && !((player)))
+        //{
+          EnableUtil.changeEnabled(player, hand);
+          player.sendMessage(new TranslationTextComponent("item.nnow.magnet.line1", EnableUtil.isEnabled(stack)).applyTextStyle(TextFormatting.GREEN));
+          return new ActionResult<ItemStack>(ActionResultType.SUCCESS, player.getHeldItem(hand));
+        //}		
        
-        return super.onItemRightClick(world, player, hand);
+        //return super.onItemRightClick(world, player, hand);
     }
 	
 	@Override
