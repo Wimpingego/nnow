@@ -1,17 +1,5 @@
 {	
-	"item.nnow.coin_0": "Wooden Coin",
-	"item.nnow.coin_1": "Iron Coin",
-	"item.nnow.coin_2": "Gold Coin",
-	"item.nnow.coin_3": "Diamond Coin",
-	"item.nnow.coin_4": "Emerald Coin",
-	"item.nnow.coin_5": "Wooden Coin Pile",
-	"item.nnow.coin_6": "Iron Coin Pile",
-	"item.nnow.coin_7": "Gold Coin Pile",
-	"item.nnow.coin_8": "Diamond Coin Pile",
-	"item.nnow.coin_9": "Emerald Coin Pile",
-	"item.nnow.coin_c": "Chocolate Coin",
-
-	"item.nnow.stone_pebble": "Stone Pebble",
+	"itemGroup.NNOWTab": "Never Needed Or Wanted",
 	
 	"item.nnow.redstone_nugget": "Redstone Nugget",
 	"item.nnow.lapis_nugget": "Lapis Nugget",
@@ -22,42 +10,92 @@
 	"item.nnow.ice_nugget": "Ice Nugget",
 	"item.nnow.fire_nugget": "Fire Nugget",
 	"item.nnow.wooden_nugget": "Wooden Nugget",
-
-	"block.nnow.ags_block": "Anti Gravity Sand",
-	"block.nnow.agrs_block": "Anti Gravity Red Sand",
-	"block.nnow.agg_block": "Anti Gravity Gravel",
-	"block.nnow.dark_glass_block": "Dark Glass",
-
-	"block.nnow.gravel_slab": "Gravel Slab",
-	"block.nnow.dirt_slab": "Dirt Slab",
-	"block.nnow.coarsedirt_slab": "Coarse Dirt Slab",
-	"block.nnow.sand_slab": "Sand Slab",
-	"block.nnow.redsand_slab": "Red Sand Slab",
-	"block.nnow.bookshelf_slab": "Bookshelf Slab",
-	"block.nnow.path_slab": "Path Slab",	
-	"block.nnow.grass_slab": "Grass Slab (WIP)",	
-
-	"block.nnow.gravel_stairs": "Gravel Stairs",
-	"block.nnow.coarsedirt_stairs": "Coarse Dirt Stairs",		
-	"block.nnow.dirt_stairs": "Dirt Stairs",	
-	"block.nnow.sand_stairs": "Sand Stairs",	
-	"block.nnow.redsand_stairs": "Red Sand Stairs",	
-	"block.nnow.bookshelf_stairs": "Bookshelf Stairs",	
-	"block.nnow.path_stairs": "Path Stairs",		
-	"block.nnow.grass_stairs": "Grass Stairs (WIP)",
-
-	"block.nnow.bookshelf_chest": "Bookshelf Chest",
-	"block.nnow.safe_chest": "Safe Vault",
-	"block.nnow.beekeeper_block": "Beekeeper Workstation",
-	"block.nnow.trap_block": "Monster Trap",
-		
-	"block.nnow.end_lantern": "End Lantern",		
-		
+	
 	"block.nnow.barley_crop": "Barley Seeds",
 	"item.nnow.barley": "Barley",
 	"block.nnow.pepper_crop": "Pepper Seeds",
 	"item.nnow.pepper": "Pepper",
-		
+	"item.nnow.weetabix": "Weetabix",
+
+	"item.nnow.stone_dust": "Stone Dust",
+	"item.nnow.sand_dust": "Sand Dust",
+	"item.nnow.dirt_dust": "Dirt Dust",
+	"item.nnow.gravel_dust": "Gravel Dust",
+	"item.nnow.clay_dust": "Clay Dust",
+	
+	"item.nnow.stone_hammer": "Stone Hammer",
+	"item.nnow.iron_hammer": "Iron Hammer",
+	"item.nnow.golden_hammer": "Golden Hammer",
+	"item.nnow.diamond_hammer": "Diamond Hammer",
+
+	"item.nnow.magnet": "Derpy Magnet",
+	"item.nnow.magnet.line1": "Magnet is active: %s",
+	"item.nnow.magnet.line2": "Works while in player inventory",
+	"item.nnow.magnet.line3": "Attraction range set to: %s",
+	
+	"item.nnow.viagra": "Villager Intense Area Growing Range Attachment",
+	"item.nnow.viagra.line1": "Only works when in your main hand",
+	"item.nnow.viagra.line2": "Range in blocks: %s",
+	
+	"item.nnow.poking_stick": "Poking Stick",
+	"item.nnow.poking_stick.line1": "Who knows what this does but why not try pocking things with it",
+
+	"item.nnow.death_potato": "Death Potato",
+	
+	"item.nnow.doom_disc": "Music Disc",
+	"item.nnow.doom_disc.desc": "Tremble Mortals - Doom is HERE",
+	"item.doom_disc.sub": "Doom Music",
+	
+	"item.nnow.mizzy_disc": "Music Disc",
+	"item.nnow.mizzy_disc.desc": "Pink & Fluffy - Dancing on rainbows",
+	"item.mizzy_disc.sub": "Mizzy Music",
+	
+	"block.nnow.rsg_head": "Redstone Golem Head",
+	"block.nnow.redstone_golem_head": "Redstone Golem Head",
+	"block.nnow.redstone_golem_rear": "Redstone Golem Right Ear",
+	"block.nnow.redstone_golem_rear_top": "Redstone Golem Right Ear Top Piece",
+	"block.nnow.redstone_golem_lear": "Redstone Golem Left Ear",
+	"block.nnow.redstone_golem_lear_top": "Redstone Golem Left Ear Top Piece",
+	
+
+	"block.nnow.trap_block": "Monster Trap",
+	"block.nnow.iron_trap": "Iron Monster Trap",
+	"block.nnow.gold_trap": "Gold Monster Trap",
+	"block.nnow.diamond_trap": "Diamond Monster Trap",
+	"block.nnow.wither_trap": "Wither Proof Monster Trap",
+	"block.nnow.sword_in_stone": "Old Derpy's Sword",
+	"block.nnow.beekeeper_block": "Beekeeper Workstation",	
+	"block.nnow.end_lantern": "End Lantern",
+	"block.nnow.sea_fisherman": "Sea Fisherman",
+	"block.nnow.sea_trader": "Sea Trader",	
+	
+	"block.nnow.agg_block": "Anti Gravity Gravel",
+	"block.nnow.ags_block": "Anti Gravity Sand",
+	"block.nnow.agrs_block": "Anti Gravity Red Sand",
+	"block.nnow.dark_glass_block": "Dark Glass",
+	"block.nnow.super_obsidian": "Super Obsidian",
+	
+	"block.nnow.waterwell": "Well Spring",
+	"block.nnow.lavawell": "Lava Spring",	
+	"block.nnow.cobblegen": "Cobblestone Generator",	
+	
+	"block.nnow.gravel_slab": "Gravel Slab",
+	"block.nnow.sand_slab": "Sand Slab",
+	"block.nnow.redsand_slab": "Red Sand Slab",
+	"block.nnow.coarsedirt_slab": "Coarse Dirt Slab",	
+	"block.nnow.dirt_slab": "Dirt Slab",
+	"block.nnow.bookshelf_slab": "Bookshelf Slab",
+
+	"block.nnow.gravel_stairs": "Gravel Stairs",
+	"block.nnow.sand_stairs": "Sand Stairs",	
+	"block.nnow.redsand_stairs": "Red Sand Stairs",		
+	"block.nnow.coarsedirt_stairs": "Coarse Dirt Stairs",		
+	"block.nnow.dirt_stairs": "Dirt Stairs",	
+	"block.nnow.bookshelf_stairs": "Bookshelf Stairs",	
+
+	"block.nnow.bookshelf_chest": "Bookshelf Chest",
+	"block.nnow.safe_chest": "Safe Vault",
+			
 	"block.nnow.iron_berry_bush": "Iron Berries",
 	"block.nnow.gold_berry_bush": "Gold Berries",
 	"block.nnow.coal_berry_bush": "Coal Berries",
@@ -73,29 +111,24 @@
 	
 	"container.bookshelf_chest": "Bookshelf Chest",	
 	"container.safe_chest": "Safe Valut",
-		
-	"itemGroup.NNOWTab": "Never Needed Or Wanted",
-	
-	"item.nnow.magnet": "Derpy Magnet",
-	"item.nnow.magnet.line1": "Magnet is active: %s",
-	"item.nnow.magnet.line2": "Works while in player inventory",
-	"item.nnow.magnet.line3": "Attraction range set to: %s",
-	
-	"item.nnow.viagra": "Villager Intense Area Growing Range Attachment",
-	"item.nnow.viagra.line1": "Only works when in your main hand",
-	"item.nnow.viagra.line2": "Range in blocks: %s",
-	
-	"item.nnow.poking_stick": "Poking Stick",
-	"item.nnow.poking_stick.line1": "Who knows what this does but why not try pocking things with it",
 	
 	"entity.minecraft.villager.nnow.old_derpy": "Old Derpy",
 	"entity.minecraft.villager.nnow.banker": "Banker",
 	"entity.minecraft.villager.nnow.beekeeper": "Beekeeper",
 	"entity.minecraft.villager.nnow.monster_trapper": "Monster Trapper",
 	"entity.minecraft.villager.nnow.end_trader": "End Trader",
+	"entity.minecraft.villager.nnow.sea_fisherman": "Sea Fisherman",
+	"entity.minecraft.villager.nnow.sea_trader": "Sea Trader",
 	
-	"block.nnow.example_button": "Example Button",	
-	"block.nnow.example_pressure_plate": "Example Pressure Plate",
-	"block.nnow.example_fence": "Example Fence"
+	"item.nnow.cobblegen.line1": "A source of cobblestone",
+	"item.nnow.cobblegen.general.line1": "Right-click on block with pickaxe",	
+	
+	"item.nnow.waterwell.line1": "An endless source of water",
+	"item.nnow.waterwell.general.line1": "Right-click on block with empty bucket",	
+	
+	"item.nnow.lavawell.line1": "An endless source of lava",
+	"item.nnow.lavawell.general.line1": "Right-click on block with empty bucket",
+	
+	"item.nnow.witherproof.line1": "Wither Proof"
 	
 }

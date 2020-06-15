@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=north": { "model": "nnow:block/redstone_golem_lear_top", "y": 0 },
+        "facing=south": { "model": "nnow:block/redstone_golem_lear_top", "y": 180 },
+        "facing=west":  { "model": "nnow:block/redstone_golem_lear_top", "y": 270 },
+        "facing=east":  { "model": "nnow:block/redstone_golem_lear_top", "y": 90 },
+        "facing=up": { "model": "nnow:block/redstone_golem_lear_top", "y": 180 },
+        "facing=down": { "model": "nnow:block/redstone_golem_lear_top", "y": 180 }
+		}
+}

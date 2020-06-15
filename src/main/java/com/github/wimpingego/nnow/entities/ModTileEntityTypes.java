@@ -25,5 +25,4 @@ public class ModTileEntityTypes {
 			.register("safe_chest", () -> TileEntityType.Builder
 					.create(SafeChestTileEntity::new, BlockList.SAFE_CHEST.get()).build(null));	
 
-
 }

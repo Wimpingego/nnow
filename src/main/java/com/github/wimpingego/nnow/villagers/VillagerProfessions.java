@@ -25,6 +25,8 @@ public class VillagerProfessions
     public static final VillagerProfession BEEKEEPER = null;
     public static final VillagerProfession MONSTER_TRAPPER = null;
     public static final VillagerProfession END_TRADER= null;
+    public static final VillagerProfession SEA_TRADER= null;
+    public static final VillagerProfession SEA_FISHERMAN= null;
     
     @SubscribeEvent
     public static void registerVillagerProfessions(Register<VillagerProfession> event)
@@ -36,5 +38,7 @@ public class VillagerProfessions
         registry.register(VillagerUtil.villagerProfession("beekeeper", PointOfInterestTypes.BEEKEEPER, ImmutableSet.of(), ImmutableSet.of(), null).setRegistryName(NNOW.MOD_ID, "beekeeper"));
         registry.register(VillagerUtil.villagerProfession("monster_trapper", PointOfInterestTypes.MONSTER_TRAPPER, ImmutableSet.of(), ImmutableSet.of(), null).setRegistryName(NNOW.MOD_ID, "monster_trapper"));
         registry.register(VillagerUtil.villagerProfession("end_trader", PointOfInterestTypes.END_TRADER, ImmutableSet.of(), ImmutableSet.of(), null).setRegistryName(NNOW.MOD_ID, "end_trader"));
+        registry.register(VillagerUtil.villagerProfession("sea_trader", PointOfInterestTypes.SEA_TRADER, ImmutableSet.of(), ImmutableSet.of(), null).setRegistryName(NNOW.MOD_ID, "sea_trader"));
+        registry.register(VillagerUtil.villagerProfession("sea_fisherman", PointOfInterestTypes.SEA_FISHERMAN, ImmutableSet.of(), ImmutableSet.of(), null).setRegistryName(NNOW.MOD_ID, "sea_fisherman"));
     }
 }

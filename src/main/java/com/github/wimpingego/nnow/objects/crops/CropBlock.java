@@ -36,15 +36,15 @@ public class CropBlock extends CropsBlock {
 		//}
 	//}
 
-	public ItemStack getItem(IBlockReader worldIn, BlockPos pos, BlockState state) {
-		switch (name) {
-		case "barley":
-			return new ItemStack(ItemList.BARLEY_SEEDS.get());
-		case "pepper":
-			return new ItemStack(ItemList.PEPPER_SEEDS.get());
-		default:
-			return new ItemStack(ItemList.PEPPER_SEEDS.get());
-		}
-	}
+	//public ItemStack getItem(IBlockReader worldIn, BlockPos pos, BlockState state) {
+		//switch (name) {
+		//case "barley":
+			//return new ItemStack(ItemList.BARLEY_SEEDS.get());
+		//case "pepper":
+			//return new ItemStack(ItemList.PEPPER_SEEDS.get());
+		//default:
+			//return new ItemStack(ItemList.PEPPER_SEEDS.get());
+		//}
+	//}
 
 }

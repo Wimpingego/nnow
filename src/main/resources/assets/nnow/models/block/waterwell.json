@@ -1,0 +1,101 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "cobblegen_block_generic": "nnow:blocks/cobblegen_block_generic",
+        "front": "nnow:blocks/waterwell_front",
+        "back": "nnow:blocks/cobblegen_back",
+        "1": "nnow:blocks/cobblegen_side1",
+        "2": "nnow:blocks/cobblegen_side2",
+        "top": "nnow:blocks/cobblegen_top",
+        "particle": "block/cobblestone"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.5, 0.5, 0.5 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 45, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cobble",
+            "from": [ 0, 0, 0 ], 
+            "to": [ 16, 16, 1 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#back", "uv": [ 0, 0, 16, 16 ] },
+                "south": { "texture": "#back", "uv": [ 0, 0, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Cobble",
+            "from": [ 0, 0, 15 ], 
+            "to": [ 16, 16, 16 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#front", "uv": [ 0, 0, 16, 16 ] },
+                "south": { "texture": "#front", "uv": [ 0, 0, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Lava",
+            "from": [ 0, 0, 0 ], 
+            "to": [ 1, 16, 16 ], 
+            "shade": false,
+            "faces": {
+                "east": { "texture": "#1", "uv": [ 0, 0, 16, 16 ] },
+                "west": { "texture": "#1", "uv": [ 0, 0, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Water",
+            "from": [ 15, 0, 0 ], 
+            "to": [ 16, 16, 16 ], 
+            "shade": false,
+            "faces": {
+                "east": { "texture": "#2", "uv": [ 0, 0, 16, 16 ] },
+                "west": { "texture": "#2", "uv": [ 0, 0, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Top",
+            "from": [ 0, 15, 0 ], 
+            "to": [ 16, 16, 16 ], 
+            "shade": false,
+            "faces": {
+                "up": { "texture": "#top", "uv": [ 0, 0, 16, 16 ] },
+                "down": { "texture": "#top", "uv": [ 0, 0, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Bottom",
+            "from": [ 0, 0, 0 ], 
+            "to": [ 16, 1, 16 ], 
+            "shade": false,
+            "faces": {
+                "up": { "texture": "#top", "uv": [ 0, 0, 16, 16 ] },
+                "down": { "texture": "#top", "uv": [ 0, 0, 16, 16 ] }
+            }
+        }
+    ]
+}

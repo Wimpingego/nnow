@@ -2,6 +2,7 @@ package com.github.wimpingego.nnow.objects.items;
 
 import java.util.List;
 
+import com.github.wimpingego.nnow.init.BlockList;
 import com.github.wimpingego.nnow.init.ItemList;
 import com.github.wimpingego.nnow.util.ModConfigs;
 import com.github.wimpingego.nnow.util.helpers.KeyboardHelper;
@@ -42,7 +43,7 @@ public class PokingStick extends Item {
 		if (context.getWorld().getBlockState(context.getPos()).getBlock() == Blocks.GRASS_BLOCK) {
 			for (ItemStack stack : context.getPlayer().inventory.mainInventory) {
 				if (stack.isEmpty()) {
-					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_PEBBLE.get(),0 + random.nextInt(3)));
+					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_DUST.get(),0 + random.nextInt(3)));
 					context.getItem().damageItem(1, context.getPlayer(), (playerIn) -> {
 						playerIn.sendBreakAnimation(context.getHand());
 					});
@@ -54,7 +55,7 @@ public class PokingStick extends Item {
 		if (context.getWorld().getBlockState(context.getPos()).getBlock() == Blocks.PODZOL) {
 			for (ItemStack stack : context.getPlayer().inventory.mainInventory) {
 				if (stack.isEmpty()) {
-					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_PEBBLE.get(),2 + random.nextInt(3)));
+					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_DUST.get(),2 + random.nextInt(3)));
 					context.getItem().damageItem(1, context.getPlayer(), (playerIn) -> {
 						playerIn.sendBreakAnimation(context.getHand());
 					});
@@ -66,7 +67,7 @@ public class PokingStick extends Item {
 		if (context.getWorld().getBlockState(context.getPos()).getBlock() == Blocks.DIRT) {
 			for (ItemStack stack : context.getPlayer().inventory.mainInventory) {
 				if (stack.isEmpty()) {
-					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_PEBBLE.get(),2 + random.nextInt(3)));
+					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_DUST.get(),2 + random.nextInt(3)));
 					context.getItem().damageItem(1, context.getPlayer(), (playerIn) -> {
 						playerIn.sendBreakAnimation(context.getHand());
 					});
@@ -78,7 +79,7 @@ public class PokingStick extends Item {
 		if (context.getWorld().getBlockState(context.getPos()).getBlock() == Blocks.COARSE_DIRT) {
 			for (ItemStack stack : context.getPlayer().inventory.mainInventory) {
 				if (stack.isEmpty()) {
-					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_PEBBLE.get(),2 + random.nextInt(3)));
+					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_DUST.get(),2 + random.nextInt(3)));
 					context.getItem().damageItem(1, context.getPlayer(), (playerIn) -> {
 						playerIn.sendBreakAnimation(context.getHand());
 					});
@@ -90,7 +91,7 @@ public class PokingStick extends Item {
 		if (context.getWorld().getBlockState(context.getPos()).getBlock() == Blocks.MYCELIUM) {
 			for (ItemStack stack : context.getPlayer().inventory.mainInventory) {
 				if (stack.isEmpty()) {
-					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_PEBBLE.get(),2 + random.nextInt(3)));
+					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_DUST.get(),2 + random.nextInt(3)));
 					context.getItem().damageItem(1, context.getPlayer(), (playerIn) -> {
 						playerIn.sendBreakAnimation(context.getHand());
 					});
@@ -104,7 +105,7 @@ public class PokingStick extends Item {
 		if (context.getWorld().getBlockState(context.getPos()).getBlock() == Blocks.STONE) {
 			for (ItemStack stack : context.getPlayer().inventory.mainInventory) {
 				if (stack.isEmpty()) {
-					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_PEBBLE.get(),2 + random.nextInt(3)));
+					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_DUST.get(),2 + random.nextInt(3)));
 					context.getItem().damageItem(1, context.getPlayer(), (playerIn) -> {
 						playerIn.sendBreakAnimation(context.getHand());
 					});
@@ -116,7 +117,7 @@ public class PokingStick extends Item {
 		if (context.getWorld().getBlockState(context.getPos()).getBlock() == Blocks.COBBLESTONE) {
 			for (ItemStack stack : context.getPlayer().inventory.mainInventory) {
 				if (stack.isEmpty()) {
-					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_PEBBLE.get(),2 + random.nextInt(3)));
+					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_DUST.get(),2 + random.nextInt(3)));
 					context.getItem().damageItem(1, context.getPlayer(), (playerIn) -> {
 						playerIn.sendBreakAnimation(context.getHand());
 					});
@@ -128,7 +129,7 @@ public class PokingStick extends Item {
 		if (context.getWorld().getBlockState(context.getPos()).getBlock() == Blocks.GRANITE) {
 			for (ItemStack stack : context.getPlayer().inventory.mainInventory) {
 				if (stack.isEmpty()) {
-					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_PEBBLE.get(),2 + random.nextInt(3)));
+					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_DUST.get(),2 + random.nextInt(3)));
 					context.getItem().damageItem(1, context.getPlayer(), (playerIn) -> {
 						playerIn.sendBreakAnimation(context.getHand());
 					});
@@ -140,7 +141,7 @@ public class PokingStick extends Item {
 		if (context.getWorld().getBlockState(context.getPos()).getBlock() == Blocks.DIORITE) {
 			for (ItemStack stack : context.getPlayer().inventory.mainInventory) {
 				if (stack.isEmpty()) {
-					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_PEBBLE.get(),2 + random.nextInt(3)));
+					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_DUST.get(),2 + random.nextInt(3)));
 					context.getItem().damageItem(1, context.getPlayer(), (playerIn) -> {
 						playerIn.sendBreakAnimation(context.getHand());
 					});
@@ -152,8 +153,20 @@ public class PokingStick extends Item {
 		if (context.getWorld().getBlockState(context.getPos()).getBlock() == Blocks.ANDESITE) {
 			for (ItemStack stack : context.getPlayer().inventory.mainInventory) {
 				if (stack.isEmpty()) {
-					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_PEBBLE.get(),2 + random.nextInt(3)));
+					context.getPlayer().addItemStackToInventory(new ItemStack(ItemList.STONE_DUST.get(),2 + random.nextInt(3)));
 					context.getItem().damageItem(1, context.getPlayer(), (playerIn) -> {
+						playerIn.sendBreakAnimation(context.getHand());
+					});
+					return ActionResultType.SUCCESS;
+				}
+			}
+		}
+		
+		if (context.getWorld().getBlockState(context.getPos()).getBlock() == BlockList.COBBLEGEN.get()) {
+			for (ItemStack stack : context.getPlayer().inventory.mainInventory) {
+				if (stack.isEmpty()) {
+					context.getPlayer().addItemStackToInventory(new ItemStack(Items.COBBLESTONE,64));
+					context.getItem().damageItem(64, context.getPlayer(), (playerIn) -> {
 						playerIn.sendBreakAnimation(context.getHand());
 					});
 					return ActionResultType.SUCCESS;

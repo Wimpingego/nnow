@@ -7,11 +7,13 @@ import com.github.wimpingego.nnow.container.ModContainerTypes;
 import com.github.wimpingego.nnow.entities.ModTileEntityTypes;
 import com.github.wimpingego.nnow.init.BlockList;
 import com.github.wimpingego.nnow.init.ItemList;
+import com.github.wimpingego.nnow.init.SoundList;
 import com.github.wimpingego.nnow.util.ClientRenderer;
+import com.github.wimpingego.nnow.util.Trollnventory;
+import com.github.wimpingego.nnow.util.WitherEvents;
 import com.github.wimpingego.nnow.util.ModConfigs;
 import com.github.wimpingego.nnow.villagers.PointOfInterestTypes;
 import com.github.wimpingego.nnow.villagers.VillagerUtil;
-
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -53,6 +55,7 @@ public class NNOW
 		modEventBus.addListener(this::setup);
 		modEventBus.addListener(this::clientSetup);
 		
+		SoundList.SOUNDS.register(modEventBus);
 		ItemList.ITEMS.register(modEventBus);
 		BlockList.BLOCKS.register(modEventBus);
 		BlockList.NO_ITEM_BLOCK.register(modEventBus);
@@ -60,9 +63,15 @@ public class NNOW
 		ModContainerTypes.CONTAINER_TYPES.register(modEventBus);
 		
 		MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(Trollnventory.class);
         
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModConfigs.COMMON_CONFIG);
         ModConfigs.load(ModConfigs.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve("nnow-common.toml"));
+        
+        IEventBus forgeEventBus = MinecraftForge.EVENT_BUS;
+    
+        forgeEventBus.addListener(WitherEvents::onWitherExplosion);
+        forgeEventBus.addListener(WitherEvents::onExplosion);
 	}
 	
 	@SubscribeEvent
@@ -84,6 +93,8 @@ public class NNOW
 		VillagerUtil.fixPOITypeBlockStates(PointOfInterestTypes.BEEKEEPER);
 		VillagerUtil.fixPOITypeBlockStates(PointOfInterestTypes.MONSTER_TRAPPER);
 		VillagerUtil.fixPOITypeBlockStates(PointOfInterestTypes.END_TRADER);
+		VillagerUtil.fixPOITypeBlockStates(PointOfInterestTypes.SEA_TRADER);
+		VillagerUtil.fixPOITypeBlockStates(PointOfInterestTypes.SEA_FISHERMAN);
 	}
 		
 	private void clientSetup(final FMLClientSetupEvent event)

@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iCi",
+        "WCL",
+        "iCi"
+    ],
+    "key": {
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "C": {
+            "item": "minecraft:cobblestone"
+        },
+        "L": {
+            "item": "minecraft:water_bucket"
+        },
+        "W": {
+            "item": "minecraft:lava_bucket"
+        }
+    },
+    "result": {
+        "item": "nnow:cobblegen",
+        "count": 1
+    }
+}

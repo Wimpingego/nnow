@@ -24,16 +24,21 @@ public class PointOfInterestTypes
     public static final PointOfInterestType BEEKEEPER = null;
     public static final PointOfInterestType MONSTER_TRAPPER = null;
     public static final PointOfInterestType END_TRADER = null;
+    public static final PointOfInterestType SEA_TRADER = null;
+    public static final PointOfInterestType SEA_FISHERMAN = null;
     
     @SubscribeEvent
     public static void registerPointOfInterestTypes(Register<PointOfInterestType> event)
     {
         IForgeRegistry<PointOfInterestType> registry = event.getRegistry();
         
-        registry.register(VillagerUtil.pointOfInterestType("old_derpy", VillagerUtil.getAllStates(BlockList.BOOKSHELF_CHEST.get()), 1, 1).setRegistryName(NNOW.MOD_ID, "old_derpy"));
-        registry.register(VillagerUtil.pointOfInterestType("banker", VillagerUtil.getAllStates(BlockList.SAFE_CHEST.get()), 1, 1).setRegistryName(NNOW.MOD_ID, "banker"));
+        registry.register(VillagerUtil.pointOfInterestType("old_derpy", VillagerUtil.getAllStates(BlockList.SWORD_IN_STONE.get()), 1, 1).setRegistryName(NNOW.MOD_ID, "old_derpy"));
         registry.register(VillagerUtil.pointOfInterestType("beekeeper", VillagerUtil.getAllStates(BlockList.BEEKEEPER_BLOCK.get()), 1, 1).setRegistryName(NNOW.MOD_ID, "beekeeper"));
-        registry.register(VillagerUtil.pointOfInterestType("monster_trapper", VillagerUtil.getAllStates(BlockList.TRAP_BLOCK.get()), 1, 1).setRegistryName(NNOW.MOD_ID, "monster_trapper"));
         registry.register(VillagerUtil.pointOfInterestType("end_trader", VillagerUtil.getAllStates(BlockList.END_LANTERN.get()), 1, 1).setRegistryName(NNOW.MOD_ID, "end_trader"));
+        registry.register(VillagerUtil.pointOfInterestType("sea_trader", VillagerUtil.getAllStates(BlockList.SEA_TRADER_POI.get()), 1, 1).setRegistryName(NNOW.MOD_ID, "sea_trader"));
+        registry.register(VillagerUtil.pointOfInterestType("sea_fisherman", VillagerUtil.getAllStates(BlockList.SEA_FISHERMAN_POI.get()), 1, 1).setRegistryName(NNOW.MOD_ID, "sea_fisherman"));
+        
+        registry.register(VillagerUtil.pointOfInterestType("banker", VillagerUtil.getAllStates(BlockList.SAFE_CHEST.get()), 1, 1).setRegistryName(NNOW.MOD_ID, "banker"));
+        registry.register(VillagerUtil.pointOfInterestType("monster_trapper", VillagerUtil.getAllStates(BlockList.TRAP_BLOCK.get()), 1, 1).setRegistryName(NNOW.MOD_ID, "monster_trapper"));
     }
 }

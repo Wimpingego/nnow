@@ -7,13 +7,13 @@
     ],
     "key": {
         "#": {
-            "item": "minecraft:iron_sword"
+            "item": "minecraft:wooden_sword"
         },
         "i": {
-            "item": "minecraft:iron_ingot"
+            "item": "minecraft:oak_planks"
         },
         "I": {
-            "item": "minecraft:iron_block"
+            "item": "minecraft:oak_log"
         }
     },
     "result": {
