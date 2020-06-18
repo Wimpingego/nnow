@@ -9,9 +9,6 @@ What this mod adds is well kind of what the name says things we have never neede
 
 ![image](https://imgur.com/uhGM7Gf.png)
 
-
- 
-
 ## All New Villagers:
 
 7 new villagers each with trades and their own poi blocks
@@ -24,7 +21,6 @@ What this mod adds is well kind of what the name says things we have never neede
 * End Trader needs the Ender lantern 
 * Sea Trader needs the Sea Trader POI block
 * Sea Fisherman needs the Sea Fisherman POI block
- 
 
 ## Ore & Other Bushes:
 
@@ -40,7 +36,6 @@ All ore bushes drop a nugget version of what type it is, The XP bush drops xp ob
 * Dusts (Stone,Sand, Dirt Gravel & Clay) - Can be used to craft the dusts block version. 
 * Poking Stick - Give blocks in the wolrd a poke and see what drops you get back, Item durability can be set in configs.
 * Death Potato (Troll) - If set to TRUE in the configs a potato that will be with you always, Could also be a nice snack.
- 
 
 ## Hammers:
 The good old hammer I mean we never leave home with out one right, breaking block with this tools can drop you dust if your lucky.
@@ -52,8 +47,6 @@ The good old hammer I mean we never leave home with out one right, breaking bloc
 * Dirt = Clay Dust.
 * Grass = Sugar cane plus a chance to get villager spawn egg if Sky Block mode is set to TRUE in configs.
 You can change the drop rate values in the mod configs.
-
- 
 
 ## Blocks added: 
 
@@ -70,8 +63,6 @@ You can change the drop rate values in the mod configs.
 * Lava Well - A block with an endless source of lava, Just right click it with a empty bucket.
 * Cobblestone Generator - A source of Cobble. Right click on it with a Pickaxe or Hammer uses tool durability.
 * Cobblestone return amount and tools durability cost for the Cobblestone Generator can be set in the mod configs.
-
- 
 
 ## Monster Traps:
 Nothing beats a good old trap unless you step in it that is
