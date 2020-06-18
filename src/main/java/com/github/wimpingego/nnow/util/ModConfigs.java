@@ -77,7 +77,7 @@ public class ModConfigs {
     
     private static void initConfig()  {       
         COMMON_BUILDER.push(BOOKSHELF);
-        ENCHANT_POWER = COMMON_BUILDER.comment("Enchant power level modifier.").defineInRange("Enchant Level", 8, 1,60);
+        ENCHANT_POWER = COMMON_BUILDER.comment("Enchant power level modifier.").defineInRange("Enchant Level", 1, 1,16);
         COMMON_BUILDER.pop();        
         
         COMMON_BUILDER.push(VIAGRE);
@@ -133,7 +133,7 @@ public class ModConfigs {
         COMMON_BUILDER.pop();
         
         COMMON_BUILDER.push(HAMMER);
-        SKYBLOCK_MODE = COMMON_BUILDER.comment().define("Let the hammer have a chance of dropping a spawn egg", true);
+        SKYBLOCK_MODE = COMMON_BUILDER.comment().define("SkyBlock mode", true);
 		DROP_CHANCE = COMMON_BUILDER.comment().defineInRange("Dust drop chance modifier", 0.5, 0.00, 1.0);
 		SECOND_CHANCE = COMMON_BUILDER.comment().defineInRange("Second item drop chance modifier (Suger cane & Cactus)",0.05, 0.00, 1.0);
 		EGG_CHANCE = COMMON_BUILDER.comment().defineInRange("Spawn egg drop chance modifier",0.005, 0.00, 1.0);	

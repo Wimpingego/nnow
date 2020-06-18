@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "###",
+        " C "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:fishing_rod"
+        },
+        "C": {
+            "item": "minecraft:chest"
+        }
+    },
+    "result": {
+        "item": "nnow:sea_fisherman",
+        "count": 1
+    }
+}

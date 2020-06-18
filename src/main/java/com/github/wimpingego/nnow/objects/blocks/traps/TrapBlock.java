@@ -18,18 +18,16 @@ import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
-import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
-
 /*
 @author: Naxanria 
 
 @edits: Wimpingego
 */
-public class TrapBlock extends Block {
+public class TrapBlock extends Block{
 	
 	public static final VoxelShape NORTH_SHAPE = makeCuboidShape(0.05D * 16, 0.05D * 16, 0.0D * 16, 0.95 * 16,
 			0.95D * 16, 0.25D * 16);
@@ -124,7 +122,7 @@ public void onEntityCollision(BlockState state, World worldIn, BlockPos pos, Ent
 		case WEST:
 			return EAST_SHAPE;
 		default:
-			return VoxelShapes.fullCube();
+			return NORTH_SHAPE;
 		}
-	}
+	}	
 }

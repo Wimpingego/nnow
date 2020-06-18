@@ -1,6 +1,7 @@
 package com.github.wimpingego.nnow.objects.blocks;
 
 import com.github.wimpingego.nnow.entities.ModTileEntityTypes;
+import com.github.wimpingego.nnow.init.BlockList;
 import com.github.wimpingego.nnow.tileentity.BookshelfChestTileEntity;
 import com.github.wimpingego.nnow.util.ModConfigs;
 
@@ -63,6 +64,6 @@ public class BookshelfChestBlock extends Block {
 	@Override
 	public float getEnchantPowerBonus(BlockState state, IWorldReader world, BlockPos pos)
 	{
-        return value;
+        return this.getBlock() == BlockList.BOOKSHELF_CHEST.get() ? value: 0;
 	}
 }

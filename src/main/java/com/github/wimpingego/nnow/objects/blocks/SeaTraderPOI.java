@@ -13,19 +13,18 @@ import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
-import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
 
 
 
 public class SeaTraderPOI<IBlockState> extends Block {
-	public static final VoxelShape NORTHS = makeCuboidShape(0.05D*16, 0.05D*16, 0.05D*16, 0.95D*16, 1.98D*16, 0.95D*16);
-	public static final VoxelShape WESTS = makeCuboidShape(0.05D*16, 0.05D*16, 0.05D*16, 0.95D*16, 1.98D*16, 0.95D*16);
-	public static final VoxelShape SOUTHS = makeCuboidShape(0.05D*16, 0.05D*16, 0.05D*16, 0.95D*16, 1.98D*16, 0.95D*16);
-	public static final VoxelShape EASTS = makeCuboidShape(0.05D*16, 0.05D*16, 0.05D*16, 0.95D*16, 1.98D*16, 0.95D*16);
-	public static final VoxelShape UPS = makeCuboidShape(0.05D*16, 0.05D*16, 0.05D*16, 0.95D*16, 1.98D*16, 0.95D*16);
-	public static final VoxelShape DOWNS = makeCuboidShape(0.05D*16, 0.05D*16, 0.05D*16, 0.95D*16, 1.98D*16, 0.95D*16);
+	public static final VoxelShape NORTHS = Block.makeCuboidShape(0.05D*16, 0.05D*16, 0.05D*16, 0.95D*16, 1.98D*16, 0.95D*16);
+	public static final VoxelShape WESTS = Block.makeCuboidShape(0.05D*16, 0.05D*16, 0.05D*16, 0.95D*16, 1.98D*16, 0.95D*16);
+	public static final VoxelShape SOUTHS = Block.makeCuboidShape(0.05D*16, 0.05D*16, 0.05D*16, 0.95D*16, 1.98D*16, 0.95D*16);
+	public static final VoxelShape EASTS = Block.makeCuboidShape(0.05D*16, 0.05D*16, 0.05D*16, 0.95D*16, 1.98D*16, 0.95D*16);
+	public static final VoxelShape UPS = Block.makeCuboidShape(0.05D*16, 0.05D*16, 0.05D*16, 0.95D*16, 1.98D*16, 0.95D*16);
+	public static final VoxelShape DOWNS = Block.makeCuboidShape(0.05D*16, 0.05D*16, 0.05D*16, 0.95D*16, 1.98D*16, 0.95D*16);
 	
 	public static final DirectionProperty NORTH = DirectionalBlock.FACING;
 	public static final DirectionProperty EAST = DirectionalBlock.FACING;
@@ -58,11 +57,10 @@ public class SeaTraderPOI<IBlockState> extends Block {
         this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 2.0F, 1.0F);
     }
 
-	private void setBlockBounds(float f, float g, float h, float i, float j, float k) {		
+	private void setBlockBounds(float f, float g, float h, float i, float j, float k) {	
 	}
-
+	
 	@Override
-	@Deprecated
 	public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
 		switch(state.get(BlockStateProperties.FACING)) {
 		case DOWN:
@@ -78,7 +76,7 @@ public class SeaTraderPOI<IBlockState> extends Block {
 		case WEST:
 			return WESTS;
 		default:
-			return VoxelShapes.fullCube();
+			return NORTHS;
 		}
 	}
 

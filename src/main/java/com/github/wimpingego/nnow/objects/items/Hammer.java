@@ -41,7 +41,7 @@ public class Hammer extends PickaxeItem
 		        double r = random.nextDouble();
 		        if (r <= DropChance)
 		        {
-		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemList.SAND_DUST.get(), 1)));
+		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemList.GRAVEL_DUST.get(), 1)));
 		        }		
 			}			
 			else if(block == Blocks.SAND)
@@ -71,7 +71,7 @@ public class Hammer extends PickaxeItem
 		        double r = random.nextDouble();
 		        if (r <= DropChance)
 		        {
-		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemList.GRAVEL_DUST.get(), 1)));
+		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemList.CLAY_DUST.get(), 1)));
 		        }		
 			}
 			else if(block == Blocks.GRAVEL)
@@ -83,7 +83,7 @@ public class Hammer extends PickaxeItem
 		        double r = random.nextDouble();
 		        if (r <= DropChance)
 		        {
-		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemList.CLAY_DUST.get(), 1)));
+		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemList.SAND_DUST.get(), 1)));
 		        }		
 			}
 			else if(block == Blocks.GRASS)
@@ -107,7 +107,8 @@ public class Hammer extends PickaxeItem
 			}
 			if(!(block == Blocks.COBBLESTONE) || 
 					!(block == Blocks.SAND) || 
-					!(block == Blocks.GRAVEL) || 
+					!(block == Blocks.GRAVEL) ||
+					!(block == Blocks.DIRT) || 
 					!(block == Blocks.GRASS))
 			{
 		        stack.damageItem(1, entityLiving, (p_220038_0_) -> {

@@ -3,6 +3,8 @@ package com.github.wimpingego.nnow.init;
 import com.github.wimpingego.nnow.NNOW;
 import com.github.wimpingego.nnow.objects.blocks.AGSBlock;
 import com.github.wimpingego.nnow.objects.blocks.BookshelfChestBlock;
+import com.github.wimpingego.nnow.objects.blocks.BookshelfSlabBlock;
+import com.github.wimpingego.nnow.objects.blocks.BookshelfStairsBlock;
 import com.github.wimpingego.nnow.objects.blocks.CobbleGen;
 import com.github.wimpingego.nnow.objects.blocks.CustomStairsBlock;
 import com.github.wimpingego.nnow.objects.blocks.DarkGlass;
@@ -32,13 +34,13 @@ import com.github.wimpingego.nnow.objects.bushs.QuartzBerryBush;
 import com.github.wimpingego.nnow.objects.bushs.RedstoneBerryBush;
 import com.github.wimpingego.nnow.objects.bushs.WoodenBerryBush;
 
-import com.github.wimpingego.nnow.objects.crops.CropBlock;
+//import com.github.wimpingego.nnow.objects.crops.CropBlock;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SlabBlock;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -90,7 +92,7 @@ public class BlockList {
 	public static final RegistryObject<Block> REDSAND_STAIRS = BLOCKS.register("redsand_stairs",() -> new CustomStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.RED_SAND).harvestTool(ToolType.SHOVEL)));	
 	public static final RegistryObject<Block> COARSEDIRT_STAIRS = BLOCKS.register("coarsedirt_stairs",() -> new CustomStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.DIRT).harvestTool(ToolType.SHOVEL)));
 	public static final RegistryObject<Block> DIRT_STAIRS = BLOCKS.register("dirt_stairs",() -> new CustomStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.DIRT).harvestTool(ToolType.SHOVEL)));	
-	public static final RegistryObject<Block> BOOKSHELF_STAIRS = BLOCKS.register("bookshelf_stairs",() -> new CustomStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.BOOKSHELF).harvestTool(ToolType.AXE)));			
+	public static final RegistryObject<Block> BOOKSHELF_STAIRS = BLOCKS.register("bookshelf_stairs",() -> new BookshelfStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.BOOKSHELF).harvestTool(ToolType.AXE)));			
 	
 	//Slabs
 	
@@ -99,7 +101,7 @@ public class BlockList {
 	public static final RegistryObject<Block> REDSAND_SLAB = BLOCKS.register("redsand_slab",() -> new SlabBlock(Block.Properties.from(Blocks.RED_SAND).harvestTool(ToolType.SHOVEL)));		
 	public static final RegistryObject<Block> COARSEDIRT_SLAB = BLOCKS.register("coarsedirt_slab",() -> new SlabBlock(Block.Properties.from(Blocks.DIRT).harvestTool(ToolType.SHOVEL)));	
 	public static final RegistryObject<Block> DIRT_SLAB = BLOCKS.register("dirt_slab",() -> new SlabBlock(Block.Properties.from(Blocks.DIRT).harvestTool(ToolType.SHOVEL)));		
-	public static final RegistryObject<Block> BOOKSHELF_SLAB = BLOCKS.register("bookshelf_slab",() -> new SlabBlock(Block.Properties.from(Blocks.BOOKSHELF).harvestTool(ToolType.AXE)));		
+	public static final RegistryObject<Block> BOOKSHELF_SLAB = BLOCKS.register("bookshelf_slab",() -> new BookshelfSlabBlock(AGS_BLOCK.get().getDefaultState(), Block.Properties.from(Blocks.BOOKSHELF).harvestTool(ToolType.AXE)));		
 	
 	//Chests
 	public static final RegistryObject<Block> BOOKSHELF_CHEST = BLOCKS.register("bookshelf_chest",() -> new BookshelfChestBlock(Block.Properties.from(Blocks.BOOKSHELF).hardnessAndResistance(2.5f, 600.0f).harvestTool(ToolType.AXE)));

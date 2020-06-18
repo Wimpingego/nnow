@@ -1,12 +1,15 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "#",
-        "G",
-        "#"
+        "#B#",
+        " G ",
+        "#B#"
     ],
     "key": {
-        "#": {
+	    "#": {
+            "item": "minecraft:iron_bars"
+        },
+        "B": {
             "item": "minecraft:black_dye"
         },
         "G": {
