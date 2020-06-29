@@ -1,10 +1,13 @@
 {
-    "variants": {
-        "facing=north": { "model": "nnow:block/sword_in_stone", "y": 270},
-        "facing=south": { "model": "nnow:block/sword_in_stone", "y": 90 },
-        "facing=west":  { "model": "nnow:block/sword_in_stone", "y": 0},
-        "facing=east":  { "model": "nnow:block/sword_in_stone", "y": 180 },
-        "facing=up": { "model": "nnow:block/sword_in_stone", "y": 180 },
-        "facing=down": { "model": "nnow:block/sword_in_stone", "y": 0 }
-		}
+  "variants": {
+    "facing=east,half=lower":  { "model": "nnow:block/sword_in_stone_bottom", "y": 90  },
+    "facing=south,half=lower": { "model": "nnow:block/sword_in_stone_bottom", "y": 180 },
+    "facing=west,half=lower":  { "model": "nnow:block/sword_in_stone_bottom", "y": 270 },
+    "facing=north,half=lower": { "model": "nnow:block/sword_in_stone_bottom", "y": 0 },
+
+    "facing=east,half=upper":  { "model": "nnow:block/sword_in_stone_top", "y": 90  },
+    "facing=south,half=upper": { "model": "nnow:block/sword_in_stone_top", "y": 180 },
+    "facing=west,half=upper":  { "model": "nnow:block/sword_in_stone_top", "y": 270 },
+    "facing=north,half=upper": { "model": "nnow:block/sword_in_stone_top", "y": 0 }
+  }
 }

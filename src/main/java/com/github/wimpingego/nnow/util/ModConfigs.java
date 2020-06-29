@@ -21,7 +21,10 @@ public class ModConfigs {
     public static final String TROLL = "Troll";
     public static final String GENS = "Cobblestone Generator";
     public static final String HAMMER = "Hammer";
+    public static final String HAMMERSPEED = "Hammer Speeds";
+    public static final String HAMMERUSE = "Hammer Durability";
     public static final String TRAP = "Traps";
+    public static final String SKYBLOCK = "Skyblock";
 
     private static final ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();
     public static ForgeConfigSpec COMMON_CONFIG;
@@ -66,6 +69,16 @@ public class ModConfigs {
 	public static DoubleValue SECOND_CHANCE;
 	public static DoubleValue EGG_CHANCE;
 	
+    public static DoubleValue STONE_HAMMER_SPEED_MODIFIER;
+    public static DoubleValue IRON_HAMMER_SPEED_MODIFIER;
+    public static DoubleValue GOLDEN_HAMMER_SPEED_MODIFIER;
+    public static DoubleValue DIAMOND_HAMMER_SPEED_MODIFIER;
+	
+    public static ConfigValue<Integer> STONE_HAMMER_DURABILITY_MODIFIER;
+    public static ConfigValue<Integer> IRON_HAMMER_DURABILITY_MODIFIER;
+    public static ConfigValue<Integer> GOLDEN_HAMMER_DURABILITY_MODIFIER;
+    public static ConfigValue<Integer> DIAMOND_HAMMER_DURABILITY_MODIFIER;
+    
     public static ConfigValue<Integer> IRON_ATTACK_POWER;
     public static ConfigValue<Integer> GOLDERN_ATTACK_POWER;
     public static ConfigValue<Integer> DIAMOND_ATTACK_POWER;
@@ -133,10 +146,27 @@ public class ModConfigs {
         COMMON_BUILDER.pop();
         
         COMMON_BUILDER.push(HAMMER);
-        SKYBLOCK_MODE = COMMON_BUILDER.comment().define("SkyBlock mode", true);
 		DROP_CHANCE = COMMON_BUILDER.comment().defineInRange("Dust drop chance modifier", 0.5, 0.00, 1.0);
 		SECOND_CHANCE = COMMON_BUILDER.comment().defineInRange("Second item drop chance modifier (Suger cane & Cactus)",0.05, 0.00, 1.0);
-		EGG_CHANCE = COMMON_BUILDER.comment().defineInRange("Spawn egg drop chance modifier",0.005, 0.00, 1.0);	
+		EGG_CHANCE = COMMON_BUILDER.comment().defineInRange("Spawn egg drop chance modifier (If Skyblock is set to TRUE)",0.005, 0.00, 1.0);	
+		COMMON_BUILDER.pop();
+		
+        COMMON_BUILDER.push(HAMMERSPEED);	
+		STONE_HAMMER_SPEED_MODIFIER = COMMON_BUILDER.comment().defineInRange("Stone Hammer speed modifier",4.5, 1.0, 10.0);	
+		IRON_HAMMER_SPEED_MODIFIER = COMMON_BUILDER.comment().defineInRange("Iron Hammer speed modifier",3.5, 1.0, 10.0);	
+		GOLDEN_HAMMER_SPEED_MODIFIER = COMMON_BUILDER.comment().defineInRange("Golden Hammer speed modifier",2.0, 1.0, 10.0);	
+		DIAMOND_HAMMER_SPEED_MODIFIER = COMMON_BUILDER.comment().defineInRange("Diamond Hammer speed modifier",2.0, 1.0, 10.0);	
+		COMMON_BUILDER.pop();
+		
+        COMMON_BUILDER.push(HAMMERUSE);	
+		STONE_HAMMER_DURABILITY_MODIFIER = COMMON_BUILDER.comment().define("Stone Hammer durability modifier",197);	
+		IRON_HAMMER_DURABILITY_MODIFIER = COMMON_BUILDER.comment().define("Iron Hammer durability modifier",375);	
+		GOLDEN_HAMMER_DURABILITY_MODIFIER = COMMON_BUILDER.comment().define("Golden Hammer durability modifier",48);	
+		DIAMOND_HAMMER_DURABILITY_MODIFIER = COMMON_BUILDER.comment().define("Diamond Hammer durability modifier",2342);	
+		COMMON_BUILDER.pop();
+		
+        COMMON_BUILDER.push(SKYBLOCK);	
+        SKYBLOCK_MODE = COMMON_BUILDER.comment().define("SkyBlock mode", true);
 		COMMON_BUILDER.pop();
 
         COMMON_CONFIG = COMMON_BUILDER.build();

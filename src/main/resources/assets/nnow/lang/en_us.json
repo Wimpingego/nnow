@@ -51,12 +51,6 @@
 	"item.mizzy_disc.sub": "Mizzy Music",
 	
 	"block.nnow.rsg_head": "Redstone Golem Head",
-	"block.nnow.redstone_golem_head": "Redstone Golem Head",
-	"block.nnow.redstone_golem_rear": "Redstone Golem Right Ear",
-	"block.nnow.redstone_golem_rear_top": "Redstone Golem Right Ear Top Piece",
-	"block.nnow.redstone_golem_lear": "Redstone Golem Left Ear",
-	"block.nnow.redstone_golem_lear_top": "Redstone Golem Left Ear Top Piece",
-	
 
 	"block.nnow.trap_block": "Monster Trap",
 	"block.nnow.iron_trap": "Iron Monster Trap",
@@ -74,6 +68,7 @@
 	"block.nnow.agrs_block": "Anti Gravity Red Sand",
 	"block.nnow.dark_glass_block": "Dark Glass",
 	"block.nnow.super_obsidian": "Super Obsidian",
+	"block.nnow.super_obsidian_bars": "Super Obsidian",
 	
 	"block.nnow.waterwell": "Water Well",
 	"block.nnow.lavawell": "Lava Well",	
@@ -129,6 +124,9 @@
 	"item.nnow.lavawell.line1": "An endless source of lava",
 	"item.nnow.lavawell.general.line1": "Right-click on block with empty bucket",
 	
-	"item.nnow.witherproof.line1": "Wither Proof"
+	"item.nnow.witherproof.line1": "Wither Proof",
+	
+	"item.nnow.hammer.line1": "Mine blocks for a chance to get dust",
+	"item.nnow.hammer.line2": "All hammers have the same drop rate chance"
 	
 }

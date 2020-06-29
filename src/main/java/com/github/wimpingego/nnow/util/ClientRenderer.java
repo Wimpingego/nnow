@@ -9,7 +9,7 @@ import net.minecraft.client.renderer.RenderTypeLookup;
 public class ClientRenderer {
 
 	public static void registerBlocks() {
-		Block[] blocks = { BlockList.SAFE_CHEST.get(), BlockList.BEEKEEPER_BLOCK.get(), BlockList.END_LANTERN.get()};
+		Block[] blocks = { BlockList.SAFE_CHEST.get(), BlockList.BEEKEEPER_BLOCK.get(), BlockList.END_LANTERN.get(),BlockList.RSG_HEAD.get()};
 		
 		Block[] leaves = { BlockList.IRONBERRY_BUSH.get(),BlockList.GOLDBERRY_BUSH.get(),BlockList.COALBERRY_BUSH.get(),BlockList.REDSTONEBERRY_BUSH.get(),
 				BlockList.QUARTZBERRY_BUSH.get(),BlockList.DIAMONDBERRY_BUSH.get(),BlockList.EMERALDBERRY_BUSH.get(),BlockList.LAPISBERRY_BUSH.get(),BlockList.ICEBERRY_BUSH.get(),

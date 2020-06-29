@@ -1,10 +1,8 @@
 {
     "variants": {
-        "facing=north": { "model": "nnow:block/cobblegen", "y": 180 },
-        "facing=south": { "model": "nnow:block/cobblegen" },
-        "facing=west":  { "model": "nnow:block/cobblegen", "y": 90 },
-        "facing=east":  { "model": "nnow:block/cobblegen", "y": 270 },
-        "facing=up": { "model": "nnow:block/cobblegen", "y": 180 },
-        "facing=down": { "model": "nnow:block/cobblegen", "y": 90 }
+        "facing=north": { "model": "nnow:block/cobblegen", "y": 0 },
+        "facing=south": { "model": "nnow:block/cobblegen", "y": 180 },
+        "facing=west":  { "model": "nnow:block/cobblegen", "y": 270 },
+        "facing=east":  { "model": "nnow:block/cobblegen", "y": 90 }
 		}
 }

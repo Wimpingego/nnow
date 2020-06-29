@@ -23,11 +23,11 @@ public class TradesRegistration {
         	event.getTrades().get(3).add((new RandomTradeBuilder(16, 10, 0.05F).setPrice(Items.REDSTONE, 1,1).setPrice2(Items.STONE, 8,8).setForSale(Items.REDSTONE_ORE, 1, 2).build()));
         	event.getTrades().get(3).add((new RandomTradeBuilder(16, 10, 0.05F).setPrice(Items.LAPIS_LAZULI, 1,1).setPrice2(Items.STONE, 8,8).setForSale(Items.LAPIS_ORE, 1, 2).build()));
         	
-        	event.getTrades().get(4).add((new RandomTradeBuilder(16, 10, 0.05F).setPrice(Items.QUARTZ, 1,1).setPrice2(Items.STONE, 8,8).setForSale(Items.NETHER_QUARTZ_ORE, 1, 2).build()));
+        	event.getTrades().get(4).add((new RandomTradeBuilder(16, 10, 0.05F).setPrice(Items.QUARTZ, 1,1).setPrice2(Items.NETHERRACK, 8,8).setForSale(Items.NETHER_QUARTZ_ORE, 1, 2).build()));
         	event.getTrades().get(4).add((new RandomTradeBuilder(16, 10, 0.05F).setPrice(Items.DIAMOND, 1,1).setPrice2(Items.STONE, 8,8).setForSale(Items.DIAMOND_ORE, 1, 2).build()));
         	
         	event.getTrades().get(5).add((new RandomTradeBuilder(16, 10, 0.05F).setPrice(Items.EMERALD, 1,1).setPrice2(Items.STONE, 8,8).setForSale(Items.EMERALD_ORE, 1, 2).build()));    
-        	event.getTrades().get(5).add((new RandomTradeBuilder(16, 50, 0.05F).setEmeraldPrice(64,128).setForSale(Items.NETHER_STAR, 1, 1).build()));    
+        	event.getTrades().get(5).add((new RandomTradeBuilder(16, 50, 0.05F).setPrice(Items.WITHER_SKELETON_SKULL, 6,6).setPrice2(Items.SOUL_SAND, 10,10).setForSale(Items.NETHER_STAR, 1, 1).build()));    
         } 
         
         if (event.getType() == VillagerProfessions.BEEKEEPER)
@@ -47,7 +47,7 @@ public class TradesRegistration {
     	
         if (event.getType() == VillagerProfessions.OLD_DERPY)
         {
-        	event.getTrades().get(1).add((new RandomTradeBuilder(16, 10, 0.05F).setPrice(Items.OAK_LOG, 1,16).setForSale(Items.EMERALD, 1, 8).build()));
+        	event.getTrades().get(1).add((new RandomTradeBuilder(16, 10, 0.05F).setPrice(Items.OAK_LOG, 8,16).setForSale(Items.EMERALD, 1, 8).build()));
             event.getTrades().get(1).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(1,16).setForSale(Items.SWEET_BERRIES, 1,4).build()));         
             
            	event.getTrades().get(2).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(1,8).setForSale(Items.COAL, 1, 8).build()));
@@ -95,28 +95,28 @@ public class TradesRegistration {
         if (event.getType() == VillagerProfessions.SEA_TRADER)
         {            	
         	
-            event.getTrades().get(1).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.TUBE_CORAL_BLOCK, 8, 32).build()));
-            event.getTrades().get(1).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.FIRE_CORAL_BLOCK, 8, 32).build()));
-            event.getTrades().get(1).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.HORN_CORAL_BLOCK, 8, 32).build()));  
-            event.getTrades().get(1).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.BRAIN_CORAL_BLOCK, 8, 32).build()));
-            event.getTrades().get(1).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.BUBBLE_CORAL_BLOCK, 8, 32).build()));
+            event.getTrades().get(1).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.TUBE_CORAL_BLOCK, 8, 16).build()));
+            event.getTrades().get(1).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.FIRE_CORAL_BLOCK, 8, 16).build()));
+            event.getTrades().get(1).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.HORN_CORAL_BLOCK, 8, 16).build()));  
+            event.getTrades().get(1).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.BRAIN_CORAL_BLOCK, 8, 16).build()));
+            event.getTrades().get(1).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.BUBBLE_CORAL_BLOCK, 8, 16).build()));
             
-            event.getTrades().get(2).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(8,64).setForSale(Items.PRISMARINE_SHARD, 4, 64).build()));
-            event.getTrades().get(2).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(8,64).setForSale(Items.PRISMARINE_CRYSTALS, 4, 64).build()));
+            event.getTrades().get(2).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(8,64).setForSale(Items.PRISMARINE_SHARD, 4, 16).build()));
+            event.getTrades().get(2).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(8,64).setForSale(Items.PRISMARINE_CRYSTALS, 4, 16).build()));
             event.getTrades().get(2).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(8,64).setForSale(Items.SEA_PICKLE, 4, 32).build()));
             event.getTrades().get(2).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(8,64).setForSale(Items.SEAGRASS, 8, 64).build()));
             
-            event.getTrades().get(3).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.TUBE_CORAL, 8, 64).build()));
-            event.getTrades().get(3).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.FIRE_CORAL, 8, 64).build()));
-            event.getTrades().get(3).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.HORN_CORAL, 8, 64).build()));
-            event.getTrades().get(3).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.BRAIN_CORAL, 8, 64).build())); 
-            event.getTrades().get(3).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.BUBBLE_CORAL, 8, 64).build())); 
+            event.getTrades().get(3).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.TUBE_CORAL, 8, 16).build()));
+            event.getTrades().get(3).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.FIRE_CORAL, 8, 16).build()));
+            event.getTrades().get(3).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.HORN_CORAL, 8, 16).build()));
+            event.getTrades().get(3).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.BRAIN_CORAL, 8, 16).build())); 
+            event.getTrades().get(3).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.BUBBLE_CORAL, 8, 16).build())); 
             
-            event.getTrades().get(4).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.TUBE_CORAL_FAN, 8, 64).build()));
-            event.getTrades().get(4).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.FIRE_CORAL_FAN, 8, 64).build()));
-            event.getTrades().get(4).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.HORN_CORAL_FAN, 8, 64).build()));
-            event.getTrades().get(4).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.BRAIN_CORAL_FAN, 8, 64).build())); 
-            event.getTrades().get(4).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.BUBBLE_CORAL_FAN, 8, 64).build())); 
+            event.getTrades().get(4).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.TUBE_CORAL_FAN, 8, 16).build()));
+            event.getTrades().get(4).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.FIRE_CORAL_FAN, 8, 16).build()));
+            event.getTrades().get(4).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.HORN_CORAL_FAN, 8, 16).build()));
+            event.getTrades().get(4).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.BRAIN_CORAL_FAN, 8, 16).build())); 
+            event.getTrades().get(4).add((new RandomTradeBuilder(16, 10, 0.05F).setEmeraldPrice(4,32).setForSale(Items.BUBBLE_CORAL_FAN, 8, 16).build())); 
             
             event.getTrades().get(5).add((new RandomTradeBuilder(16, 50, 0.05F).setEmeraldPrice(32,32).setForSale(Items.TRIDENT, 1, 1).build()));       
         } 

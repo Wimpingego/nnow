@@ -9,15 +9,12 @@ import com.github.wimpingego.nnow.objects.blocks.CobbleGen;
 import com.github.wimpingego.nnow.objects.blocks.CustomStairsBlock;
 import com.github.wimpingego.nnow.objects.blocks.DarkGlass;
 import com.github.wimpingego.nnow.objects.blocks.EndLantern;
-import com.github.wimpingego.nnow.objects.blocks.SeaFishermanPOI;
 import com.github.wimpingego.nnow.objects.blocks.LavaWell;
 import com.github.wimpingego.nnow.objects.blocks.SuperObsidian;
-import com.github.wimpingego.nnow.objects.blocks.SwordInStone;
 import com.github.wimpingego.nnow.objects.blocks.SafeChestBlock;
-import com.github.wimpingego.nnow.objects.blocks.SeaTraderPOI;
 import com.github.wimpingego.nnow.objects.blocks.WaterWell;
-import com.github.wimpingego.nnow.objects.blocks.golem.MiniRedstoneGolemHead;
-//import com.github.wimpingego.nnow.objects.blocks.golem.RedstoneGolemHead;
+import com.github.wimpingego.nnow.objects.blocks.DoubleHighBlock;
+import com.github.wimpingego.nnow.objects.blocks.golem.RedstoneGolemHead;
 import com.github.wimpingego.nnow.objects.blocks.traps.TrapBlock;
 import com.github.wimpingego.nnow.objects.blocks.traps.TrapType;
 import com.github.wimpingego.nnow.objects.blocks.BeekeeperBlock;
@@ -33,9 +30,7 @@ import com.github.wimpingego.nnow.objects.bushs.LapisBerryBush;
 import com.github.wimpingego.nnow.objects.bushs.QuartzBerryBush;
 import com.github.wimpingego.nnow.objects.bushs.RedstoneBerryBush;
 import com.github.wimpingego.nnow.objects.bushs.WoodenBerryBush;
-
 //import com.github.wimpingego.nnow.objects.crops.CropBlock;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SlabBlock;
@@ -50,15 +45,6 @@ public class BlockList {
 
 	public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS,NNOW.MOD_ID);
 	
-	//Golem
-	
-	public static final RegistryObject<Block> MINI_RSG_HEAD = BLOCKS.register("rsg_head",() -> new MiniRedstoneGolemHead<Object>(Block.Properties.from(Blocks.STONE)));
-	//public static final RegistryObject<Block> RSG = BLOCKS.register("redstone_golem_head",() -> new RedstoneGolemHead<Object>(Block.Properties.from(Blocks.GRAVEL)));
-	//public static final RegistryObject<Block> RSG_REAR = BLOCKS.register("redstone_golem_rear",() -> new RedstoneGolemHead<Object>(Block.Properties.from(Blocks.GRAVEL)));
-	//public static final RegistryObject<Block> RSG_REAR_TOP = BLOCKS.register("redstone_golem_rear_top",() -> new RedstoneGolemHead<Object>(Block.Properties.from(Blocks.GRAVEL)));
-	//public static final RegistryObject<Block> RSG_LEAR = BLOCKS.register("redstone_golem_lear",() -> new RedstoneGolemHead<Object>(Block.Properties.from(Blocks.GRAVEL)));
-	//public static final RegistryObject<Block> RSG_LEAR_TOP = BLOCKS.register("redstone_golem_lear_top",() -> new RedstoneGolemHead<Object>(Block.Properties.from(Blocks.GRAVEL)));
-
 	//Traps
 	
 	public static final RegistryObject<Block> TRAP_BLOCK = BLOCKS.register("trap_block",() -> new TrapBlock(Block.Properties.from(Blocks.IRON_BLOCK).harvestTool(ToolType.PICKAXE),TrapType.FAKE));
@@ -69,17 +55,18 @@ public class BlockList {
 	
 	//POI
 	
-	public static final RegistryObject<Block> SWORD_IN_STONE = BLOCKS.register("sword_in_stone",() -> new SwordInStone<Object>(Block.Properties.from(Blocks.STONE)));
-	public static final RegistryObject<Block> BEEKEEPER_BLOCK = BLOCKS.register("beekeeper_block",() -> new BeekeeperBlock<Object>(Block.Properties.from(Blocks.BOOKSHELF).lightValue(4).harvestTool(ToolType.AXE)));
 	public static final RegistryObject<Block> END_LANTERN = BLOCKS.register("end_lantern",() -> new EndLantern(Block.Properties.from(Blocks.LANTERN)));
-	public static final RegistryObject<Block> SEA_FISHERMAN_POI = BLOCKS.register("sea_fisherman",() -> new SeaFishermanPOI<Object>(Block.Properties.from(Blocks.IRON_BLOCK).harvestTool(ToolType.PICKAXE)));
-	public static final RegistryObject<Block> SEA_TRADER_POI = BLOCKS.register("sea_trader",() -> new SeaTraderPOI<Object>(Block.Properties.from(Blocks.STONE)));
+	public static final RegistryObject<Block> SWORD_IN_STONE = BLOCKS.register("sword_in_stone",() -> new DoubleHighBlock(Block.Properties.from(Blocks.STONE)));
+	public static final RegistryObject<Block> BEEKEEPER_BLOCK = BLOCKS.register("beekeeper_block",() -> new BeekeeperBlock<Object>(Block.Properties.from(Blocks.BOOKSHELF).lightValue(4).harvestTool(ToolType.AXE)));
+	public static final RegistryObject<Block> SEA_FISHERMAN_POI = BLOCKS.register("sea_fisherman",() -> new DoubleHighBlock(Block.Properties.from(Blocks.IRON_BLOCK).harvestTool(ToolType.PICKAXE)));
+	public static final RegistryObject<Block> SEA_TRADER_POI = BLOCKS.register("sea_trader",() -> new DoubleHighBlock(Block.Properties.from(Blocks.OAK_LOG).harvestTool(ToolType.AXE)));
 	
 	public static final RegistryObject<Block> AGG_BLOCK = BLOCKS.register("agg_block",() -> new Block(Block.Properties.from(Blocks.GRAVEL)));
 	public static final RegistryObject<Block> AGS_BLOCK = BLOCKS.register("ags_block",() -> new AGSBlock(Block.Properties.from(Blocks.SAND)));
 	public static final RegistryObject<Block> AGRS_BLOCK = BLOCKS.register("agrs_block",() -> new AGSBlock(Block.Properties.from(Blocks.RED_SAND)));
 	public static final RegistryObject<Block> DARK_GLASS_BLOCK = BLOCKS.register("dark_glass_block",() -> new DarkGlass());
 	public static final RegistryObject<Block> SUPER_OBSIDIAN = BLOCKS.register("super_obsidian",() -> new SuperObsidian());
+	public static final RegistryObject<Block> SUPER_OBSIDIAN_BARS = BLOCKS.register("super_obsidian_bars",() -> new SuperObsidian());
 	
 	public static final RegistryObject<Block> WATERWELL = BLOCKS.register("waterwell", () -> new WaterWell(Block.Properties.from(Blocks.IRON_BLOCK).harvestTool(ToolType.PICKAXE)));
 	public static final RegistryObject<Block> LAVAWELL = BLOCKS.register("lavawell",() -> new LavaWell(Block.Properties.from(Blocks.IRON_BLOCK).lightValue(8).harvestTool(ToolType.PICKAXE)));
@@ -106,6 +93,11 @@ public class BlockList {
 	//Chests
 	public static final RegistryObject<Block> BOOKSHELF_CHEST = BLOCKS.register("bookshelf_chest",() -> new BookshelfChestBlock(Block.Properties.from(Blocks.BOOKSHELF).hardnessAndResistance(2.5f, 600.0f).harvestTool(ToolType.AXE)));
 	public static final RegistryObject<Block> SAFE_CHEST = BLOCKS.register("safe_chest",() -> new SafeChestBlock(Block.Properties.from(Blocks.IRON_BLOCK).hardnessAndResistance(2.5f, 600.0f).harvestTool(ToolType.PICKAXE)));
+	
+	//Golem
+	
+	public static final RegistryObject<Block> RSG_HEAD = BLOCKS.register("rsg_head",() -> new RedstoneGolemHead(Block.Properties.from(Blocks.STONE)));
+
 	
 	//No Item Blocks Info
 	

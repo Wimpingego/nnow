@@ -4,10 +4,13 @@ import com.github.wimpingego.nnow.NNOW;
 import com.github.wimpingego.nnow.objects.items.CoalNugget;
 import com.github.wimpingego.nnow.objects.items.DeathPotato;
 import com.github.wimpingego.nnow.objects.items.MusicDisc;
-import com.github.wimpingego.nnow.objects.items.Hammer;
 import com.github.wimpingego.nnow.objects.items.Magnet;
 import com.github.wimpingego.nnow.objects.items.PokingStick;
 import com.github.wimpingego.nnow.objects.items.Viagra;
+import com.github.wimpingego.nnow.objects.items.hammers.DiamondHammer;
+import com.github.wimpingego.nnow.objects.items.hammers.GoldenHammer;
+import com.github.wimpingego.nnow.objects.items.hammers.IronHammer;
+import com.github.wimpingego.nnow.objects.items.hammers.StoneHammer;
 
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -62,15 +65,14 @@ public class ItemList {
 	
 	//Other items
 	
-	public static final RegistryObject<Item> S_HAMMER = ITEMS.register("stone_hammer", () -> new Hammer(ItemTier.STONE, 7, -3.3f, new Item.Properties().group(NNOW.NNOW_TAB)));
-	public static final RegistryObject<Item> I_HAMMER = ITEMS.register("iron_hammer", () -> new Hammer(ItemTier.IRON, 6, -3.2f, new Item.Properties().group(NNOW.NNOW_TAB)));
-	public static final RegistryObject<Item> G_HAMMER = ITEMS.register("golden_hammer", () -> new Hammer(ItemTier.GOLD, 7, -3.1f, new Item.Properties().group(NNOW.NNOW_TAB)));
-	public static final RegistryObject<Item> D_HAMMER = ITEMS.register("diamond_hammer", () -> new Hammer(ItemTier.DIAMOND, 6, -3.1f, new Item.Properties().group(NNOW.NNOW_TAB)));
+	public static final RegistryObject<Item> S_HAMMER = ITEMS.register("stone_hammer", () -> new StoneHammer(ItemTier.STONE, 7, -3.3f, new Item.Properties().group(NNOW.NNOW_TAB)));
+	public static final RegistryObject<Item> I_HAMMER = ITEMS.register("iron_hammer", () -> new IronHammer(ItemTier.IRON, 6, -3.2f, new Item.Properties().group(NNOW.NNOW_TAB)));
+	public static final RegistryObject<Item> G_HAMMER = ITEMS.register("golden_hammer", () -> new GoldenHammer(ItemTier.GOLD, 7, -3.1f, new Item.Properties().group(NNOW.NNOW_TAB)));
+	public static final RegistryObject<Item> D_HAMMER = ITEMS.register("diamond_hammer", () -> new DiamondHammer(ItemTier.DIAMOND, 6, -3.1f, new Item.Properties().group(NNOW.NNOW_TAB)));
 	
-	
+	public static final RegistryObject<Item> POKING_STICK = ITEMS.register("poking_stick", () -> new PokingStick(new Item.Properties().group(NNOW.NNOW_TAB)));
 	public static final RegistryObject<Item> MAGNET = ITEMS.register("magnet", () -> new Magnet(new Item.Properties().group(NNOW.NNOW_TAB)));
 	public static final RegistryObject<Item> VIAGRA = ITEMS.register("viagra", () -> new Viagra(new Item.Properties().group(NNOW.NNOW_TAB)));
-	public static final RegistryObject<Item> POKING_STICK = ITEMS.register("poking_stick", () -> new PokingStick(new Item.Properties().group(NNOW.NNOW_TAB)));
 	public static final RegistryObject<Item> DEATH_POTATO = ITEMS.register("death_potato", () -> new DeathPotato(new Item.Properties().group(NNOW.NNOW_TAB).food(FoodList.DEATH_POTATO)));
 	
 	//Discs
