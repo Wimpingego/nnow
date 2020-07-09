@@ -19,8 +19,6 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.Direction;
 import net.minecraft.util.NonNullList;
-//import net.minecraft.util.SoundCategory;
-//import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
@@ -88,14 +86,6 @@ public class BookshelfChestTileEntity extends LockableLootTileEntity {
 			ItemStackHelper.loadAllItems(compound, this.chestContents);
 		}
 	}
-
-	//private void playSound(SoundEvent sound) {
-		//double dx = (double) this.pos.getX() + 0.5D;
-		//double dy = (double) this.pos.getY() + 0.5D;
-		//double dz = (double) this.pos.getZ() + 0.5D;
-		//this.world.playSound((PlayerEntity) null, dx, dy, dz, sound, SoundCategory.BLOCKS, 0.5f,
-			//	this.world.rand.nextFloat() * 0.1f + 0.9f);
-	//}
 
 	@Override
 	public boolean receiveClientEvent(int id, int type) {

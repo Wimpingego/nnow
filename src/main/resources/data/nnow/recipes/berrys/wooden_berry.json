@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "S",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "tag": "forge:nuggets/wooden"
+        },
+        "S": {
+            "item": "minecraft:sweet_berries"
+        }
+    },
+    "result": {
+        "item": "nnow:wooden_berry",
+        "count": 1
+    }
+}

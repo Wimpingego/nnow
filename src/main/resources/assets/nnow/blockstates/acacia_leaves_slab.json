@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "nnow:block/acacia_leaves_slab" },
+        "type=top": { "model": "nnow:block/acacia_leaves_slab_top" },
+        "type=double": { "model": "block/acacia_leaves" }
+    }
+}

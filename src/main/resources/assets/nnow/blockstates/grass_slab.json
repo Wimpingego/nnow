@@ -1,7 +1,17 @@
 {
-    "variants": {
-        "type=bottom": { "model": "nnow:block/grass_slab" },
-        "type=top": { "model": "nnow:block/grass_slab_top" },
-        "type=double": { "model": "block/grass_block" }
-    }
+  "variants": {
+    "type=bottom":[
+		{ "model": "nnow:block/grass_slab" },
+		{ "model": "nnow:block/grass_slab", "y": 90 },
+		{ "model": "nnow:block/grass_slab", "y": 180 },
+		{ "model": "nnow:block/grass_slab", "y": 270 }
+	],
+        "type=top":[
+		{ "model": "nnow:block/grass_slab_top" },
+		{ "model": "nnow:block/grass_slab_top", "y": 90 },
+		{ "model": "nnow:block/grass_slab_top", "y": 180 },
+		{ "model": "nnow:block/grass_slab_top", "y": 270 }
+	],
+    "type=double": { "model": "minecraft:block/grass_block" }
+  }
 }

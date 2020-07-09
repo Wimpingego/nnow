@@ -7,11 +7,19 @@ import com.github.wimpingego.nnow.objects.items.MusicDisc;
 import com.github.wimpingego.nnow.objects.items.Magnet;
 import com.github.wimpingego.nnow.objects.items.PokingStick;
 import com.github.wimpingego.nnow.objects.items.Viagra;
+import com.github.wimpingego.nnow.objects.items.armor.ItemCustomArmorTC;
 import com.github.wimpingego.nnow.objects.items.hammers.DiamondHammer;
 import com.github.wimpingego.nnow.objects.items.hammers.GoldenHammer;
 import com.github.wimpingego.nnow.objects.items.hammers.IronHammer;
 import com.github.wimpingego.nnow.objects.items.hammers.StoneHammer;
+import com.github.wimpingego.nnow.objects.items.shovel.DiamondSpade;
+import com.github.wimpingego.nnow.objects.items.shovel.GoldenSpade;
+import com.github.wimpingego.nnow.objects.items.shovel.IronSpade;
+import com.github.wimpingego.nnow.objects.items.shovel.StoneSpade;
+import com.github.wimpingego.nnow.util.enums.ModArmorMaterials;
 
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemTier;
@@ -70,6 +78,11 @@ public class ItemList {
 	public static final RegistryObject<Item> G_HAMMER = ITEMS.register("golden_hammer", () -> new GoldenHammer(ItemTier.GOLD, 7, -3.1f, new Item.Properties().group(NNOW.NNOW_TAB)));
 	public static final RegistryObject<Item> D_HAMMER = ITEMS.register("diamond_hammer", () -> new DiamondHammer(ItemTier.DIAMOND, 6, -3.1f, new Item.Properties().group(NNOW.NNOW_TAB)));
 	
+	public static final RegistryObject<Item> S_SPADE = ITEMS.register("stone_spade", () -> new StoneSpade(ItemTier.STONE, 1.5f, -3f, new Item.Properties().group(NNOW.NNOW_TAB)));
+	public static final RegistryObject<Item> I_SPADE = ITEMS.register("iron_spade", () -> new IronSpade(ItemTier.IRON, 1.5f, -3f, new Item.Properties().group(NNOW.NNOW_TAB)));
+	public static final RegistryObject<Item> G_SPADE = ITEMS.register("golden_spade", () -> new GoldenSpade(ItemTier.GOLD, 1.5f, -3f, new Item.Properties().group(NNOW.NNOW_TAB)));
+	public static final RegistryObject<Item> D_SPADE = ITEMS.register("diamond_spade", () -> new DiamondSpade(ItemTier.DIAMOND, 1.5f, -3f, new Item.Properties().group(NNOW.NNOW_TAB)));
+	
 	public static final RegistryObject<Item> POKING_STICK = ITEMS.register("poking_stick", () -> new PokingStick(new Item.Properties().group(NNOW.NNOW_TAB)));
 	public static final RegistryObject<Item> MAGNET = ITEMS.register("magnet", () -> new Magnet(new Item.Properties().group(NNOW.NNOW_TAB)));
 	public static final RegistryObject<Item> VIAGRA = ITEMS.register("viagra", () -> new Viagra(new Item.Properties().group(NNOW.NNOW_TAB)));
@@ -79,5 +92,13 @@ public class ItemList {
 	
 	public static final RegistryObject<Item> DOOM_MUSIC_DISC = ITEMS.register("doom_disc", () -> new MusicDisc(1, SoundList.DOOM_DISC_LAZY.get(), new Item.Properties().maxStackSize(1).group(NNOW.NNOW_TAB)));
 	public static final RegistryObject<Item> MIZZY_MUSIC_DISC = ITEMS.register("mizzy_disc", () -> new MusicDisc(2, SoundList.MIZZY_DISC_LAZY.get(), new Item.Properties().maxStackSize(1).group(NNOW.NNOW_TAB)));
+	
+	//Armour
 
+	public static final RegistryObject<ArmorItem> LC_HELMET = ITEMS.register("clear_leather_helmet",() -> new ArmorItem(ModArmorMaterials.LC, EquipmentSlotType.HEAD, new Item.Properties().group(NNOW.NNOW_TAB)));
+	public static final RegistryObject<ArmorItem> CC_HELMET = ITEMS.register("clear_chain_helmet",() -> new ArmorItem(ModArmorMaterials.CC, EquipmentSlotType.HEAD, new Item.Properties().group(NNOW.NNOW_TAB)));
+	public static final RegistryObject<ArmorItem> IC_HELMET = ITEMS.register("clear_iron_helmet",() -> new ArmorItem(ModArmorMaterials.IC, EquipmentSlotType.HEAD, new Item.Properties().group(NNOW.NNOW_TAB)));
+	public static final RegistryObject<ArmorItem> GC_HELMET = ITEMS.register("clear_golden_helmet",() -> new ArmorItem(ModArmorMaterials.GC, EquipmentSlotType.HEAD, new Item.Properties().group(NNOW.NNOW_TAB)));
+	public static final RegistryObject<ArmorItem> DC_HELMET = ITEMS.register("clear_diamond_helmet",() -> new ArmorItem(ModArmorMaterials.DC, EquipmentSlotType.HEAD, new Item.Properties().group(NNOW.NNOW_TAB)));
+	public static final RegistryObject<ArmorItem> TC_HELMET = ITEMS.register("clear_turtle_helmet",() -> new ItemCustomArmorTC(ModArmorMaterials.TC, EquipmentSlotType.HEAD, new Item.Properties().group(NNOW.NNOW_TAB)));
 }

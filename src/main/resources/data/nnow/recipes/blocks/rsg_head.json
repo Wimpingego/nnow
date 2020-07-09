@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#SR",
+        "CGR",
+        "RCS"
+    ],
+    "key": {
+        "#": {
+            "tag": "forge:stone"
+        },
+        "S": {
+            "tag": "forge:stone"
+        },
+        "R": {
+            "item": "minecraft:redstone_block"
+        },
+        "C": {
+            "tag": "forge:cobblestone"
+        },
+        "G": {
+            "item": "minecraft:glowstone"
+        }
+    },
+    "result": {
+        "item": "nnow:rsg_head",
+        "count": 1
+    }
+}

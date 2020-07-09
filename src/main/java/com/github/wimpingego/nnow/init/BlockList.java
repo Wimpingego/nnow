@@ -1,20 +1,27 @@
 package com.github.wimpingego.nnow.init;
 
 import com.github.wimpingego.nnow.NNOW;
-import com.github.wimpingego.nnow.objects.blocks.AGSBlock;
+import com.github.wimpingego.nnow.objects.blocks.AGBlock;
 import com.github.wimpingego.nnow.objects.blocks.BookshelfChestBlock;
 import com.github.wimpingego.nnow.objects.blocks.BookshelfSlabBlock;
 import com.github.wimpingego.nnow.objects.blocks.BookshelfStairsBlock;
 import com.github.wimpingego.nnow.objects.blocks.CobbleGen;
-import com.github.wimpingego.nnow.objects.blocks.CustomStairsBlock;
 import com.github.wimpingego.nnow.objects.blocks.DarkGlass;
 import com.github.wimpingego.nnow.objects.blocks.EndLantern;
 import com.github.wimpingego.nnow.objects.blocks.LavaWell;
+import com.github.wimpingego.nnow.objects.blocks.RedstoneGolemHead;
 import com.github.wimpingego.nnow.objects.blocks.SuperObsidian;
 import com.github.wimpingego.nnow.objects.blocks.SafeChestBlock;
 import com.github.wimpingego.nnow.objects.blocks.WaterWell;
 import com.github.wimpingego.nnow.objects.blocks.DoubleHighBlock;
-import com.github.wimpingego.nnow.objects.blocks.golem.RedstoneGolemHead;
+import com.github.wimpingego.nnow.objects.blocks.slabs.BirchSlab;
+import com.github.wimpingego.nnow.objects.blocks.slabs.GrassSlab;
+import com.github.wimpingego.nnow.objects.blocks.slabs.LeafSlab;
+import com.github.wimpingego.nnow.objects.blocks.slabs.SpruceSlab;
+import com.github.wimpingego.nnow.objects.blocks.stairs.BirchStairsBlock;
+import com.github.wimpingego.nnow.objects.blocks.stairs.CustomStairsBlock;
+import com.github.wimpingego.nnow.objects.blocks.stairs.LeafStairsBlock;
+import com.github.wimpingego.nnow.objects.blocks.stairs.SpruceStairsBlock;
 import com.github.wimpingego.nnow.objects.blocks.traps.TrapBlock;
 import com.github.wimpingego.nnow.objects.blocks.traps.TrapType;
 import com.github.wimpingego.nnow.objects.blocks.BeekeeperBlock;
@@ -46,7 +53,6 @@ public class BlockList {
 	public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS,NNOW.MOD_ID);
 	
 	//Traps
-	
 	public static final RegistryObject<Block> TRAP_BLOCK = BLOCKS.register("trap_block",() -> new TrapBlock(Block.Properties.from(Blocks.IRON_BLOCK).harvestTool(ToolType.PICKAXE),TrapType.FAKE));
 	public static final RegistryObject<Block> IRON_TRAP = BLOCKS.register("iron_trap",() -> new TrapBlock(Block.Properties.from(Blocks.IRON_BLOCK).harvestTool(ToolType.PICKAXE), TrapType.IRON));
 	public static final RegistryObject<Block> GOLDERN_TRAP = BLOCKS.register("gold_trap",() -> new TrapBlock(Block.Properties.from(Blocks.IRON_BLOCK).harvestTool(ToolType.PICKAXE), TrapType.GOLD));
@@ -54,16 +60,16 @@ public class BlockList {
 	public static final RegistryObject<Block> WITHER_TRAP = BLOCKS.register("wither_trap",() -> new TrapBlock(Block.Properties.from(Blocks.IRON_BLOCK).harvestTool(ToolType.PICKAXE), TrapType.WITHER));
 	
 	//POI
-	
 	public static final RegistryObject<Block> END_LANTERN = BLOCKS.register("end_lantern",() -> new EndLantern(Block.Properties.from(Blocks.LANTERN)));
 	public static final RegistryObject<Block> SWORD_IN_STONE = BLOCKS.register("sword_in_stone",() -> new DoubleHighBlock(Block.Properties.from(Blocks.STONE)));
 	public static final RegistryObject<Block> BEEKEEPER_BLOCK = BLOCKS.register("beekeeper_block",() -> new BeekeeperBlock<Object>(Block.Properties.from(Blocks.BOOKSHELF).lightValue(4).harvestTool(ToolType.AXE)));
 	public static final RegistryObject<Block> SEA_FISHERMAN_POI = BLOCKS.register("sea_fisherman",() -> new DoubleHighBlock(Block.Properties.from(Blocks.IRON_BLOCK).harvestTool(ToolType.PICKAXE)));
 	public static final RegistryObject<Block> SEA_TRADER_POI = BLOCKS.register("sea_trader",() -> new DoubleHighBlock(Block.Properties.from(Blocks.OAK_LOG).harvestTool(ToolType.AXE)));
 	
-	public static final RegistryObject<Block> AGG_BLOCK = BLOCKS.register("agg_block",() -> new Block(Block.Properties.from(Blocks.GRAVEL)));
-	public static final RegistryObject<Block> AGS_BLOCK = BLOCKS.register("ags_block",() -> new AGSBlock(Block.Properties.from(Blocks.SAND)));
-	public static final RegistryObject<Block> AGRS_BLOCK = BLOCKS.register("agrs_block",() -> new AGSBlock(Block.Properties.from(Blocks.RED_SAND)));
+	//Blocks
+	public static final RegistryObject<Block> AGG_BLOCK = BLOCKS.register("agg_block",() -> new AGBlock(Block.Properties.from(Blocks.GRAVEL)));
+	public static final RegistryObject<Block> AGS_BLOCK = BLOCKS.register("ags_block",() -> new AGBlock(Block.Properties.from(Blocks.SAND)));
+	public static final RegistryObject<Block> AGRS_BLOCK = BLOCKS.register("agrs_block",() -> new AGBlock(Block.Properties.from(Blocks.RED_SAND)));
 	public static final RegistryObject<Block> DARK_GLASS_BLOCK = BLOCKS.register("dark_glass_block",() -> new DarkGlass());
 	public static final RegistryObject<Block> SUPER_OBSIDIAN = BLOCKS.register("super_obsidian",() -> new SuperObsidian());
 	public static final RegistryObject<Block> SUPER_OBSIDIAN_BARS = BLOCKS.register("super_obsidian_bars",() -> new SuperObsidian());
@@ -73,38 +79,49 @@ public class BlockList {
 	public static final RegistryObject<Block> COBBLEGEN = BLOCKS.register("cobblegen",() -> new CobbleGen(Block.Properties.from(Blocks.IRON_BLOCK).lightValue(4).harvestTool(ToolType.PICKAXE)));
     	    
 	//Stairs
-	
 	public static final RegistryObject<Block> GRAVEL_STAIRS = BLOCKS.register("gravel_stairs",() -> new CustomStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.GRAVEL).harvestTool(ToolType.SHOVEL)));	
 	public static final RegistryObject<Block> SAND_STAIRS = BLOCKS.register("sand_stairs",() -> new CustomStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.SAND).harvestTool(ToolType.SHOVEL)));	
 	public static final RegistryObject<Block> REDSAND_STAIRS = BLOCKS.register("redsand_stairs",() -> new CustomStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.RED_SAND).harvestTool(ToolType.SHOVEL)));	
 	public static final RegistryObject<Block> COARSEDIRT_STAIRS = BLOCKS.register("coarsedirt_stairs",() -> new CustomStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.DIRT).harvestTool(ToolType.SHOVEL)));
 	public static final RegistryObject<Block> DIRT_STAIRS = BLOCKS.register("dirt_stairs",() -> new CustomStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.DIRT).harvestTool(ToolType.SHOVEL)));	
+	public static final RegistryObject<Block> CRACKED_STONE_STAIRS = BLOCKS.register("cracked_stone_bricks_stairs",() -> new CustomStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.STONE).harvestTool(ToolType.PICKAXE)));
 	public static final RegistryObject<Block> BOOKSHELF_STAIRS = BLOCKS.register("bookshelf_stairs",() -> new BookshelfStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.BOOKSHELF).harvestTool(ToolType.AXE)));			
 	
-	//Slabs
+	public static final RegistryObject<Block> OAK_LEAVES_STAIRS = BLOCKS.register("oak_leaves_stairs",() -> new LeafStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.OAK_LEAVES)));	
+	public static final RegistryObject<Block> DARK_OAK_LEAVES_STAIRS = BLOCKS.register("dark_oak_leaves_stairs",() -> new LeafStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.DARK_OAK_LEAVES)));	
+	public static final RegistryObject<Block> JUNGLE_LEAVES_STAIRS = BLOCKS.register("jungle_leaves_stairs",() -> new LeafStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.JUNGLE_LEAVES)));	
+	public static final RegistryObject<Block> ACACIA_LEAVES_STAIRS = BLOCKS.register("acacia_leaves_stairs",() -> new LeafStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.ACACIA_LEAVES)));	
+	public static final RegistryObject<Block> SPRUCE_LEAVES_STAIRS = BLOCKS.register("spruce_leaves_stairs",() -> new SpruceStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.SPRUCE_LEAVES)));	
+	public static final RegistryObject<Block> BIRCH_LEAVES_STAIRS = BLOCKS.register("birch_leaves_stairs",() -> new BirchStairsBlock(AGS_BLOCK.get().getDefaultState(),Block.Properties.from(Blocks.BIRCH_LEAVES)));	
 	
+	//Slabs
+	public static final RegistryObject<Block> GRASS_SLAB = BLOCKS.register("grass_slab",() -> new GrassSlab(Block.Properties.from(Blocks.GRASS_BLOCK).harvestTool(ToolType.SHOVEL)));	
 	public static final RegistryObject<Block> GRAVEL_SLAB = BLOCKS.register("gravel_slab",() -> new SlabBlock(Block.Properties.from(Blocks.GRAVEL).harvestTool(ToolType.SHOVEL)));
 	public static final RegistryObject<Block> SAND_SLAB = BLOCKS.register("sand_slab",() -> new SlabBlock(Block.Properties.from(Blocks.SAND).harvestTool(ToolType.SHOVEL)));	
 	public static final RegistryObject<Block> REDSAND_SLAB = BLOCKS.register("redsand_slab",() -> new SlabBlock(Block.Properties.from(Blocks.RED_SAND).harvestTool(ToolType.SHOVEL)));		
 	public static final RegistryObject<Block> COARSEDIRT_SLAB = BLOCKS.register("coarsedirt_slab",() -> new SlabBlock(Block.Properties.from(Blocks.DIRT).harvestTool(ToolType.SHOVEL)));	
-	public static final RegistryObject<Block> DIRT_SLAB = BLOCKS.register("dirt_slab",() -> new SlabBlock(Block.Properties.from(Blocks.DIRT).harvestTool(ToolType.SHOVEL)));		
-	public static final RegistryObject<Block> BOOKSHELF_SLAB = BLOCKS.register("bookshelf_slab",() -> new BookshelfSlabBlock(AGS_BLOCK.get().getDefaultState(), Block.Properties.from(Blocks.BOOKSHELF).harvestTool(ToolType.AXE)));		
+	public static final RegistryObject<Block> DIRT_SLAB = BLOCKS.register("dirt_slab",() -> new SlabBlock(Block.Properties.from(Blocks.DIRT).harvestTool(ToolType.SHOVEL)));
+	public static final RegistryObject<Block> CRACKED_STONE_SLAB = BLOCKS.register("cracked_stone_bricks_slab",() -> new SlabBlock(Block.Properties.from(Blocks.STONE).harvestTool(ToolType.PICKAXE)));
+	public static final RegistryObject<Block> BOOKSHELF_SLAB = BLOCKS.register("bookshelf_slab",() -> new BookshelfSlabBlock(Block.Properties.from(Blocks.BOOKSHELF).harvestTool(ToolType.AXE)));		
+	
+	public static final RegistryObject<Block> OAK_LEAVES_SLAB = BLOCKS.register("oak_leaves_slab",() -> new LeafSlab(Block.Properties.from(Blocks.OAK_LEAVES)));
+	public static final RegistryObject<Block> DARK_OAK_LEAVES_SLAB = BLOCKS.register("dark_oak_leaves_slab",() -> new LeafSlab(Block.Properties.from(Blocks.DARK_OAK_LEAVES)));
+	public static final RegistryObject<Block> JUNGLE_LEAVES_SLAB = BLOCKS.register("jungle_leaves_slab",() -> new LeafSlab(Block.Properties.from(Blocks.JUNGLE_LEAVES)));
+	public static final RegistryObject<Block> ACACIA_LEAVES_SLAB = BLOCKS.register("acacia_leaves_slab",() -> new LeafSlab(Block.Properties.from(Blocks.ACACIA_LEAVES)));
+	public static final RegistryObject<Block> SPRUCE_LEAVES_SLAB = BLOCKS.register("spruce_leaves_slab",() -> new SpruceSlab(Block.Properties.from(Blocks.SPRUCE_LEAVES)));
+	public static final RegistryObject<Block> BIRCH_LEAVES_SLAB = BLOCKS.register("birch_leaves_slab",() -> new BirchSlab(Block.Properties.from(Blocks.BIRCH_LEAVES)));
 	
 	//Chests
 	public static final RegistryObject<Block> BOOKSHELF_CHEST = BLOCKS.register("bookshelf_chest",() -> new BookshelfChestBlock(Block.Properties.from(Blocks.BOOKSHELF).hardnessAndResistance(2.5f, 600.0f).harvestTool(ToolType.AXE)));
 	public static final RegistryObject<Block> SAFE_CHEST = BLOCKS.register("safe_chest",() -> new SafeChestBlock(Block.Properties.from(Blocks.IRON_BLOCK).hardnessAndResistance(2.5f, 600.0f).harvestTool(ToolType.PICKAXE)));
 	
 	//Golem
-	
 	public static final RegistryObject<Block> RSG_HEAD = BLOCKS.register("rsg_head",() -> new RedstoneGolemHead(Block.Properties.from(Blocks.STONE)));
-
 	
 	//No Item Blocks Info
-	
 	public static final DeferredRegister<Block> NO_ITEM_BLOCK = new DeferredRegister<>(ForgeRegistries.BLOCKS, NNOW.MOD_ID);
 	
 	//Bushes
-	
 	public static final RegistryObject<Block> IRONBERRY_BUSH = NO_ITEM_BLOCK.register("iron_berry_bush",() -> new IronBerryBush(Block.Properties.from(Blocks.SWEET_BERRY_BUSH).tickRandomly()));
 	public static final RegistryObject<Block> GOLDBERRY_BUSH = NO_ITEM_BLOCK.register("gold_berry_bush",() -> new GoldBerryBush(Block.Properties.from(Blocks.SWEET_BERRY_BUSH).tickRandomly()));
 	public static final RegistryObject<Block> COALBERRY_BUSH = NO_ITEM_BLOCK.register("coal_berry_bush",() -> new CoalBerryBush(Block.Properties.from(Blocks.SWEET_BERRY_BUSH).tickRandomly()));

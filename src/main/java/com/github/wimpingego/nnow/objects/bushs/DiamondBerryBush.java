@@ -10,6 +10,9 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.BushBlock;
 import net.minecraft.block.IGrowable;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -17,11 +20,13 @@ import net.minecraft.state.IntegerProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.util.ActionResultType;
+import net.minecraft.util.DamageSource;
 import net.minecraft.util.Hand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
@@ -35,6 +40,7 @@ public class DiamondBerryBush extends BushBlock implements IGrowable
 	   private static final VoxelShape field_220127_c = Block.makeCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 16.0D, 15.0D);
 	   
 	   int Nugget = ModConfigs.DIAMOND_NUGGETS.get();
+	   int Damage = ModConfigs.BERRY_DAMAGE.get();
 	   
 	   public DiamondBerryBush(Block.Properties properties) {
 	      super(properties);
@@ -100,5 +106,20 @@ public class DiamondBerryBush extends BushBlock implements IGrowable
 	   public void grow(ServerWorld p_225535_1_, Random p_225535_2_, BlockPos p_225535_3_, BlockState p_225535_4_) {
 	      int i = Math.min(3, p_225535_4_.get(AGE) + 1);
 	      p_225535_1_.setBlockState(p_225535_3_, p_225535_4_.with(AGE, Integer.valueOf(i)), 2);
+	   }
+	   
+	   public void onEntityCollision(BlockState state, World worldIn, BlockPos pos, Entity entityIn){
+	   if(ModConfigs.BERRY_DO_DAMAGE.get()){
+		      if (entityIn instanceof LivingEntity && entityIn.getType() != EntityType.FOX && entityIn.getType() != EntityType.BEE) {
+		         entityIn.setMotionMultiplier(state, new Vec3d((double)0.8F, 0.75D, (double)0.8F));
+		         if (!worldIn.isRemote && state.get(AGE) > 0 && (entityIn.lastTickPosX != entityIn.getPosX() || entityIn.lastTickPosZ != entityIn.getPosZ())) {
+		            double d0 = Math.abs(entityIn.getPosX() - entityIn.lastTickPosX);
+		            double d1 = Math.abs(entityIn.getPosZ() - entityIn.lastTickPosZ);
+		            if (d0 >= (double)0.003F || d1 >= (double)0.003F) {
+		               entityIn.attackEntityFrom(DamageSource.SWEET_BERRY_BUSH, Damage);
+		            }
+		         }
+		      }
+		   }
 	   }
 }

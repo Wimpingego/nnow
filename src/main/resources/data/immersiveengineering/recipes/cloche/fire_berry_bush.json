@@ -1,0 +1,20 @@
+ {
+    "type": "immersiveengineering:cloche",
+    "results": [
+      {
+        "item": "nnow:fire_nugget",
+        "count": 1
+      }
+    ],
+    "input": {
+      "item": "nnow:fire_berry"
+    },
+    "soil": {
+      "item": "minecraft:dirt"
+    },
+    "time": 840,
+    "render": {
+      "type": "crop",
+      "block": "nnow:fire_berry_bush"
+    }
+  }

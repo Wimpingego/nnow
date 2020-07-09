@@ -12,6 +12,7 @@ import com.github.wimpingego.nnow.util.ClientRenderer;
 import com.github.wimpingego.nnow.util.Trollnventory;
 import com.github.wimpingego.nnow.util.WitherEvents;
 import com.github.wimpingego.nnow.util.ModConfigs;
+import com.github.wimpingego.nnow.util.PlayerSpecialAbilities;
 import com.github.wimpingego.nnow.villagers.PointOfInterestTypes;
 import com.github.wimpingego.nnow.villagers.VillagerUtil;
 import net.minecraft.item.BlockItem;
@@ -63,7 +64,7 @@ public class NNOW
 		ModContainerTypes.CONTAINER_TYPES.register(modEventBus);
 		
 		MinecraftForge.EVENT_BUS.register(this);
-        MinecraftForge.EVENT_BUS.register(Trollnventory.class);
+        //MinecraftForge.EVENT_BUS.register(Trollnventory.class);
         
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModConfigs.COMMON_CONFIG);
         ModConfigs.load(ModConfigs.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve("nnow-common.toml"));
@@ -87,7 +88,11 @@ public class NNOW
 	}
 
 	private void setup(final FMLCommonSetupEvent event)
+	
 	{	
+		MinecraftForge.EVENT_BUS.register(new PlayerSpecialAbilities());
+        MinecraftForge.EVENT_BUS.register(Trollnventory.class);
+		
 		VillagerUtil.fixPOITypeBlockStates(PointOfInterestTypes.OLD_DERPY);
 		VillagerUtil.fixPOITypeBlockStates(PointOfInterestTypes.BANKER);
 		VillagerUtil.fixPOITypeBlockStates(PointOfInterestTypes.BEEKEEPER);

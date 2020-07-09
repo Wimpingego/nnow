@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:acacia_leaves"
+        }
+    },
+    "result": {
+        "item": "nnow:acacia_leaves_stairs",
+        "count": 4
+    }
+}

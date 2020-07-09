@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "nnow:coal_nugget",
+    "nnow:redstone_nugget",
+    "nnow:quartz_nugget",
+    "nnow:diamond_nugget",
+    "nnow:emerald_nugget",
+    "nnow:lapis_nugget",
+    "nnow:ice_nugget",
+    "nnow:fire_nugget",
+    "nnow:wooden_nugget"
+  ]
+}

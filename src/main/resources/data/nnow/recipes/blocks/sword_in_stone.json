@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "CCC"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wooden_sword"
+        },
+        "C": {
+            "tag": "forge:cobblestone"
+        }
+    },
+    "result": {
+        "item": "nnow:sword_in_stone",
+        "count": 1
+    }
+}

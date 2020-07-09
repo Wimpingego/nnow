@@ -1,0 +1,20 @@
+ {
+    "type": "immersiveengineering:cloche",
+    "results": [
+      {
+        "item": "nnow:diamond_nugget",
+        "count": 1
+      }
+    ],
+    "input": {
+      "item": "nnow:diamond_berry"
+    },
+    "soil": {
+      "item": "minecraft:dirt"
+    },
+    "time": 840,
+    "render": {
+      "type": "crop",
+      "block": "nnow:diamond_berry_bush"
+    }
+  }

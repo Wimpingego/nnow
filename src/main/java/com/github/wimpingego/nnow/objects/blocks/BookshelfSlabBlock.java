@@ -13,7 +13,7 @@ public class BookshelfSlabBlock extends SlabBlock
 
 	int value = ModConfigs.ENCHANT_POWER.get();
 	
-	public BookshelfSlabBlock(BlockState state, Properties properties)
+	public BookshelfSlabBlock(Properties properties)
 	{
 		super(properties);
 	}

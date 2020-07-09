@@ -13,7 +13,7 @@ public class FoodList {
 	@SuppressWarnings("deprecation")
 	public static final Food DEATH_POTATO = (new Food.Builder()).hunger(4).saturation(1.2F).effect(new EffectInstance(Effects.REGENERATION, 100, 0), 0.6F).effect(new EffectInstance(Effects.NAUSEA, 240, 1), 1.0F).setAlwaysEdible().build();
 	@SuppressWarnings("deprecation")
-	public static final Food WEETABIX = (new Food.Builder()).hunger(5).saturation(1.2F).effect(new EffectInstance(Effects.STRENGTH, 200, 0), 1.0F).setAlwaysEdible().build();
+	public static final Food WEETABIX = (new Food.Builder()).hunger(5).saturation(1.2F).effect(new EffectInstance(Effects.STRENGTH, 600, 0), 1.0F).setAlwaysEdible().build();
 	
 	
 }

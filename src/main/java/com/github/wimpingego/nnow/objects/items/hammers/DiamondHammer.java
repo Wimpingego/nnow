@@ -6,10 +6,10 @@ import net.minecraft.block.BlockState;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.ItemStack;
 
-public class DiamondHammer extends Hammer{
+public class DiamondHammer extends HammerBase{
 	
-	Double speed = ModConfigs.DIAMOND_HAMMER_SPEED_MODIFIER.get();
-	static int use = ModConfigs.DIAMOND_HAMMER_DURABILITY_MODIFIER.get();
+	Double speed = ModConfigs.DIAMOND_TIER_TOOL_SPEED_MODIFIER.get();
+	static int use = ModConfigs.DIAMOND_TIER_TOOL_DURABILITY_MODIFIER.get();
 
 	public DiamondHammer(IItemTier tier, int attackDamageIn, float attackSpeedIn, Properties builder)
 	{

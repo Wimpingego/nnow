@@ -6,7 +6,7 @@ issueTrackerURL="https://github.com/Wimpingego/nnow/issues"
 [[mods]]
 
 modId="nnow"
-version="0.1.4"
+version="0.1.5"
 displayName="Never Needed Or Wanted"
 #updateJSONURL="http://myurl.me/"
 displayURL="https://github.com/Wimpingego"

@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "iIi",
+        "iii"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wooden_sword"
+        },
+        "i": {
+            "tag": "minecraft:planks"
+        },
+        "I": {
+            "tag": "minecraft:logs"
+        }
+    },
+    "result": {
+        "item": "nnow:trap_block",
+        "count": 1
+    }
+}

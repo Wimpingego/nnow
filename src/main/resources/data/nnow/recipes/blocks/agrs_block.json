@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:feather"
+        },
+        {
+            "tag": "forge:sand/red"
+        },
+        {
+            "tag": "forge:sand/red"
+        },
+        {
+            "tag": "forge:sand/red"
+        }
+    ],
+    "result": {
+        "item": "nnow:agrs_block",
+        "count": 3
+    }
+}
