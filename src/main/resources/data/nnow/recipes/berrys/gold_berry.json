@@ -1,13 +1,13 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "#",
-        "S",
-        "#"
+        "###",
+        "#S#",
+        "###"
     ],
     "key": {
         "#": {
-            "item": "minecraft:gold_nugget"
+            "tag": "forge:ingots/gold"
         },
         "S": {
             "item": "minecraft:sweet_berries"

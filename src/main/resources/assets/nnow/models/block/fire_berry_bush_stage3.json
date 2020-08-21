@@ -1,6 +1,6 @@
 {
     "parent": "block/cross",
     "textures": {
-        "cross": "nnow:blocks/fire_berry_bush_stage3"
+        "cross": "nnow:blocks/bushes/fire_berry_bush_stage3"
     }
 }

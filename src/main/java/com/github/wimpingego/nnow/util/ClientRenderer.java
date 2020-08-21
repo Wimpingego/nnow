@@ -7,13 +7,17 @@ import net.minecraft.client.renderer.RenderTypeLookup;
 
 
 public class ClientRenderer {
-
+	
 	public static void registerBlocks() {
-		Block[] blocks = { BlockList.SAFE_CHEST.get(), BlockList.BEEKEEPER_BLOCK.get(), BlockList.END_LANTERN.get(),BlockList.SEA_TRADER_POI.get(),BlockList.RSG_HEAD.get()};
 		
-		Block[] leaves = { BlockList.IRONBERRY_BUSH.get(),BlockList.GOLDBERRY_BUSH.get(),BlockList.COALBERRY_BUSH.get(),BlockList.REDSTONEBERRY_BUSH.get(),
-				BlockList.QUARTZBERRY_BUSH.get(),BlockList.DIAMONDBERRY_BUSH.get(),BlockList.EMERALDBERRY_BUSH.get(),BlockList.LAPISBERRY_BUSH.get(),BlockList.ICEBERRY_BUSH.get(),
-				BlockList.XP_BUSH.get(),BlockList.FIREBERRY_BUSH.get(),BlockList.WOODENBERRY_BUSH.get()};
+		//Block[] blocks = { BlockList.BEEKEEPER_BLOCK.get(), BlockList.END_LANTERN.get(),BlockList.SEA_TRADER_POI.get(),BlockList.RSG_HEAD.get()};
+		Block[] blocks = { BlockList.END_LANTERN.get(),BlockList.RSG_HEAD.get()};
+		
+		Block[] bushes = { BlockList.ICE_BERRY_BUSH.get(),BlockList.FIRE_BERRY_BUSH.get(),BlockList.WOODEN_BERRY_BUSH.get(),BlockList.STONE_BERRY_BUSH.get(),BlockList.SAND_BERRY_BUSH.get(),
+				BlockList.CLAY_BERRY_BUSH.get(),BlockList.DIRT_BERRY_BUSH.get(),BlockList.GRAVEL_BERRY_BUSH.get(),BlockList.XP_BERRY_BUSH.get()};
+		
+		Block[] ore_bushes = { BlockList.IRON_BERRY_BUSH.get(),BlockList.GOLD_BERRY_BUSH.get(),BlockList.COAL_BERRY_BUSH.get(),BlockList.REDSTONE_BERRY_BUSH.get(),
+				BlockList.QUARTZ_BERRY_BUSH.get(),BlockList.DIAMOND_BERRY_BUSH.get(),BlockList.EMERALD_BERRY_BUSH.get(),BlockList.LAPIS_BERRY_BUSH.get()};
 		
 		Block[] glass = { BlockList.DARK_GLASS_BLOCK.get()};
 		
@@ -27,7 +31,11 @@ public class ClientRenderer {
 			RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 		}
 
-		for (Block block : leaves) {
+		for (Block block : bushes) {
+			RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
+		}
+		
+		for (Block block : ore_bushes) {
 			RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 		}
 		
@@ -43,7 +51,6 @@ public class ClientRenderer {
 			RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 		}
 	}
-	
 }
 
 // BlockList.BARLEY_CROP.get(), BlockList.PEPPER_CROP.get(),

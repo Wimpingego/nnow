@@ -13,7 +13,7 @@ import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.RayTraceContext;
-import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.World;
 import net.minecraftforge.items.ItemStackHandler;
 
@@ -28,26 +28,26 @@ public class ToolUtil3x3 {
 	  {
 	    World world = player.world;
 
-	    Vec3d look = player.getLookVec();
-	    Vec3d startPos = getVec3d(player).add(0, player.getEyeHeight(), 0);
-	    Vec3d endPos = startPos.add(look.mul(range, range, range));
+	    Vector3d look = player.getLookVec();
+	    Vector3d startPos = getVec3d(player).add(0, player.getEyeHeight(), 0);
+	    Vector3d endPos = startPos.add(look.mul(range, range, range));
 	    RayTraceContext context = new RayTraceContext(startPos, endPos, RayTraceContext.BlockMode.OUTLINE, fluidMode, player);
 	    return world.rayTraceBlocks(context);
 	  }
 	  
-	  public static Vec3d getVec3d(BlockPos pos)
+	  public static Vector3d getVec3d(BlockPos pos)
 	  {
-	    return new Vec3d(pos.getX(), pos.getY(), pos.getZ());
+	    return new Vector3d(pos.getX(), pos.getY(), pos.getZ());
 	  }
 
-	  public static Vec3d getVec3d(Entity entity)
+	  public static Vector3d getVec3d(Entity entity)
 	  {
 	    return entity.getPositionVec();
 //	    return new Vec3d(entity.posX, entity.posY, entity.posZ);
 	  }
-	public static BlockRayTraceResult getLookingAt(Vec3d position, Vec3d look, double range, Entity entity)
+	public static BlockRayTraceResult getLookingAt(Vector3d position, Vector3d look, double range, Entity entity)
 	  {
-	    Vec3d endPos = position.add(look.mul(range, range, range));
+	    Vector3d endPos = position.add(look.mul(range, range, range));
 	    RayTraceContext context = new RayTraceContext(position, endPos, RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity);
 	    return entity.world.rayTraceBlocks(context);
 	  }

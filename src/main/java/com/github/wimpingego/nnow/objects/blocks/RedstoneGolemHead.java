@@ -2,7 +2,6 @@ package com.github.wimpingego.nnow.objects.blocks;
 
 import javax.annotation.Nullable;
 import com.github.wimpingego.nnow.init.ItemList;
-import com.github.wimpingego.nnow.util.ModConfigs;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -28,7 +27,6 @@ public class RedstoneGolemHead extends Block {
 	 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
-    double DropChance = ModConfigs.DROP_CHANCE.get();
     
 	public RedstoneGolemHead(Properties properties) {
 		super(properties);
@@ -54,130 +52,7 @@ public class RedstoneGolemHead extends Block {
     public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit)
 	{
 	   ItemStack itemstack = player.getHeldItem(handIn);
-	   
-	   //DUST TO BLOCK
-	   
-	   if (itemstack.getItem() == Items.REDSTONE)
-	   {
-		   itemstack.shrink(1);
-		   ItemStack itemstack1;
-		   itemstack1 = new ItemStack(Items.REDSTONE, 1 + RANDOM.nextInt(2));
-		   
-		   if (itemstack.isEmpty())
-	       {
-	           player.setHeldItem(handIn, itemstack1);
-	           return ActionResultType.SUCCESS;
-	       }
-		   
-		   else if (!player.inventory.addItemStackToInventory(itemstack1))
-	       {
-	    	   player.dropItem(itemstack1, false);
-	    	   return ActionResultType.SUCCESS;
-	       } 
-	   }
-	   
-	   //NNOW DUST
-	   
-	   if (itemstack.getItem() == ItemList.STONE_DUST.get())
-	   {
-		   itemstack.shrink(1);
-		   ItemStack itemstack1;
-		   itemstack1 = new ItemStack(ItemList.STONE_DUST.get(), 1 + RANDOM.nextInt(2));
-	    
-		   if (itemstack.isEmpty())
-	       {
-	           player.setHeldItem(handIn, itemstack1);
-	           
-	           return ActionResultType.SUCCESS;
-	       }
-	       else if (!player.inventory.addItemStackToInventory(itemstack1))
-	       {
-	    	   player.dropItem(itemstack1, false);
-        
-	    	   return ActionResultType.SUCCESS;
-	       } 
-	   }
-	   
-	   if (itemstack.getItem() == ItemList.SAND_DUST.get())
-	   {
-		   itemstack.shrink(1);
-		   ItemStack itemstack1;
-		   itemstack1 = new ItemStack(ItemList.SAND_DUST.get(), 1 + RANDOM.nextInt(2));
-	    
-		   if (itemstack.isEmpty())
-	       {
-	           player.setHeldItem(handIn, itemstack1);
-	           
-	           return ActionResultType.SUCCESS;
-	       }
-	       else if (!player.inventory.addItemStackToInventory(itemstack1))
-	       {
-	    	   player.dropItem(itemstack1, false);
-        
-	    	   return ActionResultType.SUCCESS;
-	       } 
-	   }
-	   
-	   if (itemstack.getItem() == ItemList.DIRT_DUST.get())
-	   {
-		   itemstack.shrink(1);
-		   ItemStack itemstack1;
-		   itemstack1 = new ItemStack(ItemList.DIRT_DUST.get(), 1 + RANDOM.nextInt(2));
-	    
-		   if (itemstack.isEmpty())
-	       {
-	           player.setHeldItem(handIn, itemstack1);
-	           
-	           return ActionResultType.SUCCESS;
-	       }
-	       else if (!player.inventory.addItemStackToInventory(itemstack1))
-	       {
-	    	   player.dropItem(itemstack1, false);
-        
-	    	   return ActionResultType.SUCCESS;
-	       } 
-	   }
-	   
-	   if (itemstack.getItem() == ItemList.GRAVEL_DUST.get())
-	   {
-		   itemstack.shrink(1);
-		   ItemStack itemstack1;
-		   itemstack1 = new ItemStack(ItemList.GRAVEL_DUST.get(), 1 + RANDOM.nextInt(2));
-	    
-		   if (itemstack.isEmpty())
-	       {
-	           player.setHeldItem(handIn, itemstack1);
-	           
-	           return ActionResultType.SUCCESS;
-	       }
-	       else if (!player.inventory.addItemStackToInventory(itemstack1))
-	       {
-	    	   player.dropItem(itemstack1, false);
-        
-	    	   return ActionResultType.SUCCESS;
-	       } 
-	   }
-	   
-	   if (itemstack.getItem() == ItemList.CLAY_DUST.get())
-	   {
-		   itemstack.shrink(1);
-		   ItemStack itemstack1;
-		   itemstack1 = new ItemStack(ItemList.CLAY_DUST.get(), 1 + RANDOM.nextInt(2));
-	    
-		   if (itemstack.isEmpty())
-	       {
-	           player.setHeldItem(handIn, itemstack1);
-	           
-	           return ActionResultType.SUCCESS;
-	       }
-	       else if (!player.inventory.addItemStackToInventory(itemstack1))
-	       {
-	    	   player.dropItem(itemstack1, false);
-        
-	    	   return ActionResultType.SUCCESS;
-	       } 
-	   }
-	   
+	      
 	   if (itemstack.getItem() == ItemList.DEATH_POTATO.get())
 	   {
 		   itemstack.shrink(1);

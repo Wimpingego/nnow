@@ -19,7 +19,6 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
@@ -77,7 +76,7 @@ public class LavaWell extends Block {
 	public void addInformation(ItemStack stack, @Nullable IBlockReader worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	{
 		super.addInformation(stack, worldIn, tooltip, flagIn);
-		tooltip.add((new TranslationTextComponent("item.nnow.lavawell.line1").applyTextStyle(TextFormatting.RED)));
-		tooltip.add((new TranslationTextComponent("item.nnow.lavawell.general.line1").applyTextStyle(TextFormatting.YELLOW)));
+		tooltip.add((new TranslationTextComponent("item.nnow.lavawell.line1")));
+		tooltip.add((new TranslationTextComponent("item.nnow.lavawell.general.line1")));
 	}
 }

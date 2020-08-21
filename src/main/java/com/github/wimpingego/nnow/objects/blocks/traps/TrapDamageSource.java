@@ -11,13 +11,13 @@ import javax.annotation.Nullable;
 */
 public class TrapDamageSource extends DamageSource
 {
-  @SuppressWarnings("unused")
+
+@SuppressWarnings("unused")
 private TrapType type;
   private Entity source = null;
-  // todo: have an option for fakeplayer kills
   public TrapDamageSource(TrapType type)
   {
-    super("spikes." + type.name);
+    super("trap." + type.name);
     this.type = type;
   
     setDamageBypassesArmor();

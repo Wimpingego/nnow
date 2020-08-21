@@ -6,7 +6,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.client.renderer.color.IBlockColor;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.ILightReader;
+import net.minecraft.world.IBlockDisplayReader;
 import net.minecraft.world.biome.BiomeColors;
 
 public class LeafStairsBlock extends StairsBlock
@@ -20,7 +20,7 @@ public class LeafStairsBlock extends StairsBlock
 	
 	public static class ColorHandler implements IBlockColor 
 	{
-		public int getColor(BlockState state, @Nullable ILightReader reader , @Nullable BlockPos blockPos, int tintIndex)
+		public int getColor(BlockState state, @Nullable IBlockDisplayReader reader , @Nullable BlockPos blockPos, int tintIndex)
 		{
 
 			if(reader != null && blockPos != null)

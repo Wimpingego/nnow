@@ -9,6 +9,18 @@
     "nnow:lapis_nugget",
     "nnow:ice_nugget",
     "nnow:fire_nugget",
-    "nnow:wooden_nugget"
+    "nnow:wooden_nugget",
+    "nnow:copper_nugget",
+    "nnow:nickel_nugget",
+    "nnow:silver_nugget",
+    "nnow:uranium_nugget",
+    "nnow:lead_nugget",
+    "nnow:aluminum_nugget",
+    "nnow:tin_nugget"
+    "nnow:osmium_nugget",
+    "nnow:bismuth_nugget",
+    "nnow:zinc_nugget"
+    "nnow:platinum_nugget",
+	"nnow:iridium_nugget"
   ]
 }
