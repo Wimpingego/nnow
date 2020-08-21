@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "nnow:items/iron_hammer"
+    "layer0": "nnow:items/hammers/iron_hammer"
   }
 }

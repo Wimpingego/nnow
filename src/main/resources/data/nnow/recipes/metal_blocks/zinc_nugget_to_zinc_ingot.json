@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "nnow:zinc_nugget"
+        }
+    },
+    "result": {
+        "item": "nnow:zinc_ingot",
+        "count": 1
+    }
+}

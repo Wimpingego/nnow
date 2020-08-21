@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "nnow:stone_spade",
+    "nnow:iron_spade",
+	"nnow:golden_spade",
+	"nnow:diamond_spade"
+  ]
+}

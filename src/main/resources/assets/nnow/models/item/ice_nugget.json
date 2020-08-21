@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "nnow:items/ice_nugget"
+		"layer0": "nnow:items/nuggets/ice_nugget"
 	}
 }

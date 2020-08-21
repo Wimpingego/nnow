@@ -1,0 +1,30 @@
+{
+    "type":"botanypots:crop",
+    "conditions":[
+        {
+            "type":"forge:mod_loaded",
+            "modid":"nnow"
+        }
+    ],
+    "seed":{
+        "item":"nnow:bismuth_berry"
+        },
+    "categories":["dirt"],
+    "growthTicks":600,
+    "display":{
+        "block":"nnow:bismuth_berry_bush",
+        "properties":{
+            "age":3
+            }
+        },
+    "results":[
+        {
+            "chance":0.90,
+            "output":{
+                "item":"nnow:bismuth_nugget"
+                },
+                "minRolls":1,
+                "maxRolls":1
+        }
+    ]
+}

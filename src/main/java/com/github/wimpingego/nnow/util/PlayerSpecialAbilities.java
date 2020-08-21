@@ -1,7 +1,6 @@
 package com.github.wimpingego.nnow.util;
 
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.EffectInstance;
@@ -16,16 +15,6 @@ public class PlayerSpecialAbilities
 	public static void giveFullHealth(World world, PlayerEntity player, ItemStack itemstack)
 	{
     	player.setHealth(20);
-		return;
-	}
-
-	//Set player health beyond normal max health
-	public static void giveNewMaxHealth(World world, PlayerEntity player, ItemStack itemstack, double newMax)
-	{		
-		player.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(newMax);
-		float healthAsFloat = (float) newMax;
-		player.setHealth(healthAsFloat);
-		
 		return;
 	}
 	

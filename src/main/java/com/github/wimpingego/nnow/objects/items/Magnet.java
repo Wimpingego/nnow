@@ -21,7 +21,6 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 
@@ -59,7 +58,7 @@ public class Magnet extends Item
 			List<ItemEntity> items = entity.world.getEntitiesWithinAABB(ItemEntity.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
 			for(ItemEntity e: items)
 			{
-				//if(KeyboardHelper.isHoldingShift() && !e.getPersistentData().getBoolean("PreventRemoteMovement"))
+				if(!player.isSneaking() && !e.getPersistentData().getBoolean("PreventRemoteMovement"))
 				{						
 					double factor = 0.035;
 					e.addVelocity((x - e.getPosX()) * factor, (y - e.getPosY()+1.25) * factor, (z - e.getPosZ()) * factor);
@@ -70,7 +69,7 @@ public class Magnet extends Item
 			List<ExperienceOrbEntity> xp = entity.world.getEntitiesWithinAABB(ExperienceOrbEntity.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
 			for(ExperienceOrbEntity orb: xp)
 			{
-				//if(!player.isShiftKeyDown())
+				if(!player.isSneaking())
 				{						
 					double factor = 0.035;
 					orb.addVelocity((x - orb.getPosX()) * factor, (y - orb.getPosY()+1.25) * factor, (z - orb.getPosZ()) * factor);
@@ -84,14 +83,14 @@ public class Magnet extends Item
     {
 		ItemStack stack = player.getHeldItem(hand);	
 		
-		//if(!world.isRemote && !((player)))
-        //{
+		if(!world.isRemote && !(player.isSneaking()))
+        {
           EnableUtil.changeEnabled(player, hand);
-          player.sendMessage(new TranslationTextComponent("item.nnow.magnet.line1", EnableUtil.isEnabled(stack)).applyTextStyle(TextFormatting.GREEN));
+          player.sendMessage(new TranslationTextComponent("item.nnow.magnet.line1", EnableUtil.isEnabled(stack)), null);
           return new ActionResult<ItemStack>(ActionResultType.SUCCESS, player.getHeldItem(hand));
-        //}		
+        }		
        
-        //return super.onItemRightClick(world, player, hand);
+        return super.onItemRightClick(world, player, hand);
     }
 	
 	@Override
@@ -103,8 +102,8 @@ public class Magnet extends Item
 	@Override
 	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
 		if(KeyboardHelper.isHoldingShift()) {
-			tooltip.add((new TranslationTextComponent("item.nnow.magnet.line2").applyTextStyle(TextFormatting.YELLOW)));
-			tooltip.add((new TranslationTextComponent("item.nnow.magnet.line3",range).applyTextStyle(TextFormatting.LIGHT_PURPLE)));
+			tooltip.add((new TranslationTextComponent("item.nnow.magnet.line2")));
+			tooltip.add((new TranslationTextComponent("item.nnow.magnet.line3",range)));
 		} else {
 			tooltip.add(new StringTextComponent("Hold " + "\u00A75" + "Shift " + "\u00A7r"+ "For More Info"));
 		}

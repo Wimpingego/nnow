@@ -11,11 +11,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class SoundList {
 
-	public static final DeferredRegister<SoundEvent> SOUNDS = new DeferredRegister<>(ForgeRegistries.SOUND_EVENTS,
-			NNOW.MOD_ID);
+	public static final DeferredRegister<SoundEvent> SOUNDS = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS,NNOW.MOD_ID);
 
 	//Doom
-	
 	public static final RegistryObject<SoundEvent> DOOM_SOUND = SOUNDS.register("item.doom_sound",
 			() -> new SoundEvent(new ResourceLocation(NNOW.MOD_ID, "item.doom_sound")));
 
@@ -25,7 +23,6 @@ public class SoundList {
 	public static final RegistryObject<SoundEvent> DOOM_DISC = SOUNDS.register("item.doom_disc.disc", DOOM_DISC_LAZY);
 	
 	//Mizzy
-	
 	public static final RegistryObject<SoundEvent> MIZZY_SOUND = SOUNDS.register("item.mizzy_sound",
 			() -> new SoundEvent(new ResourceLocation(NNOW.MOD_ID, "item.mizzy_sound")));
 

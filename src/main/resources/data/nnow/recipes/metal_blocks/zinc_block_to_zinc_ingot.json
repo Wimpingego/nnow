@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "nnow:zinc_block"
+        }
+    ],
+    "result": {
+        "item": "nnow:zinc_ingot",
+        "count": 9
+	}
+}
