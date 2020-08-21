@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#E#",
+        "EVE",
+        "#E#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:bone_block"
+        },
+        "E": {
+            "item": "minecraft:emerald_block"
+        },
+        "V": {
+            "item": "minecraft:diamond_block"
+        }
+    },
+    "result": {
+        "item": "nnow:viagra",
+        "count": 1
+    }
+}

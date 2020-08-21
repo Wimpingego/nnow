@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "nnow:items/stone_spade"
+    "layer0": "nnow:items/spades/stone_spade"
   }
 }

@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "nnow:items/lapis_berry"
+        "layer0": "nnow:items/berrys/lapis_berry"
     }
 }

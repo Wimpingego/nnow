@@ -1,0 +1,30 @@
+{
+    "type":"botanypots:crop",
+    "conditions":[
+        {
+            "type":"forge:mod_loaded",
+            "modid":"nnow"
+        }
+    ],
+    "seed":{
+        "item":"nnow:wooden_berry"
+        },
+    "categories":["dirt"],
+    "growthTicks":300,
+    "display":{
+        "block":"nnow:wooden_berry_bush",
+        "properties":{
+            "age":3
+            }
+        },
+    "results":[
+        {
+            "chance":0.90,
+            "output":{
+                "item":"nnow:wooden_nugget"
+                },
+                "minRolls":2,
+                "maxRolls":6
+        }
+    ]
+}

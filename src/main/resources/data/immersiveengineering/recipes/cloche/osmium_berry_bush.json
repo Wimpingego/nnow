@@ -1,0 +1,20 @@
+ {
+    "type": "immersiveengineering:cloche",
+    "results": [
+      {
+        "item": "nnow:osmium_nugget",
+        "count": 1
+      }
+    ],
+    "input": {
+      "item": "nnow:osmium_berry"
+    },
+    "soil": {
+      "item": "minecraft:dirt"
+    },
+    "time": 600,
+    "render": {
+      "type": "crop",
+      "block": "nnow:osmium_berry_bush"
+    }
+  }

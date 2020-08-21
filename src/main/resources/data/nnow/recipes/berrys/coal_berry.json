@@ -1,13 +1,13 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "#",
-        "S",
-        "#"
+        "###",
+        "#S#",
+        "###"
     ],
     "key": {
         "#": {
-            "tag": "forge:nuggets/coal"
+            "item": "minecraft:coal"
         },
         "S": {
             "item": "minecraft:sweet_berries"

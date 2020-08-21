@@ -1,11 +1,11 @@
 package com.github.wimpingego.nnow.villagers;
 
-
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.Function;
+
 import net.minecraft.entity.merchant.villager.VillagerTrades.ITrade;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -129,7 +129,7 @@ public class RandomTradeBuilder
         return this.setForSale(RandomTradeBuilder.createFunction(item, min, max));
     }
     
-	public RandomTradeBuilder setEmeraldPrice(int emeralds)
+    public RandomTradeBuilder setEmeraldPrice(int emeralds)
     {
         return this.setPrice((random) -> new ItemStack(Items.EMERALD, emeralds));
     }
@@ -181,6 +181,7 @@ public class RandomTradeBuilder
     {
         return (random) -> new ItemStack(item, random.nextInt(max) + min);
     }
+    
     // --- registering stuff ---
     
     protected RandomTradeBuilder register(int index)

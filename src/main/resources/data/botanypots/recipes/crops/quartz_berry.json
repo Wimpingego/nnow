@@ -1,0 +1,1 @@
+{"type":"botanypots:crop","conditions":[{"type":"forge:mod_loaded","modid":"nnow"}],"seed":{"item":"nnow:quartz_berry"},"categories":["dirt"],"growthTicks":1800,"display":{"block":"nnow:quartz_berry_bush","properties":{"age":3}},"results":[{"chance":0.90,"output":{"item":"nnow:quartz_nugget"},"minRolls":1,"maxRolls":1}]}

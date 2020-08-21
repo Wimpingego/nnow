@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "nnow:items/lapis_nugget"
+		"layer0": "nnow:items/nuggets/lapis_nugget"
 	}
 }

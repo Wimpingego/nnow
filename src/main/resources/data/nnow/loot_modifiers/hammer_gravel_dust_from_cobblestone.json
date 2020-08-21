@@ -1,0 +1,17 @@
+{
+  "conditions": [
+    {
+      "condition": "minecraft:match_tool",
+      "predicate": {
+        "tag": "nnow:hammers"
+      }
+    },
+    {
+      "condition": "block_state_property",
+      "block":"minecraft:cobblestone"
+    }
+  ],
+  "seedItem": "minecraft:cobblestone",
+  "numSeeds": 1,
+  "replacement": "nnow:gravel_dust"
+}

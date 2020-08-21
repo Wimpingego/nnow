@@ -9,7 +9,6 @@ import net.minecraft.util.text.TextFormatting;
 
 public class MusicDisc extends MusicDiscItem {
 
-	@SuppressWarnings("deprecation")
 	public MusicDisc(int comparatorValueIn, SoundEvent soundIn, Properties builder) {
 		super(comparatorValueIn, soundIn, builder);
 	}
