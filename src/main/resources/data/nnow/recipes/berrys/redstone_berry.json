@@ -1,13 +1,13 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "#",
-        "S",
-        "#"
+        "###",
+        "#S#",
+        "###"
     ],
     "key": {
         "#": {
-            "tag": "forge:nuggets/redstone"
+            "tag": "forge:dusts/redstone"
         },
         "S": {
             "item": "minecraft:sweet_berries"

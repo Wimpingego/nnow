@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "nnow:items/gravel_dust"
+        "layer0": "nnow:items/dusts/gravel_dust"
     }
 }

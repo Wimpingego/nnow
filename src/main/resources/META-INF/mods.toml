@@ -1,12 +1,12 @@
 modLoader="javafml"
 loaderVersion="[31,)"
-
+license="GNU GPLv3"
 issueTrackerURL="https://github.com/Wimpingego/nnow/issues"
 
 [[mods]]
 
 modId="nnow"
-version="0.1.5"
+version="${file.jarVersion}" #mandatory
 displayName="Never Needed Or Wanted"
 #updateJSONURL="http://myurl.me/"
 displayURL="https://github.com/Wimpingego"

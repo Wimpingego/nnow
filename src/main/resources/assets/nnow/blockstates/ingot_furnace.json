@@ -1,0 +1,20 @@
+
+{
+    "variants": {
+      "facing=east": {
+        "model": "nnow:block/ingot_furnace",
+        "y": 90
+      },
+      "facing=north": {
+        "model": "nnow:block/ingot_furnace"
+      },
+      "facing=south": {
+        "model": "nnow:block/ingot_furnace",
+        "y": 180
+      },
+      "facing=west": {
+        "model": "nnow:block/ingot_furnace",
+        "y": 270
+      }
+    }
+}  

@@ -1,0 +1,17 @@
+{
+  "conditions": [
+    {
+      "condition": "minecraft:match_tool",
+      "predicate": {
+        "tag": "nnow:spades"
+      }
+    },
+    {
+      "condition": "block_state_property",
+      "block":"minecraft:red_sand"
+    }
+  ],
+  "seedItem": "minecraft:red_sand",
+  "numSeeds": 1,
+  "replacement": "nnow:dirt_dust"
+}

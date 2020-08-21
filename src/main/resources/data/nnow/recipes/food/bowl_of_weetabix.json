@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "WWW",
+        "WMW",
+        "WBW"
+    ],
+    "key": {
+        "M": {
+            "item": "minecraft:milk_bucket"
+        },
+        "W": {
+            "item": "nnow:weetabix"
+        },
+        "B": {
+            "item": "minecraft:bowl"
+        }
+    },
+    "result": {
+        "item": "nnow:bowl_of_weetabix",
+        "count": 1
+    }
+}
