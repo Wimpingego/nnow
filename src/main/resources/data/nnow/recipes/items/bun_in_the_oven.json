@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#B#",
+        "RGR",
+        "RQR"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:spider_eye"
+        },
+        "B": {
+            "item": "minecraft:bone"
+        },
+        "R": {
+            "item": "minecraft:rotten_flesh"
+        },
+        "G": {
+            "item": "minecraft:gunpowder"
+        },
+        "Q": {
+            "item": "minecraft:bone_block"
+        }
+    },
+    "result": {
+        "item": "nnow:bun_in_the_oven",
+        "count": 1
+    }
+}

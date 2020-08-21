@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#S#",
+        "#B#",
+        "#S#"
+    ],
+    "key": {
+        "S": {
+            "tag": "minecraft:wooden_trapdoors"
+        },
+        "#": {
+     		 "tag": "minecraft:planks"
+        },
+        "B": {
+            "item": "minecraft:book"
+        }
+    },
+    "result": {
+        "item": "nnow:banker_poi",
+        "count": 1
+    }
+}

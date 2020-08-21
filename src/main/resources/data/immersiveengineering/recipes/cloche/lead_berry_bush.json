@@ -1,0 +1,20 @@
+ {
+    "type": "immersiveengineering:cloche",
+    "results": [
+      {
+        "item": "nnow:lead_nugget",
+        "count": 1
+      }
+    ],
+    "input": {
+      "item": "nnow:lead_berry"
+    },
+    "soil": {
+      "item": "minecraft:dirt"
+    },
+    "time": 600,
+    "render": {
+      "type": "crop",
+      "block": "nnow:lead_berry_bush"
+    }
+  }

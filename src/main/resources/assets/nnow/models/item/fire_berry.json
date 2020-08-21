@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "nnow:items/fire_berry"
+        "layer0": "nnow:items/berrys/fire_berry"
     }
 }

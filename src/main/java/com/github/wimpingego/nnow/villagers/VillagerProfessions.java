@@ -27,6 +27,8 @@ public class VillagerProfessions
     public static final VillagerProfession END_TRADER= null;
     public static final VillagerProfession SEA_TRADER= null;
     public static final VillagerProfession SEA_FISHERMAN= null;
+    public static final VillagerProfession NETHER_TRADER= null;
+    public static final VillagerProfession INGOT_TRADER= null;
     
     @SubscribeEvent
     public static void registerVillagerProfessions(Register<VillagerProfession> event)
@@ -40,5 +42,7 @@ public class VillagerProfessions
         registry.register(VillagerUtil.villagerProfession("end_trader", PointOfInterestTypes.END_TRADER, ImmutableSet.of(), ImmutableSet.of(), null).setRegistryName(NNOW.MOD_ID, "end_trader"));
         registry.register(VillagerUtil.villagerProfession("sea_trader", PointOfInterestTypes.SEA_TRADER, ImmutableSet.of(), ImmutableSet.of(), null).setRegistryName(NNOW.MOD_ID, "sea_trader"));
         registry.register(VillagerUtil.villagerProfession("sea_fisherman", PointOfInterestTypes.SEA_FISHERMAN, ImmutableSet.of(), ImmutableSet.of(), null).setRegistryName(NNOW.MOD_ID, "sea_fisherman"));
+        registry.register(VillagerUtil.villagerProfession("nether_trader", PointOfInterestTypes.NETHER_TRADER, ImmutableSet.of(), ImmutableSet.of(), null).setRegistryName(NNOW.MOD_ID, "nether_trader"));
+        registry.register(VillagerUtil.villagerProfession("ingot_trader", PointOfInterestTypes.INGOT_TRADER, ImmutableSet.of(), ImmutableSet.of(), null).setRegistryName(NNOW.MOD_ID, "ingot_trader"));
     }
 }

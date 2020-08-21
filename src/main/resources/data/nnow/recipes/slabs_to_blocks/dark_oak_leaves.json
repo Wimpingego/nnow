@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "_",
+        "_"
+    ],
+    "key": {
+        "_": {
+            "item": "nnow:dark_oak_leaves_slab"
+        }
+    },
+    "result": {
+        "item": "minecraft:dark_oak_leaves",
+        "count": 1
+    }
+}

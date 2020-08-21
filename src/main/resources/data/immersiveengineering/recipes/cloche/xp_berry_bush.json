@@ -1,0 +1,20 @@
+ {
+    "type": "immersiveengineering:cloche",
+    "results": [
+      {
+        "item": "nminecraft:experience_bottle",
+        "count": 1
+      }
+    ],
+    "input": {
+      "item": "nnow:xp_berry"
+    },
+    "soil": {
+      "item": "minecraft:dirt"
+    },
+    "time": 840,
+    "render": {
+      "type": "crop",
+      "block": "nnow:xp_berry_bush"
+    }
+  }

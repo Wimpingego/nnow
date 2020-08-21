@@ -1,7 +1,7 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "nnow:items/weetabix"
+        "layer0": "nnow:items/food/weetabix"
     }
 }
 

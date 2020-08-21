@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "nnow:copper_ingot",
+    "nnow:nickel_ingot",
+    "nnow:silver_ingot",
+    "nnow:uranium_ingot",
+    "nnow:lead_ingot",
+    "nnow:aluminum_ingot",
+    "nnow:tin_ingot",
+    "nnow:osmium_ingot",
+    "nnow:bismuth_ingot",
+    "nnow:zinc_ingot",
+    "nnow:platinum_ingot",
+	"nnow:iridium_ingot"
+  ]
+}

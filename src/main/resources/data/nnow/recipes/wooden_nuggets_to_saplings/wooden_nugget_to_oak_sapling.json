@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        " O ",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "nnow:wooden_nugget"
+        },
+        "O": {
+            "tag": "minecraft:saplings"
+        }
+    },
+    "result": {
+        "item": "minecraft:oak_sapling",
+        "count": 1
+    }
+}

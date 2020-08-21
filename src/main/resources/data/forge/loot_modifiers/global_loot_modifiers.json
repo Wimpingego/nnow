@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "entries": [
+    "nnow:sugar_cane_from_grass",
+    "nnow:sugar_cane_from_tall_grass",
+
+    "nnow:hammer_gravel_dust_from_cobblestone",
+    "nnow:hammer_sand_dust_from_gravel",
+    "nnow:hammer_dirt_dust_from_sand",
+    "nnow:hammer_dirt_dust_from_red_sand",
+    "nnow:hammer_clay_ball_from_dirt",
+
+    "nnow:spade_sand_dust_from_gravel",
+    "nnow:spade_dirt_dust_from_sand",
+    "nnow:spade_dirt_dust_from_red_sand",
+    "nnow:spade_clay_ball_from_dirt"
+	]
+}
