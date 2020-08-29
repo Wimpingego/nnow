@@ -2,7 +2,7 @@
 
 # Never Needed Or Wanted
 
-[Download](https://www.curseforge.com/minecraft/mc-mods/never-needed-or-wanted/files) | [Wiki](https://github.com/Wimpingego/nnow/wiki) | [Issuse](https://github.com/Wimpingego/nnow/issues)| [Repository](https://github.com/Wimpingego/nnow) | [Support](https://www.patreon.com/Ego_YT)
+[Download](https://www.curseforge.com/minecraft/mc-mods/never-needed-or-wanted/files) | [Wiki](https://github.com/Wimpingego/nnow/wiki) | [Issuse](https://github.com/Wimpingego/nnow/issues) | [Repository](https://github.com/Wimpingego/nnow) | [Support](https://www.patreon.com/Ego_YT)
 
 Say hello to the mod you NEVER NEEDED OR WANTED.
 This mod adds a list of blocks and items that well, you thought you “never needed or wanted”. The mod’s main goal is to be used in a sky block world,
