@@ -4,7 +4,7 @@
 
 [Download](https://www.curseforge.com/minecraft/mc-mods/never-needed-or-wanted/files) | [Wiki](https://github.com/Wimpingego/nnow/wiki) | [Issuse](https://github.com/Wimpingego/nnow/issues)| [Repository](https://github.com/Wimpingego/nnow) | [Support](https://www.patreon.com/Ego_YT)
 
-Say hello to the mod you # NEVER NEEDED OR WANTED.
+Say hello to the mod you NEVER NEEDED OR WANTED.
 This mod adds a list of blocks and items that well, you thought you “never needed or wanted”. The mod’s main goal is to be used in a sky block world,
 and through the use of the new villagers and berry bushes, make it so you can get everything you would ever need.
 
@@ -14,7 +14,7 @@ NemGo Community Discord! Join here: [https://discord.gg](https://discord.gg/012D
 
 You can even support the development on [Patreon](https://www.patreon.com/Ego_YT) with nifty perks! 
 
-![image](https://i.imgur.com/JRDsHnY.png)
+## Overview
 
 *8 New Villagers each with the own list trades and workstation.
 
@@ -39,13 +39,13 @@ You can even support the development on [Patreon](https://www.patreon.com/Ego_YT
 *Cobblestone Generator, A source of Cobblestone, but still with a cost.
 
 
-![image](https://i.imgur.com/SpJLw3E.png)
+## Downloads
 
 Never Needed Or Wanted can be downloaded from [CurseForge](https://www.curseforge.com/minecraft/mc-mods/never-needed-or-wanted/files)
 
 Please DON’T download the mod from any other websites as I can’t be sure of their safety.
 
-![image](https://i.imgur.com/OrZMYVJ.png)
+## Report A Bug
 
 Unfortunately, there's always the chance of running into a bug while playing any game. Especially so when it come to playing games with mods.
 
@@ -57,7 +57,7 @@ Create an issue on GitHub - This requires a GitHub account, which is free. Plea
 
 Post in the NemGo Discord - You can tell us about your bug via a quick post in the Discord link above.
 
-![image](https://i.imgur.com/AXfK99d.png)
+## Permissions
 
 NNOW is licensed with the GPLv3 Open Source license. Consult your favourite search engine for specifics on this license. 
 
