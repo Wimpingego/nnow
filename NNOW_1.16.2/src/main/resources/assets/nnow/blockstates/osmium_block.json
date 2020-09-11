@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "nnow:block/osmium_block"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "iIi",
+        "iii"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:diamond_sword"
+        },
+        "i": {
+            "item": "minecraft:diamond"
+        },
+        "I": {
+            "item": "minecraft:diamond_block"
+        }
+    },
+    "result": {
+        "item": "nnow:diamond_trap",
+        "count": 1
+    }
+}

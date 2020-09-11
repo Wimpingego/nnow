@@ -1,0 +1,20 @@
+ {
+    "type": "immersiveengineering:cloche",
+    "results": [
+      {
+        "item": "nnow:emerald_nugget",
+        "count": 3
+      }
+    ],
+    "input": {
+      "item": "nnow:emerald_berry"
+    },
+    "soil": {
+      "item": "minecraft:dirt"
+    },
+    "time": 600,
+    "render": {
+      "type": "crop",
+      "block": "nnow:emerald_berry_bush"
+    }
+  }

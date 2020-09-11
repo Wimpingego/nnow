@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "nnow:stone_dust",
+    "nnow:sand_dust",
+    "nnow:dirt_dust",
+    "nnow:gravel_dust",
+    "nnow:clay_dust"
+  ]
+}

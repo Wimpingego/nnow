@@ -1,0 +1,30 @@
+{
+    "type":"botanypots:crop",
+    "conditions":[
+        {
+            "type":"forge:mod_loaded",
+            "modid":"nnow"
+        }
+    ],
+    "seed":{
+        "item":"nnow:xp_berry"
+        },
+    "categories":["dirt"],
+    "growthTicks":800,
+    "display":{
+        "block":"nnow:xp_berry_bush",
+        "properties":{
+            "age":3
+            }
+        },
+    "results":[
+        {
+            "chance":0.50,
+            "output":{
+                "item":"minecraft:experience_bottle"
+                },
+                "minRolls":1,
+                "maxRolls":1
+        }
+    ]
+}

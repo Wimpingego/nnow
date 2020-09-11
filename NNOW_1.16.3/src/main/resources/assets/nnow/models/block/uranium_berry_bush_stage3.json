@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "nnow:blocks/bushes/uranium_berry_bush_stage3"
+    }
+}

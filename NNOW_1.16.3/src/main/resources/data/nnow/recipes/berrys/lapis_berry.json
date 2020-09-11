@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#S#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "tag": "forge:gems/lapis"
+        },
+        "S": {
+            "item": "minecraft:sweet_berries"
+        }
+    },
+    "result": {
+        "item": "nnow:lapis_berry",
+        "count": 1
+    }
+}

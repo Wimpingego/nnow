@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "nnow:block/bookshelf_slab" },
+        "type=top": { "model": "nnow:block/bookshelf_slab_top" },
+        "type=double": { "model": "block/bookshelf" }
+    }
+}

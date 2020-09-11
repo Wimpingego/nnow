@@ -1,0 +1,22 @@
+{
+  "type": "nnow:sugar_cane_drops",
+  "conditions": [
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.025
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:match_tool",
+        "predicate": {
+          "item": "minecraft:shears"
+        }
+      }
+    },
+    {
+      "condition": "block_state_property",
+      "block": "minecraft:tall_grass"
+    }
+  ]
+}

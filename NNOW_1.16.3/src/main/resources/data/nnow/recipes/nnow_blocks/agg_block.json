@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:feather"
+        },
+        {
+            "tag": "forge:gravel"
+        },
+        {
+            "tag": "forge:gravel"
+        },
+        {
+            "tag": "forge:gravel"
+        }
+    ],
+    "result": {
+        "item": "nnow:agg_block",
+        "count": 3
+    }
+}

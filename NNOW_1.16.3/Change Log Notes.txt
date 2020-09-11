@@ -1,0 +1,11 @@
+Changelog File
+
+    • Version 1.0.4 ()
+
+Fixed:
+
+Updated/Changed:
+
+Added:
+
+Removed:

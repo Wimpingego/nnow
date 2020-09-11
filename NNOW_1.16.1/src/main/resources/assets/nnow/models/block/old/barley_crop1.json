@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "nnow:blocks/barley_crop1"
+    }
+}

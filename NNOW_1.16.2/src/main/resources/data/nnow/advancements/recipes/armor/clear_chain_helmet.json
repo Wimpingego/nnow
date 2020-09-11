@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nnow:armor/clear_chain_helmet"
+    ]
+  },
+  "criteria": {
+    "has_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:chainmail_helmet"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "nnow:armor/clear_chain_helmet"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_helmet",
+      "has_the_recipe"
+    ]
+  ]
+}

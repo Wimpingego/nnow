@@ -1,0 +1,20 @@
+ {
+    "type": "immersiveengineering:cloche",
+    "results": [
+      {
+        "item": "nnow:sand_dust",
+        "count": 4
+      }
+    ],
+    "input": {
+      "item": "nnow:sand_berry"
+    },
+    "soil": {
+      "item": "minecraft:dirt"
+    },
+    "time": 300,
+    "render": {
+      "type": "crop",
+      "block": "nnow:sand_berry_bush"
+    }
+  }

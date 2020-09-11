@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "nnow:bismuth_nugget"
+        }
+    },
+    "result": {
+        "item": "nnow:bismuth_ingot",
+        "count": 1
+    }
+}

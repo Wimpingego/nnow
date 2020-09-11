@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "nnow:block/gravel_slab" },
+        "type=top": { "model": "nnow:block/gravel_slab_top" },
+        "type=double": { "model": "block/gravel" }
+    }
+}

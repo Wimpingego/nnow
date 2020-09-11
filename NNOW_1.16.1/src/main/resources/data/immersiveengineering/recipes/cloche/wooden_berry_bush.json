@@ -1,0 +1,20 @@
+ {
+    "type": "immersiveengineering:cloche",
+    "results": [
+      {
+        "item": "nnow:wooden_nugget",
+        "count": 4
+      }
+    ],
+    "input": {
+      "item": "nnow:wooden_berry"
+    },
+    "soil": {
+      "item": "minecraft:dirt"
+    },
+    "time": 300,
+    "render": {
+      "type": "crop",
+      "block": "nnow:wooden_berry_bush"
+    }
+  }

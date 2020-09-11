@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "nnow:block/birch_leaves_slab" },
+        "type=top": { "model": "nnow:block/birch_leaves_slab_top" },
+        "type=double": { "model": "block/birch_leaves" }
+    }
+}

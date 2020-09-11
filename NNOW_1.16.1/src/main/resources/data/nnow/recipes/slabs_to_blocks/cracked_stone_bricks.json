@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "_",
+        "_"
+    ],
+    "key": {
+        "_": {
+            "item": "nnow:cracked_stone_bricks_slab"
+        }
+    },
+    "result": {
+        "item": "minecraft:cracked_stone_bricks",
+        "count": 1
+    }
+}

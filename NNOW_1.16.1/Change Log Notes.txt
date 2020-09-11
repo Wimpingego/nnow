@@ -1,0 +1,66 @@
+Changelog File
+
+    • Version 1.0.0 (45)
+
+Removed:
+Safe Chest,
+Bookshelf Chest
+
+    • Version 1.0.1 (76)
+
+Fixed:
+Viagra not working on Minecraft crops
+
+Updated:
+Nether Villager Trades,
+Monster Trader Trades,
+
+Added:
+Clear Netherite Helmet,
+Netherite Berry Bush,
+Netherite Nugget,
+Netherite Hammer,
+Netherite Spade,
+
+    • Version 1.0.2 (45)
+
+• VILLAGER POI'S HAVE CHANGE GAME ID'S YOU WILL NEED TO REPLACE THEM •
+
+Fixed:
+Quartz berry bush returning Diamond bush in creative and showing wrong name in The One Probe.
+Broken Ingot Furnace showing the Waterwell tool tips.
+Missing Netherite nugget Recipe 
+
+Updated/Changed:
+The Death Potato to be more in line with the troll it is based on. 
+Changed the Sword In The Stone recipe a little.
+Edited Config layout.
+Recipe for Oak Logs to Wooden Nuggets.
+Villager POI block names and game id’s.
+Poking Stick textures,
+
+
+Added:
+Netherite Pickaxe, Netherite Hammer and Emerald Hammer to the Cobblestone Generator Tools list,
+Stone Poking Stick tier,
+Iron Poking Stick tier,
+
+
+    • Version 1.0.3 (87)
+
+Fixed:
+Aluminum, Bismuth, Copper, Lapis Nugget drops to be inline with the other bushes when used in Botany Pots
+
+Updated/Changed:
+
+Added:
+
+    • Version 1.0.4 ()
+
+Fixed:
+Should of fixed the spade 3x3 mining not working with all the block the shovels do
+
+Updated/Changed:
+
+Added:
+

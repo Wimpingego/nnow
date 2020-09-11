@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "nnow:block/cracked_stone_bricks_slab" },
+        "type=top": { "model": "nnow:block/cracked_stone_bricks_slab_top" },
+        "type=double": { "model": "block/cracked_stone_bricks" }
+    }
+}

@@ -1,0 +1,133 @@
+    • Changelog File
+
+Version 0.1.1 (22)
+
+Version 0.1.2 (49)
+
+Fixed wrong dust drops when using hammers,
+Renamed the config setting for Skyblock mode to Skyblock Mode,
+Fixed wrong block names in lang file,
+Change Dark Glass recipe,
+
+Version 0.1.2a (never released)
+
+Lowered the needed Forge version to 31.1.78
+
+Version 0.1.3 (66)
+Lowered the needed Forge version to 31.1.78
+Added missing #minecraft:wither_immune and #minecraft:dragon_immune tags. 
+Bookshelf stairs can now be used in the enchantment setup they uses the same “Enchant power level modifier” value in the config as bookshelf chests do.
+Bookshelf slabs can now be used in the enchantment setup but they has half the value set in the config.
+Lowered default “Enchant power level modifier” in the config to 1.
+Added missing recipes for Sea Fisherman & Sea Trader blocks 
+
+Version 0.1.4 (756)
+Fixed:
+
+Cobblestone Generator, Water Well and Lava Well showing the right way in an item frame 
+
+Updated:
+
+Two block tall models so they can now be interacted with from the top block.
+Changed the Sword in stone model to be two blocks not 1.3 like it was
+Change Banker Trade for Nether Quartz Ore to use netherrack and not stone
+Change Banker Trade for Nether star
+Model of Redstone Golem head.
+
+Added:
+Block action to the Redstone Golem head.
+3x3 mining to the Hammers
+Missing loot tables for Sea Trader and Sea Fisherman blocks
+Second model for Super Obsidian
+
+
+
+
+
+
+
+
+
+
+
+Version 0.1.5 (976)
+Fixed:
+Spelling mistake on the “poking stick” tool tip
+Bushes now work with the Immersive Engineering cloche,
+ 
+Updated:
+
+Recipes now use forge/Minecraft tags not items
+Change to the bookshelf chest recipe
+Weetabix food item now gives you the Strength for 30 seconds
+
+Added:
+Grass block slab,
+All 6 Leaf Slab types,
+All 6 Leaf Stairs types,
+Cracked Stone Brick Stairs and Slab,
+3X3 mining Spades of every tier,
+Clear helmets of every tier, They have the same stats as the normal,
+Berry bushes now do damage can change how much damage or turn it off in the configs,
+
+
+Version 0.1.6 ()
+
+Changed
+Iron traps now lower a mob to 1hp,
+Gold traps now kill mobs with no XP or Player kill drops,
+Diamond traps kill mobs and drop XP and Player kill drops,
+Drop rates when using the poking stick on Grass, Dirt and Logs have been lowered,
+Most of the berry bushes recipes have been changed,
+V.I.A.G.R.A item now has a max durability and a cost when in your main hand (can be changed in configs),
+Trades for the 7 Villagers,
+The Poking stick now has a 0.5 chance to drop a sapling when breaking leaves (can be changed in configs),
+Ice Nugget Texture,
+Golden Spade Texture,
+Clear Chain Helmet Texture,
+
+Fixed:
+A crash that happens if you ride over a trap on a mob,
+The Wither trap not being Wither proof,
+
+Added:
+Berry bushes now work with Botany Pots,
+New POI for the End Trader Villager,
+New POI for the Banker Villager,
+POI for the Nether Villager,
+Nether Villager Trades,
+Path Slabs,
+Added missing loot tables,
+Recipes for all tree saplings,
+Stone, Sand, Clay and Dirt berry bushes,
+Ender Chest Bag,
+
+Version 1.0.0 ()
+
+Changed:
+Hammers and Spades now always drops dust,
+Changed to drops from clay dust to clay balls on Clay Berry Bushes,
+Changed Icon on NNOW tab to Ender Chest Bag,
+Cactus now has a chance to drop from blocks tagged “sand” when using the poking stick,
+
+Fixed:
+Sugar cane not dropping from grass,
+The Magnet pulling in items when sneaking,
+Loot tables for bushes to make the work with Create, Industrial Foregoing and others,
+
+Added:
+VIAGRA item now has an off and on setting,
+Added an “Ingot Villager” and “Ingot Furnace” POI,
+New Copper, Nickel, Silver, Uranium, Lead, Aluminum, Tin, Osmium, Bismuth, Zinc, Platinum and Iridium (Nuggets, Ingots, Block,  Berry's and Berry Bushes),
+
+Version 1.0.1 ()
+
+Changed:
+
+Fixed:
+
+Beekeeper block not dropping when broken,
+
+
+Added:
+

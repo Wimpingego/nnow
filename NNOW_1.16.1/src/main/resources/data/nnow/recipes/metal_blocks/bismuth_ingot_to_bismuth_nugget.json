@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "nnow:bismuth_ingot"
+        }
+    ],
+    "result": {
+        "item": "nnow:bismuth_nugget",
+        "count": 9
+	}
+}

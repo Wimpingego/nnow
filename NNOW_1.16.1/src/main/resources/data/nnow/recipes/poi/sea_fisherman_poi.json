@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "###",
+        " C "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:fishing_rod"
+        },
+        "C": {
+            "tag": "forge:chests/wooden"
+        }
+    },
+    "result": {
+        "item": "nnow:sea_fisherman_poi",
+        "count": 1
+    }
+}

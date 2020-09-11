@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "nnow:platinum_ingot"
+        }
+    },
+    "result": {
+        "item": "nnow:platinum_block",
+        "count": 1
+    }
+}

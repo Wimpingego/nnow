@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "nnow:block/rsg_head_v3", "y": 0 },
+        "facing=south": { "model": "nnow:block/rsg_head_v3", "y": 180 },
+        "facing=west":  { "model": "nnow:block/rsg_head_v3", "y": 270 },
+        "facing=east":  { "model": "nnow:block/rsg_head_v3", "y": 90 }
+		}
+}

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "nnow:block/lavawell", "y": 0 },
+        "facing=south": { "model": "nnow:block/lavawell", "y": 180 },
+        "facing=west":  { "model": "nnow:block/lavawell", "y": 270 },
+        "facing=east":  { "model": "nnow:block/lavawell", "y": 90 }
+		}
+}

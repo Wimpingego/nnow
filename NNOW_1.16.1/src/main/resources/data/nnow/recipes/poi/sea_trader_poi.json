@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        " C ",
+        " B "
+    ],
+    "key": {
+        "#": {
+            "tag": "minecraft:wooden_pressure_plates"
+        },
+        "C": {
+            "item": "minecraft:cyan_wool"
+        },
+        "B": {
+            "item": "minecraft:barrel"
+        }
+    },
+    "result": {
+        "item": "nnow:sea_trader_poi",
+        "count": 1
+    }
+}

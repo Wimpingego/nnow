@@ -1,0 +1,20 @@
+ {
+    "type": "immersiveengineering:cloche",
+    "results": [
+      {
+        "item": "nnow:uranium_nugget",
+        "count": 3
+      }
+    ],
+    "input": {
+      "item": "nnow:uranium_berry"
+    },
+    "soil": {
+      "item": "minecraft:dirt"
+    },
+    "time": 600,
+    "render": {
+      "type": "crop",
+      "block": "nnow:uranium_berry_bush"
+    }
+  }

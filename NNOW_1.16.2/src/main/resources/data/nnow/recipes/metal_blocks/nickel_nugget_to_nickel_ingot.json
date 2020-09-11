@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "nnow:nickel_nugget"
+        }
+    },
+    "result": {
+        "item": "nnow:nickel_ingot",
+        "count": 1
+    }
+}

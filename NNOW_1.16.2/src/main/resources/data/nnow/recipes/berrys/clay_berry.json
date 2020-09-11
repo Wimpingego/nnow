@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#S#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:clay"
+        },
+        "S": {
+            "item": "minecraft:sweet_berries"
+        }
+    },
+    "result": {
+        "item": "nnow:clay_berry",
+        "count": 1
+    }
+}

@@ -1,0 +1,20 @@
+Changelog File
+
+    • Version 1.0.4 ()
+
+Fixed:
+
+Updated/Changed:
+
+Water Well,Lava Well and Cobblestone Generator and all be disabled in the configs
+3X3 Spade Tools not working with Grass blocks,Coarse Dirt and many many others
+
+Added:
+
+New HydroTank - water source for your farmland without the need to have a block under it.
+HydroTank with light - Same at the HydroTank but gives of light.
+Recipes Advancement for most items.
+
+Removed:
+
+Redstone Golem Head

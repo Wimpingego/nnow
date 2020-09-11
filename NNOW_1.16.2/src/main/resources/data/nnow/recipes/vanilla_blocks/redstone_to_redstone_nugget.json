@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:redstone"
+        }
+    ],
+    "result": {
+        "item": "nnow:redstone_nugget",
+        "count": 9
+	}
+}

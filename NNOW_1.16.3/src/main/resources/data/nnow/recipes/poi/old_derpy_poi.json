@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        " C ",
+        "CCC"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wooden_sword"
+        },
+        "C": {
+            "tag": "forge:cobblestone"
+        }
+    },
+    "result": {
+        "item": "nnow:old_derpy_poi",
+        "count": 1
+    }
+}

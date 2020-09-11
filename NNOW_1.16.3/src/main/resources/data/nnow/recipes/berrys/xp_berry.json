@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#GD",
+        "LSR",
+        "ECQ"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:iron_block"
+        },
+        "G": {
+            "item": "minecraft:gold_block"
+        },
+        "D": {
+            "item": "minecraft:diamond_block"
+        },
+        "L": {
+            "item": "minecraft:lapis_block"
+        },
+        "S": {
+            "item": "minecraft:sweet_berries"
+        },
+        "R": {
+            "item": "minecraft:redstone_block"
+        },
+        "E": {
+            "item": "minecraft:emerald_block"
+        },
+        "C": {
+            "item": "minecraft:coal_block"
+        },
+        "Q": {
+            "item": "minecraft:quartz_block"
+        }
+    },
+    "result": {
+        "item": "nnow:xp_berry",
+        "count": 1
+    }
+}

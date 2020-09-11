@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=north": { "model": "nnow:block/diamond_trap", "y": 180,"x": 270},
+        "facing=east":  { "model": "nnow:block/diamond_trap", "y": 90,"x": 90 },
+        "facing=south": { "model": "nnow:block/diamond_trap","y": 180,"x": 90},
+        "facing=west":  { "model": "nnow:block/diamond_trap", "y": 270,"x": 90 },
+        "facing=up": { "model": "nnow:block/diamond_trap", "y": 180},
+        "facing=down": { "model": "nnow:block/diamond_trap" , "y": 0, "x":180, "z":180}
+		}
+}

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:sand"
+        }
+    ],
+    "result": {
+        "item": "nnow:sand_dust",
+        "count": 4
+    }
+}

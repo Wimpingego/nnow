@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=north": { "model": "nnow:block/safe_chest", "y": 180 },
+        "facing=south": { "model": "nnow:block/safe_chest" },
+        "facing=west":  { "model": "nnow:block/safe_chest", "y": 90 },
+        "facing=east":  { "model": "nnow:block/safe_chest", "y": 270 },
+        "facing=up": { "model": "nnow:block/safe_chest", "y": 180 },
+        "facing=down": { "model": "nnow:block/safe_chest", "y": 90 }
+		}
+}

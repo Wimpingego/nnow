@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "nnow:block/spruce_leaves_slab" },
+        "type=top": { "model": "nnow:block/spruce_leaves_slab_top" },
+        "type=double": { "model": "block/spruce_leaves" }
+    }
+}

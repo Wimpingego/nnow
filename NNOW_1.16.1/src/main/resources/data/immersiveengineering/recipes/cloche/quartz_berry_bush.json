@@ -1,0 +1,20 @@
+ {
+    "type": "immersiveengineering:cloche",
+    "results": [
+      {
+        "item": "nnow:quartz_nugget",
+        "count": 3
+      }
+    ],
+    "input": {
+      "item": "nnow:quartz_berry"
+    },
+    "soil": {
+      "item": "minecraft:dirt"
+    },
+    "time": 600,
+    "render": {
+      "type": "crop",
+      "block": "nnow:quartz_berry_bush"
+    }
+  }
