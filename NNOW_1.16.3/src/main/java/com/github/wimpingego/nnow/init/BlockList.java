@@ -79,7 +79,8 @@ public class BlockList {
 	public static final RegistryObject<Block> REDSAND_SLAB = BLOCKS.register("redsand_slab",() -> new SlabBlock(Block.Properties.from(Blocks.RED_SAND).harvestTool(ToolType.SHOVEL)));		
 	public static final RegistryObject<Block> COARSEDIRT_SLAB = BLOCKS.register("coarsedirt_slab",() -> new SlabBlock(Block.Properties.from(Blocks.DIRT).harvestTool(ToolType.SHOVEL)));	
 	public static final RegistryObject<Block> DIRT_SLAB = BLOCKS.register("dirt_slab",() -> new SlabBlock(Block.Properties.from(Blocks.DIRT).harvestTool(ToolType.SHOVEL)));
-	public static final RegistryObject<Block> PATH_SLAB = BLOCKS.register("path_slab",() -> new PathSlab());
+	public static final RegistryObject<Block> PATH_SLAB = BLOCKS.register("path_slab",() -> new SlabBlock(Block.Properties.from(Blocks.DIRT).harvestTool(ToolType.SHOVEL)));
+	//public static final RegistryObject<Block> PATH_SLAB = BLOCKS.register("path_slab",() -> new PathSlab());
 	public static final RegistryObject<Block> CRACKED_STONE_SLAB = BLOCKS.register("cracked_stone_bricks_slab",() -> new SlabBlock(Block.Properties.from(Blocks.STONE).harvestTool(ToolType.PICKAXE)));
 	public static final RegistryObject<Block> BOOKSHELF_SLAB = BLOCKS.register("bookshelf_slab",() -> new BookshelfSlabBlock(Block.Properties.from(Blocks.BOOKSHELF).harvestTool(ToolType.AXE)));		
 	
