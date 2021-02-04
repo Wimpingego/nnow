@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "nnow:block/coarsedirt_slab" },
+        "type=top": { "model": "nnow:block/coarsedirt_slab_top" },
+        "type=double": { "model": "block/coarse_dirt" }
+    }
+}

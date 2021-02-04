@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "BBB",
+        "BIB",
+        "BFB"
+    ],
+    "key": {
+        "I": {
+            "item": "minecraft:iron_bars"
+        },
+        "B": {
+     		 "tag": "forge:ingots/brick"
+        },
+        "F": {
+            "item": "minecraft:furnace"
+        }
+    },
+    "result": {
+        "item": "nnow:ingot_trader_poi",
+        "count": 1
+    }
+}

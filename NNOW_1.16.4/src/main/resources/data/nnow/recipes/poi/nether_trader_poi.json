@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "BPP",
+        " # "
+    ],
+    "key": {
+        "#": {
+      		"tag": "forge:fences/wooden"
+        },
+        "B": {
+            "item": "minecraft:bone"
+        },
+        "P": {
+            "item": "minecraft:porkchop"
+        }
+    },
+    "result": {
+        "item": "nnow:nether_trader_poi",
+        "count": 1
+    }
+}

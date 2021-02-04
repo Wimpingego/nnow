@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "facing=east,half=lower":  { "model": "nnow:block/sea_fisherman_poi_bottom", "y": 90  },
+    "facing=south,half=lower": { "model": "nnow:block/sea_fisherman_poi_bottom", "y": 180 },
+    "facing=west,half=lower":  { "model": "nnow:block/sea_fisherman_poi_bottom", "y": 270 },
+    "facing=north,half=lower": { "model": "nnow:block/sea_fisherman_poi_bottom", "y": 0 },
+
+    "facing=east,half=upper":  { "model": "nnow:block/sea_fisherman_poi_top", "y": 90  },
+    "facing=south,half=upper": { "model": "nnow:block/sea_fisherman_poi_top", "y": 180 },
+    "facing=west,half=upper":  { "model": "nnow:block/sea_fisherman_poi_top", "y": 270 },
+    "facing=north,half=upper": { "model": "nnow:block/sea_fisherman_poi_top", "y": 0 }
+  }
+}

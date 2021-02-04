@@ -1,0 +1,186 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "particle": "minecraft:block/spruce_trapdoor",
+        "brown_concrete": "minecraft:block/brown_concrete",
+        "oak_log": "minecraft:block/oak_planks",
+        "spruce_trapdoor": "minecraft:block/spruce_trapdoor",
+        "honey_block_side": "minecraft:block/honey_block_side",
+        "lantern": "minecraft:block/lantern",
+        "cauldron_inner": "minecraft:block/cauldron_inner"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 184, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.5, 0.5, 0.5 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 0.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "leg",
+            "from": [ 0, 0, 0 ], 
+            "to": [ 2, 14, 2 ], 
+            "faces": {
+                "north": { "texture": "#oak_log", "uv": [ 1, 1, 3, 15 ] },
+                "east": { "texture": "#oak_log", "uv": [ 1, 1, 3, 15 ] },
+                "south": { "texture": "#oak_log", "uv": [ 1, 1, 3, 15 ] },
+                "west": { "texture": "#oak_log", "uv": [ 1, 1, 3, 15 ] },
+                "down": { "texture": "#oak_log", "uv": [ 1, 13, 3, 15 ] }
+            }
+        },
+        {
+            "name": "leg",
+            "from": [ 14, 0, 0 ], 
+            "to": [ 16, 14, 2 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#oak_log", "uv": [ 1, 1, 3, 15 ] },
+                "east": { "texture": "#oak_log", "uv": [ 1, 1, 3, 15 ] },
+                "south": { "texture": "#oak_log", "uv": [ 1, 1, 3, 15 ] },
+                "west": { "texture": "#oak_log", "uv": [ 1, 1, 3, 15 ] },
+                "down": { "texture": "#oak_log", "uv": [ 1, 13, 3, 15 ] }
+            }
+        },
+        {
+            "name": "leg",
+            "from": [ 14, 0, 14 ], 
+            "to": [ 16, 14, 16 ], 
+            "faces": {
+                "north": { "texture": "#oak_log", "uv": [ 1, 1, 3, 15 ] },
+                "east": { "texture": "#oak_log", "uv": [ 1, 1, 3, 15 ] },
+                "south": { "texture": "#oak_log", "uv": [ 1, 1, 3, 15 ] },
+                "west": { "texture": "#oak_log", "uv": [ 1, 1, 3, 15 ] },
+                "down": { "texture": "#oak_log", "uv": [ 1, 13, 3, 15 ] }
+            }
+        },
+        {
+            "name": "leg",
+            "from": [ 0, 0, 14 ], 
+            "to": [ 2, 14, 16 ], 
+            "faces": {
+                "north": { "texture": "#oak_log", "uv": [ 1, 1, 3, 15 ] },
+                "east": { "texture": "#oak_log", "uv": [ 1, 1, 3, 15 ] },
+                "south": { "texture": "#oak_log", "uv": [ 1, 1, 3, 15 ] },
+                "west": { "texture": "#oak_log", "uv": [ 1, 1, 3, 15 ] },
+                "down": { "texture": "#oak_log", "uv": [ 1, 13, 3, 15 ] }
+            }
+        },
+        {
+            "name": "Top",
+            "from": [ 0, 14, 0 ], 
+            "to": [ 16, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#spruce_trapdoor", "uv": [ 0, 0, 16, 2 ] },
+                "east": { "texture": "#spruce_trapdoor", "uv": [ 0, 0, 16, 2 ] },
+                "south": { "texture": "#spruce_trapdoor", "uv": [ 0, 0, 16, 2 ] },
+                "west": { "texture": "#spruce_trapdoor", "uv": [ 0, 0, 16, 2 ] },
+                "up": { "texture": "#spruce_trapdoor", "uv": [ 0, 0, 16, 16 ] },
+                "down": { "texture": "#spruce_trapdoor", "uv": [ 0, 0, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Shelf",
+            "from": [ 1, 3, 1 ], 
+            "to": [ 15, 5, 15 ], 
+            "faces": {
+                "north": { "texture": "#spruce_trapdoor", "uv": [ 0, 0, 14, 2 ] },
+                "east": { "texture": "#spruce_trapdoor", "uv": [ 0, 0, 14, 2 ] },
+                "south": { "texture": "#spruce_trapdoor", "uv": [ 0, 0, 14, 2 ] },
+                "west": { "texture": "#spruce_trapdoor", "uv": [ 0, 0, 14, 2 ] },
+                "up": { "texture": "#spruce_trapdoor", "uv": [ 0, 0, 14, 14 ] },
+                "down": { "texture": "#spruce_trapdoor", "uv": [ 0, 0, 14, 14 ] }
+            }
+        },
+        {
+            "name": "Honeycomb",
+            "from": [ 3, 5, 9 ], 
+            "to": [ 7, 9, 13 ], 
+            "rotation": { "origin": [ 4, 8, 13 ], "axis": "y", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#honey_block_side", "uv": [ 10, 3, 14, 8 ] },
+                "east": { "texture": "#honey_block_side", "uv": [ 9, 3, 13, 7 ] },
+                "south": { "texture": "#honey_block_side", "uv": [ 5, 3, 9, 7 ] },
+                "west": { "texture": "#honey_block_side", "uv": [ 7, 7, 11, 11 ] },
+                "up": { "texture": "#honey_block_side", "uv": [ 8, 8, 12, 12 ] },
+                "down": { "texture": "#honey_block_side", "uv": [ 8, 8, 12, 12 ] }
+            }
+        },
+        {
+            "name": "Lantern",
+            "from": [ 8, 5, 3 ], 
+            "to": [ 14, 12, 9 ], 
+            "rotation": { "origin": [ 9, 8, 5 ], "axis": "y", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#lantern", "uv": [ 0, 2, 6, 9 ] },
+                "east": { "texture": "#lantern", "uv": [ 0, 2, 6, 9 ] },
+                "south": { "texture": "#lantern", "uv": [ 0, 2, 6, 9 ] },
+                "west": { "texture": "#lantern", "uv": [ 0, 2, 6, 9 ] },
+                "up": { "texture": "#lantern", "uv": [ 0, 9, 6, 15 ] },
+                "down": { "texture": "#lantern", "uv": [ 0, 9, 6, 15 ] }
+            }
+        },
+        {
+            "name": "Lantern",
+            "from": [ 9, 12, 4 ], 
+            "to": [ 13, 14, 8 ], 
+            "rotation": { "origin": [ 9, 8, 5 ], "axis": "y", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#lantern", "uv": [ 1, 0, 5, 2 ] },
+                "east": { "texture": "#lantern", "uv": [ 1, 0, 5, 2 ] },
+                "south": { "texture": "#lantern", "uv": [ 1, 0, 5, 2 ] },
+                "west": { "texture": "#lantern", "uv": [ 1, 0, 5, 2 ] },
+                "up": { "texture": "#lantern", "uv": [ 1, 10, 5, 14 ] },
+                "down": { "texture": "#lantern", "uv": [ 1, 9, 5, 13 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 3, 16, 5 ], 
+            "to": [ 12, 17, 6 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#brown_concrete", "uv": [ 3, 3, 12, 4 ] },
+                "east": { "texture": "#brown_concrete", "uv": [ 6, 3, 7, 4 ] },
+                "south": { "texture": "#brown_concrete", "uv": [ 3, 7, 12, 8 ] },
+                "west": { "texture": "#brown_concrete", "uv": [ 7, 3, 8, 4 ] },
+                "up": { "texture": "#brown_concrete", "uv": [ 5, 7, 14, 8 ] },
+                "down": { "texture": "#brown_concrete", "uv": [ 5, 7, 14, 8 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 4, 16, 3 ], 
+            "to": [ 7, 17.25, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#cauldron_inner", "uv": [ 0, 0, 3, 1.25 ] },
+                "east": { "texture": "#cauldron_inner", "uv": [ 0, 0, 5, 1.25 ] },
+                "south": { "texture": "#cauldron_inner", "uv": [ 0, 0, 3, 1.25 ] },
+                "west": { "texture": "#cauldron_inner", "uv": [ 0, 0, 5, 1.25 ] },
+                "up": { "texture": "#cauldron_inner", "uv": [ 0, 0, 3, 5 ] },
+                "down": { "texture": "#cauldron_inner", "uv": [ 0, 0, 3, 5 ] }
+            }
+        }
+    ]
+}

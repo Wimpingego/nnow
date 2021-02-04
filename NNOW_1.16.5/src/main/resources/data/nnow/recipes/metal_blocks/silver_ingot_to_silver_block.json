@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "nnow:silver_ingot"
+        }
+    },
+    "result": {
+        "item": "nnow:silver_block",
+        "count": 1
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "level=0": {
+      "model": "nnow:block/cauldron_oak"
+    },
+    "level=1": {
+      "model": "nnow:block/cauldron_oak_level1"
+    },
+    "level=2": {
+      "model": "nnow:block/cauldron_oak_level2"
+    },
+    "level=3": {
+      "model": "nnow:block/cauldron_oak_level3"
+    }
+  }
+}

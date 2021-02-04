@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "hanging=true": { "model": "nnow:block/hanging_end_lantern"},
+        "hanging=false": { "model": "nnow:block/end_lantern"}
+  }
+}

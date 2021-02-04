@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "nnow:lead_nugget"
+        }
+    },
+    "result": {
+        "item": "nnow:lead_ingot",
+        "count": 1
+    }
+}

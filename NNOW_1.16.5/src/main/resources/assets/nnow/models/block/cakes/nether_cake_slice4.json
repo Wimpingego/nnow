@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cake_slice4",
+  "textures": {
+    "particle": "nnow:blocks/cakes/nether/cake_side",
+    "bottom": "nnow:blocks/cakes/nether/cake_bottom",
+    "top": "nnow:blocks/cakes/nether/cake_top",
+    "side": "nnow:blocks/cakes/nether/cake_side",
+    "inside": "nnow:blocks/cakes/nether/cake_inner"
+  }
+}

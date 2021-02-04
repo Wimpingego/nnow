@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#E#",
+        "OCO",
+        "#E#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:string"
+        },
+        "E": {
+            "item": "minecraft:ender_pearl"
+        },
+        "O": {
+            "item": "minecraft:obsidian"
+        },
+        "C": {
+            "item": "minecraft:chest"
+        }
+    },
+    "result": {
+        "item": "nnow:ender_bag",
+        "count": 1
+    }
+}

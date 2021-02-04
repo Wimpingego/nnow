@@ -1,0 +1,44 @@
+{
+	"item.doom_sound": {
+		"category": "item",
+		"subtitle": "item.doom_sound.sub",
+		"sounds": [
+			{
+				"name": "nnow:item/doom_sound",
+				"stream": true
+			}
+		]
+	},
+	"item.doom_disc": {
+		"category": "item",
+		"subtitle": "item.doom_disc.sub",
+		"sounds": [
+			{
+				"name": "nnow:item/doom_disc",
+				"stream": true
+			}
+		]
+	
+	},
+		"item.mizzy_sound": {
+		"category": "item",
+		"subtitle": "item.mizzy_sound.sub",
+		"sounds": [
+			{
+				"name": "nnow:item/mizzy_sound",
+				"stream": true
+			}
+		]
+	},
+	"item.mizzy_disc": {
+		"category": "item",
+		"subtitle": "item.mizzy_disc.sub",
+		"sounds": [
+			{
+				"name": "nnow:item/mizzy_disc",
+				"stream": true
+			}
+		]
+	
+	}
+}

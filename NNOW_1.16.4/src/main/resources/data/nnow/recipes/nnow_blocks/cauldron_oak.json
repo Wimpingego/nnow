@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "# #",
+        "#_#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:oak_planks"
+        },
+        "_": {
+            "item": "minecraft:oak_slab"
+        }
+    },
+    "result": {
+        "item": "nnow:cauldron_oak",
+        "count": 1
+    }
+}

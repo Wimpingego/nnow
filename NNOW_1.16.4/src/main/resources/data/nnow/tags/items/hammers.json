@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+  "nnow:stone_hammer",
+  "nnow:iron_hammer",
+	"nnow:golden_hammer",
+	"nnow:diamond_hammer",
+	"nnow:netherite_hammer"
+  ]
+}
