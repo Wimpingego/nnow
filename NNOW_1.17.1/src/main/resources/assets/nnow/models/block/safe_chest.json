@@ -1,0 +1,141 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "particle": "minecraft:block/cauldron_inner",
+        "gold_block": "minecraft:block/gold_block",
+        "iron_block": "minecraft:block/iron_block",
+        "cauldron_inner": "minecraft:block/cauldron_inner",
+        "black_concrete": "minecraft:block/black_concrete"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 184, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.5, 0.5, 0.5 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 0.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Back",
+            "from": [ 0, 0, 0 ], 
+            "to": [ 16, 16, 1 ], 
+            "faces": {
+                "north": { "texture": "#cauldron_inner", "uv": [ 0, 0, 16, 16 ] },
+                "east": { "texture": "#cauldron_inner", "uv": [ 0, 0, 1, 16 ] },
+                "south": { "texture": "#cauldron_inner", "uv": [ 0, 0, 16, 16 ] },
+                "west": { "texture": "#cauldron_inner", "uv": [ 0, 0, 1, 16 ] },
+                "up": { "texture": "#cauldron_inner", "uv": [ 0, 0, 16, 1 ] },
+                "down": { "texture": "#cauldron_inner", "uv": [ 0, 0, 16, 1 ] }
+            }
+        },
+        {
+            "name": "Left Side",
+            "from": [ 0, 0, 1 ], 
+            "to": [ 1, 16, 16 ], 
+            "faces": {
+                "east": { "texture": "#cauldron_inner", "uv": [ 0, 0, 15, 16 ] },
+                "south": { "texture": "#cauldron_inner", "uv": [ 0, 0, 1, 16 ] },
+                "west": { "texture": "#cauldron_inner", "uv": [ 0, 0, 15, 16 ] },
+                "up": { "texture": "#cauldron_inner", "uv": [ 0, 0, 1, 15 ] },
+                "down": { "texture": "#cauldron_inner", "uv": [ 0, 0, 1, 15 ] }
+            }
+        },
+        {
+            "name": "Right Side",
+            "from": [ 15, 0, 1 ], 
+            "to": [ 16, 16, 16 ], 
+            "faces": {
+                "east": { "texture": "#cauldron_inner", "uv": [ 0, 0, 15, 16 ] },
+                "south": { "texture": "#cauldron_inner", "uv": [ 0, 0, 1, 16 ] },
+                "west": { "texture": "#cauldron_inner", "uv": [ 0, 0, 15, 15 ] },
+                "up": { "texture": "#cauldron_inner", "uv": [ 0, 0, 1, 15 ] },
+                "down": { "texture": "#cauldron_inner", "uv": [ 0, 0, 1, 15 ] }
+            }
+        },
+        {
+            "name": "Bottom",
+            "from": [ 1, 0, 1 ], 
+            "to": [ 15, 1, 16 ], 
+            "faces": {
+                "south": { "texture": "#cauldron_inner", "uv": [ 0, 0, 14, 1 ] },
+                "up": { "texture": "#cauldron_inner", "uv": [ 0, 0, 14, 15 ] },
+                "down": { "texture": "#cauldron_inner", "uv": [ 0, 0, 14, 15 ] }
+            }
+        },
+        {
+            "name": "Top",
+            "from": [ 1, 15, 1 ], 
+            "to": [ 15, 16, 16 ], 
+            "faces": {
+                "south": { "texture": "#cauldron_inner", "uv": [ 0, 0, 14, 1 ] },
+                "up": { "texture": "#cauldron_inner", "uv": [ 1, 1, 15, 16 ] },
+                "down": { "texture": "#cauldron_inner", "uv": [ 1, 1, 15, 16 ] }
+            }
+        },
+        {
+            "name": "Inter Base",
+            "from": [ 1, 1, 13 ], 
+            "to": [ 15, 15, 14 ], 
+            "faces": {
+                "north": { "texture": "#black_concrete", "uv": [ 0, 0, 14, 14 ] },
+                "south": { "texture": "#black_concrete", "uv": [ 0, 0, 14, 14 ] }
+            }
+        },
+        {
+            "name": "Door",
+            "from": [ 2, 2, 14 ], 
+            "to": [ 14, 14, 15 ], 
+            "faces": {
+                "east": { "texture": "#cauldron_inner", "uv": [ 0, 0, 1, 12 ] },
+                "south": { "texture": "#cauldron_inner", "uv": [ 2, 3, 14, 15 ] },
+                "west": { "texture": "#cauldron_inner", "uv": [ 0, 0, 1, 12 ] },
+                "up": { "texture": "#cauldron_inner", "uv": [ 0, 0, 12, 1 ] },
+                "down": { "texture": "#cauldron_inner", "uv": [ 0, 0, 12, 1 ] }
+            }
+        },
+        {
+            "name": "Lock",
+            "from": [ 7, 10, 15 ], 
+            "to": [ 9, 12, 16 ], 
+            "faces": {
+                "east": { "texture": "#gold_block", "uv": [ 14, 6, 15, 8 ] },
+                "south": { "texture": "#gold_block", "uv": [ 11, 5, 13, 7 ] },
+                "west": { "texture": "#gold_block", "uv": [ 12, 1, 13, 3 ] },
+                "up": { "texture": "#gold_block", "uv": [ 12, 5, 14, 6 ] },
+                "down": { "texture": "#gold_block", "uv": [ 5, 5, 7, 6 ] }
+            }
+        },
+        {
+            "name": "Handler",
+            "from": [ 11, 4, 15 ], 
+            "to": [ 12, 8, 16 ], 
+            "faces": {
+                "east": { "texture": "#iron_block", "uv": [ 0, 0, 1, 4 ] },
+                "south": { "texture": "#iron_block", "uv": [ 0, 0, 1, 4 ] },
+                "west": { "texture": "#iron_block", "uv": [ 0, 0, 1, 4 ] },
+                "up": { "texture": "#iron_block", "uv": [ 0, 0, 1, 1 ] },
+                "down": { "texture": "#iron_block", "uv": [ 0, 0, 1, 1 ] }
+            }
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "nnow:bowl_of_raw_lava"
+    },
+    "result": "nnow:lava_bowl",
+    "experience": 0.2,
+    "cookingtime": 600
+}

@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "nnow:nickel_block",
+    "nnow:silver_block",
+    "nnow:uranium_block",
+    "nnow:lead_block",
+    "nnow:aluminum_block",
+    "nnow:tin_block",
+    "nnow:osmium_block",
+    "nnow:bismuth_block",
+    "nnow:zinc_block",
+    "nnow:platinum_block",
+	"nnow:iridium_block"
+  ]
+}

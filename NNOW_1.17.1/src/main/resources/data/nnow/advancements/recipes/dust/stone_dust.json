@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nnow:dust/stone_dust_to_cobblestone"
+    ]
+  },
+  "criteria": {
+    "has_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nnow:stone_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "nnow:dust/stone_dust_to_cobblestone"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

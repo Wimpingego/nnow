@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "iIi",
+        "iii"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:diamond_sword"
+        },
+        "i": {
+	    	"tag": "nnow:super_obsidian"
+        },
+        "I": {
+            "item": "minecraft:nether_star"
+        }
+    },
+    "result": {
+        "item": "nnow:wither_trap",
+        "count": 1
+    }
+}

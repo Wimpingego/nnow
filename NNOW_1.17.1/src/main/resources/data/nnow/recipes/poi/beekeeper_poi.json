@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#S#",
+        "#L#",
+        "#S#"
+    ],
+    "key": {
+        "S": {
+            "tag": "minecraft:wooden_trapdoors"
+        },
+        "#": {
+     		 "tag": "minecraft:planks"
+        },
+        "L": {
+            "item": "minecraft:lantern"
+        }
+    },
+    "result": {
+        "item": "nnow:beekeeper_poi",
+        "count": 1
+    }
+}

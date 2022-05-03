@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#B#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:cobblestone"
+        },
+        "B": {
+            "item": "nnow:stone_lined_bowl"
+        }
+    },
+    "result": {
+        "item": "nnow:bowl_of_raw_lava",
+        "count": 1
+    }
+}

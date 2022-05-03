@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "nnow:osmium_block"
+        }
+    ],
+    "result": {
+        "item": "nnow:osmium_ingot",
+        "count": 9
+	}
+}

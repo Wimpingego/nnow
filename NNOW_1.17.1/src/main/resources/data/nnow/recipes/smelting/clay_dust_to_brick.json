@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "nnow:clay_dust"
+    },
+    "result": "minecraft:brick",
+    "experience": 0.3,
+    "cookingtime": 200
+}

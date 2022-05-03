@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "nnow:glowstone_nugget"
+        }
+    },
+    "result": {
+        "item": "minecraft:glowstone_dust",
+        "count": 1
+    }
+}

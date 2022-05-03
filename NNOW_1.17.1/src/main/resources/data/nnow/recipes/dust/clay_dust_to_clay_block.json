@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "tag": "forge:clay"
+        }
+    },
+    "result": {
+        "item": "minecraft:clay",
+        "count": 1
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#B#",
+        " G ",
+        "#B#"
+    ],
+    "key": {
+	    "#": {
+            "item": "minecraft:iron_bars"
+        },
+        "B": {
+            "tag": "forge:dyes/black"
+        },
+        "G": {
+            "item": "minecraft:glass"
+        }
+    },
+    "result": {
+        "item": "nnow:dark_glass_block",
+        "count": 1
+    }
+}

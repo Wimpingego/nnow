@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=east":  { "model": "nnow:block/sea_fisherman_poi", "y": 90  },
+    "facing=south": { "model": "nnow:block/sea_fisherman_poi", "y": 180 },
+    "facing=west":  { "model": "nnow:block/sea_fisherman_poi", "y": 270 },
+    "facing=north": { "model": "nnow:block/sea_fisherman_poi", "y": 0 }
+  }
+}

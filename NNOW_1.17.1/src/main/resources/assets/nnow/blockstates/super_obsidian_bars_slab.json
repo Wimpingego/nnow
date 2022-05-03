@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "nnow:block/super_obsidian_bars_slab" },
+        "type=top": { "model": "nnow:block/super_obsidian_bars_slab_top" },
+        "type=double": { "model": "nnow:block/super_obsidian_bars" }
+    }
+}

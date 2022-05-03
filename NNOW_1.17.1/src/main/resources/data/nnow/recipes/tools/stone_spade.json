@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " i ",
+        "i/i",
+        " / "
+    ],
+    "key": {
+        "i": {
+            "tag": "forge:cobblestone"
+        },
+        "/": {
+      		"tag": "forge:rods/wooden"
+        }
+    },
+    "result": {
+        "item": "nnow:stone_spade",
+        "count": 1
+    }
+}
