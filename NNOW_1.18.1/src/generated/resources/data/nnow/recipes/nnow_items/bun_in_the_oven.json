@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bun_in_the_oven",
+  "pattern": [
+    "#B#",
+    "RGR",
+    "RQR"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:string"
+    },
+    "B": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "R": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "G": {
+      "item": "minecraft:gunpowder"
+    },
+    "Q": {
+      "item": "minecraft:bone_block"
+    }
+  },
+  "result": {
+    "item": "nnow:bun_in_the_oven"
+  }
+}

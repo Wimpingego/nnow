@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "villager_spawn_egg",
+  "ingredient": {
+    "item": "nnow:bun_in_the_oven"
+  },
+  "result": "minecraft:villager_spawn_egg",
+  "experience": 1.0,
+  "cookingtime": 3200
+}

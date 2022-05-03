@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "nnow:agg_block",
+    "nnow:ags_block",
+    "nnow:agrs_block",
+    "nnow:gravel_slab",
+    "nnow:sand_slab",
+    "nnow:redsand_slab",
+    "nnow:coarse_dirt_slab",
+    "nnow:dirt_slab",
+    "nnow:gravel_stairs",
+    "nnow:sand_stairs",
+    "nnow:redsand_stairs",
+    "nnow:coarse_dirt_stairs",
+    "nnow:dirt_stairs",
+    "nnow:grass_slab"
+  ]
+}

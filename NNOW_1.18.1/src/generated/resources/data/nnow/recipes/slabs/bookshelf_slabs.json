@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bookshelf_slabs",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:bookshelf"
+    }
+  },
+  "result": {
+    "item": "nnow:bookshelf_slab",
+    "count": 6
+  }
+}

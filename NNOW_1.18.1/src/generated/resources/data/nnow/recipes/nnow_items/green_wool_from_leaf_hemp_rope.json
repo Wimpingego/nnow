@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "green_wool",
+  "ingredients": [
+    {
+      "item": "nnow:leaf_hemp_rope"
+    },
+    {
+      "item": "nnow:leaf_hemp_rope"
+    },
+    {
+      "item": "nnow:leaf_hemp_rope"
+    },
+    {
+      "item": "nnow:leaf_hemp_rope"
+    }
+  ],
+  "result": {
+    "item": "minecraft:green_wool"
+  }
+}

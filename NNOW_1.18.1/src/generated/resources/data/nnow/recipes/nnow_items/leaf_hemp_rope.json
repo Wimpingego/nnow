@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "leaf_rope",
+  "ingredients": [
+    {
+      "item": "nnow:bundle_of_leaves"
+    },
+    {
+      "item": "nnow:bundle_of_leaves"
+    }
+  ],
+  "result": {
+    "item": "nnow:leaf_hemp_rope",
+    "count": 2
+  }
+}

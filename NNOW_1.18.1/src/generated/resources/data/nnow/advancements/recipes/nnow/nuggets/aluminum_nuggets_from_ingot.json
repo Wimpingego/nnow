@@ -1,0 +1,60 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nnow:nuggets/aluminum_nuggets_from_ingot"
+    ]
+  },
+  "criteria": {
+    "has_aluminum_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:aluminum_block"
+            ]
+          }
+        ]
+      }
+    },
+    "has_aluminum_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:aluminum_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "has_aluminum_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:aluminum_nugget"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "nnow:nuggets/aluminum_nuggets_from_ingot"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_aluminum_block",
+      "has_aluminum_ingot",
+      "has_aluminum_nugget",
+      "has_the_recipe"
+    ]
+  ]
+}

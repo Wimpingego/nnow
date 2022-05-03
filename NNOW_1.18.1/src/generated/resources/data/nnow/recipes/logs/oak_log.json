@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "log",
+  "ingredients": [
+    {
+      "tag": "forge:nuggets/wooden"
+    },
+    {
+      "tag": "forge:nuggets/wooden"
+    },
+    {
+      "tag": "forge:nuggets/wooden"
+    },
+    {
+      "tag": "forge:nuggets/wooden"
+    }
+  ],
+  "result": {
+    "item": "minecraft:oak_log"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ct_helmet",
+  "ingredients": [
+    {
+      "item": "minecraft:turtle_helmet"
+    }
+  ],
+  "result": {
+    "item": "nnow:clear_turtle_helmet"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "clay_dust",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/clay"
+    },
+    {
+      "tag": "forge:dusts/clay"
+    },
+    {
+      "tag": "forge:dusts/clay"
+    },
+    {
+      "tag": "forge:dusts/clay"
+    }
+  ],
+  "result": {
+    "item": "minecraft:clay"
+  }
+}

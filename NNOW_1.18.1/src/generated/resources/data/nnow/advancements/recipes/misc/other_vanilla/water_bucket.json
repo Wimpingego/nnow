@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nnow:other_vanilla/water_bucket"
+    ]
+  },
+  "criteria": {
+    "has_ice_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:ice_nugget"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "nnow:other_vanilla/water_bucket"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_ice_nugget",
+      "has_the_recipe"
+    ]
+  ]
+}

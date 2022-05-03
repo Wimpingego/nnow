@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "stone_dust",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/stone"
+    },
+    {
+      "tag": "forge:dusts/stone"
+    },
+    {
+      "tag": "forge:dusts/stone"
+    },
+    {
+      "tag": "forge:dusts/stone"
+    }
+  ],
+  "result": {
+    "item": "minecraft:cobblestone"
+  }
+}

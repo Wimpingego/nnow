@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "bowl_of_water",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "nnow:bundle_of_leaves"
+    }
+  ],
+  "result": {
+    "item": "nnow:bowl_of_water"
+  }
+}

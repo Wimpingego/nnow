@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gravel_dust",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/gravel"
+    },
+    {
+      "tag": "forge:dusts/gravel"
+    },
+    {
+      "tag": "forge:dusts/gravel"
+    },
+    {
+      "tag": "forge:dusts/gravel"
+    }
+  ],
+  "result": {
+    "item": "minecraft:gravel"
+  }
+}

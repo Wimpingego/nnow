@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nnow:nuggets/glowstone_nuggets_from_glowstone_dust"
+    ]
+  },
+  "criteria": {
+    "has_glowstone_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:glowstone_dust"
+            ]
+          }
+        ]
+      }
+    },
+    "has_glowstone_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:glowstone_nugget"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "nnow:nuggets/glowstone_nuggets_from_glowstone_dust"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_glowstone_dust",
+      "has_glowstone_nugget",
+      "has_the_recipe"
+    ]
+  ]
+}

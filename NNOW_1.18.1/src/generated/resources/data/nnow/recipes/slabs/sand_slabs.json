@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sand_slabs",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:sand/colorless"
+    }
+  },
+  "result": {
+    "item": "nnow:sand_slab",
+    "count": 6
+  }
+}

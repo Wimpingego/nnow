@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "log",
+  "pattern": [
+    "###",
+    "  #"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:nuggets/wooden"
+    }
+  },
+  "result": {
+    "item": "minecraft:birch_log"
+  }
+}

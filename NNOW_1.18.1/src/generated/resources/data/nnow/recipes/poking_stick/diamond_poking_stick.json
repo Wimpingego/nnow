@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "pokingstick",
+  "pattern": [
+    "SSS",
+    "  B"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:rods/wooden"
+    },
+    "B": {
+      "tag": "forge:gems/diamond"
+    }
+  },
+  "result": {
+    "item": "nnow:diamond_poking_stick"
+  }
+}

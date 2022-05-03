@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "nnow:block/redsand_slab_top"
+    },
+    "type=bottom": {
+      "model": "nnow:block/redsand_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/red_sand"
+    }
+  }
+}

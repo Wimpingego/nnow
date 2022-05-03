@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "platinum_blocK",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/platinum"
+    }
+  },
+  "result": {
+    "item": "nnow:platinum_block"
+  }
+}

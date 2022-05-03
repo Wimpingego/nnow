@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "nnow:dark_glass",
+    "nnow:super_obsidian",
+    "nnow:super_obsidian_bars",
+    "nnow:hydrotank",
+    "nnow:hydrotank_light",
+    "nnow:cobblegen",
+    "nnow:waterwell",
+    "nnow:lavawell",
+    "nnow:aluminum_block",
+    "nnow:bismuth_block",
+    "nnow:iridium_block",
+    "nnow:lead_block",
+    "nnow:nickel_block",
+    "nnow:osmium_block",
+    "nnow:platinum_block",
+    "nnow:silver_block",
+    "nnow:tin_block",
+    "nnow:uranium_block",
+    "nnow:zinc_block",
+    "nnow:cracked_stone_bricks_slab",
+    "nnow:cracked_stone_bricks_stairs",
+    "nnow:iron_trap",
+    "nnow:golden_trap",
+    "nnow:diamond_trap",
+    "nnow:wither_trap"
+  ]
+}

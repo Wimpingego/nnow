@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "nnow:block/storage_blocks/nickel_block"
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "nnow:block/bushes/gold_berry_bush_stage3"
+    }
+}

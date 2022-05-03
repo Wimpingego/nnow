@@ -1,0 +1,73 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nnow:traps/wither_trap"
+    ]
+  },
+  "criteria": {
+    "has_diamond_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_sword"
+            ]
+          }
+        ]
+      }
+    },
+    "has_super_obsidian": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:super_obsidian"
+            ]
+          }
+        ]
+      }
+    },
+    "has_super_obsidian_bar": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:super_obsidian_bars"
+            ]
+          }
+        ]
+      }
+    },
+    "has_nether_star": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:nether_star"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "nnow:traps/wither_trap"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_diamond_sword",
+      "has_super_obsidian",
+      "has_super_obsidian_bar",
+      "has_nether_star",
+      "has_the_recipe"
+    ]
+  ]
+}

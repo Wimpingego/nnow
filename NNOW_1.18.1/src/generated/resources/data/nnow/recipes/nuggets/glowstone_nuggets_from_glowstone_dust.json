@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "glowstone_nugget",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/glowstone"
+    }
+  ],
+  "result": {
+    "item": "nnow:glowstone_nugget",
+    "count": 9
+  }
+}

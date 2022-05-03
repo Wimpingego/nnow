@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "bowl_of_lava",
+  "ingredient": {
+    "item": "nnow:bowl_of_raw_lava"
+  },
+  "result": "nnow:bowl_of_lava",
+  "experience": 1.0,
+  "cookingtime": 200
+}

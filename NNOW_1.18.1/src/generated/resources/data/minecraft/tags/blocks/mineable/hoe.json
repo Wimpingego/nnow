@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "nnow:oak_leaves_slab",
+    "nnow:dark_oak_leaves_slab",
+    "nnow:jungle_leaves_slab",
+    "nnow:acacia_leaves_slab",
+    "nnow:spruce_leaves_slab",
+    "nnow:birch_leaves_slab",
+    "nnow:oak_leaves_stairs",
+    "nnow:dark_oak_leaves_stairs",
+    "nnow:jungle_leaves_stairs",
+    "nnow:acacia_leaves_stairs",
+    "nnow:spruce_leaves_stairs",
+    "nnow:birch_leaves_stairs"
+  ]
+}

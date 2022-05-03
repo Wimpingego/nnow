@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "nnow:block/cobblegen/cobblegen_top",
+    "up": "nnow:block/cobblegen/cobblegen_top",
+    "north": "nnow:block/lavawell/lavawell_front",
+    "south": "nnow:block/lavawell/lavawell_front",
+    "east": "nnow:block/lavawell/lavawell_front",
+    "west": "nnow:block/lavawell/lavawell_front",
+    "particle": "nnow:block/cobblegen/cobblegen_top"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "jungle_leaves_slabs",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:jungle_leaves"
+    }
+  },
+  "result": {
+    "item": "nnow:jungle_leaves_slab",
+    "count": 6
+  }
+}

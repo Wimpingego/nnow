@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sapling",
+  "pattern": [
+    " S#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:nuggets/wooden"
+    },
+    "S": {
+      "tag": "minecraft:saplings"
+    }
+  },
+  "result": {
+    "item": "minecraft:jungle_sapling"
+  }
+}

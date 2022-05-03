@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "cn_helmet",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_helmet"
+    }
+  ],
+  "result": {
+    "item": "nnow:clear_netherite_helmet"
+  }
+}

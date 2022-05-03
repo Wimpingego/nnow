@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "lapis_nugget",
+  "pattern": [
+    " #",
+    "# "
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:gems/lapis"
+    }
+  },
+  "result": {
+    "item": "nnow:lapis_nugget",
+    "count": 18
+  }
+}

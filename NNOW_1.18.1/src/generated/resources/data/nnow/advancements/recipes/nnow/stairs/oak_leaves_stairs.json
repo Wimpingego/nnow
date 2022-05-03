@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nnow:stairs/oak_leaves_stairs"
+    ]
+  },
+  "criteria": {
+    "has_oak_leaves": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:oak_leaves"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "nnow:stairs/oak_leaves_stairs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_oak_leaves",
+      "has_the_recipe"
+    ]
+  ]
+}

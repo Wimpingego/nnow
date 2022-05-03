@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "glowstone_dust",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:nuggets/glowstone"
+    }
+  },
+  "result": {
+    "item": "minecraft:glowstone_dust"
+  }
+}

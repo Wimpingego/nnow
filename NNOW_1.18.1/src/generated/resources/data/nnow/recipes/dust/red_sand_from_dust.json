@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sand_dust",
+  "pattern": [
+    " # ",
+    "# #",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:dusts/sand"
+    }
+  },
+  "result": {
+    "item": "minecraft:red_sand"
+  }
+}

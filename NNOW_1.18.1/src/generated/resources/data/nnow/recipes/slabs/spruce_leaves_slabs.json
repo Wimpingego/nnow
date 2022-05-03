@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spruce_leaves_slabs",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:spruce_leaves"
+    }
+  },
+  "result": {
+    "item": "nnow:spruce_leaves_slab",
+    "count": 6
+  }
+}

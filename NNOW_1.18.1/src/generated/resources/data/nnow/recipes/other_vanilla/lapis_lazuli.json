@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "lapis",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:nuggets/lapis"
+    }
+  },
+  "result": {
+    "item": "minecraft:lapis_lazuli"
+  }
+}

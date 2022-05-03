@@ -1,0 +1,112 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nnow:saplings/oak_sapling"
+    ]
+  },
+  "criteria": {
+    "has_wooden_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:wooden_nugget"
+            ]
+          }
+        ]
+      }
+    },
+    "has_acacia_sapling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:acacia_sapling"
+            ]
+          }
+        ]
+      }
+    },
+    "has_birch_sapling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:birch_sapling"
+            ]
+          }
+        ]
+      }
+    },
+    "has_dark_oak_sapling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:dark_oak_sapling"
+            ]
+          }
+        ]
+      }
+    },
+    "has_jungle_sapling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:jungle_sapling"
+            ]
+          }
+        ]
+      }
+    },
+    "has_oak_sapling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:oak_sapling"
+            ]
+          }
+        ]
+      }
+    },
+    "has_spruce_logs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:spruce_sapling"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "nnow:saplings/oak_sapling"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wooden_nugget",
+      "has_acacia_sapling",
+      "has_birch_sapling",
+      "has_dark_oak_sapling",
+      "has_jungle_sapling",
+      "has_oak_sapling",
+      "has_spruce_logs",
+      "has_the_recipe"
+    ]
+  ]
+}

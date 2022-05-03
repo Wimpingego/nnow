@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nnow:stairs/bookshelf_stairs"
+    ]
+  },
+  "criteria": {
+    "has_bookshelf": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:bookshelf"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "nnow:stairs/bookshelf_stairs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_bookshelf",
+      "has_the_recipe"
+    ]
+  ]
+}

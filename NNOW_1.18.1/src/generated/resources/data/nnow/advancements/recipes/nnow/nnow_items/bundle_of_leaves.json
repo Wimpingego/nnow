@@ -1,0 +1,99 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nnow:nnow_items/bundle_of_leaves"
+    ]
+  },
+  "criteria": {
+    "has_acacia_leaves": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:acacia_leaves"
+            ]
+          }
+        ]
+      }
+    },
+    "has_birch_leaves": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:birch_leaves"
+            ]
+          }
+        ]
+      }
+    },
+    "has_dark_oak_leaves": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:dark_oak_leaves"
+            ]
+          }
+        ]
+      }
+    },
+    "has_jungle_leaves": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:jungle_leaves"
+            ]
+          }
+        ]
+      }
+    },
+    "has_oak_leaves": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:oak_leaves"
+            ]
+          }
+        ]
+      }
+    },
+    "has_spruce_leaves": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:spruce_leaves"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "nnow:nnow_items/bundle_of_leaves"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia_leaves",
+      "has_birch_leaves",
+      "has_dark_oak_leaves",
+      "has_jungle_leaves",
+      "has_oak_leaves",
+      "has_spruce_leaves",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "glowstone_berry",
+  "pattern": [
+    "###",
+    "#B#",
+    "###"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:sweet_berries"
+    },
+    "#": {
+      "tag": "forge:dusts/glowstone"
+    }
+  },
+  "result": {
+    "item": "nnow:glowstone_berry"
+  }
+}

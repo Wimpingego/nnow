@@ -1,0 +1,60 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nnow:nuggets/tin_nuggets_from_ingot"
+    ]
+  },
+  "criteria": {
+    "has_tin_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:tin_block"
+            ]
+          }
+        ]
+      }
+    },
+    "has_tin_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:tin_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "has_tin_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:tin_nugget"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "nnow:nuggets/tin_nuggets_from_ingot"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_tin_block",
+      "has_tin_ingot",
+      "has_tin_nugget",
+      "has_the_recipe"
+    ]
+  ]
+}

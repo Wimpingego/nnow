@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "nnow:block/bookshelf_slab_top"
+    },
+    "type=bottom": {
+      "model": "nnow:block/bookshelf_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/bookshelf"
+    }
+  }
+}

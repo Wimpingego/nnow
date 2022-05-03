@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nnow:dust/sand_from_dust"
+    ]
+  },
+  "criteria": {
+    "has_sand_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:sand_dust"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "nnow:dust/sand_from_dust"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sand_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

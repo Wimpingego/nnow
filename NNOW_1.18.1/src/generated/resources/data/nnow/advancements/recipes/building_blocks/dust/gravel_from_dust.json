@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nnow:dust/gravel_from_dust"
+    ]
+  },
+  "criteria": {
+    "has_gravel_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:gravel_dust"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "nnow:dust/gravel_from_dust"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_gravel_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "super_obsidian",
+  "ingredients": [
+    {
+      "item": "nnow:super_obsidian_bars"
+    }
+  ],
+  "result": {
+    "item": "nnow:super_obsidian"
+  }
+}

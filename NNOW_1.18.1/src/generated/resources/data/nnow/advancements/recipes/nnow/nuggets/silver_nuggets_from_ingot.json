@@ -1,0 +1,60 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nnow:nuggets/silver_nuggets_from_ingot"
+    ]
+  },
+  "criteria": {
+    "has_silver_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:silver_block"
+            ]
+          }
+        ]
+      }
+    },
+    "has_silver_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:silver_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "has_silver_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:silver_nugget"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "nnow:nuggets/silver_nuggets_from_ingot"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_silver_block",
+      "has_silver_ingot",
+      "has_silver_nugget",
+      "has_the_recipe"
+    ]
+  ]
+}

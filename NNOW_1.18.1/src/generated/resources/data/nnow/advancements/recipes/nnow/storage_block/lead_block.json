@@ -1,0 +1,60 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nnow:storage_block/lead_block"
+    ]
+  },
+  "criteria": {
+    "has_lead_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:lead_block"
+            ]
+          }
+        ]
+      }
+    },
+    "has_lead_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:lead_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "has_lead_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:lead_nugget"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "nnow:storage_block/lead_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_lead_block",
+      "has_lead_ingot",
+      "has_lead_nugget",
+      "has_the_recipe"
+    ]
+  ]
+}

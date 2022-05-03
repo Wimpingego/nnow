@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "grass_block",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:grass_block"
+    }
+  },
+  "result": {
+    "item": "nnow:grass_slab",
+    "count": 6
+  }
+}

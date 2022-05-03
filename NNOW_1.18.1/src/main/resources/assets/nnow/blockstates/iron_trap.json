@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=north": { "model": "nnow:block/iron_trap"},
+        "facing=east":  { "model": "nnow:block/iron_trap", "y":90},
+        "facing=south": { "model": "nnow:block/iron_trap"},
+        "facing=west":  { "model": "nnow:block/iron_trap", "y":90},
+        "facing=up": { "model": "nnow:block/iron_trap"},
+        "facing=down":  { "model": "nnow:block/iron_trap"}
+		}
+}

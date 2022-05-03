@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "pokingstick",
+  "pattern": [
+    "SSS",
+    "  B"
+  ],
+  "key": {
+    "B": {
+      "tag": "minecraft:planks"
+    },
+    "S": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result": {
+    "item": "nnow:poking_stick"
+  }
+}

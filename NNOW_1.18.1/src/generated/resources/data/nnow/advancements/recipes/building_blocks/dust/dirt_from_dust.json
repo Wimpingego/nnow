@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nnow:dust/dirt_from_dust"
+    ]
+  },
+  "criteria": {
+    "has_dirt_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:dirt_dust"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "nnow:dust/dirt_from_dust"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_dirt_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

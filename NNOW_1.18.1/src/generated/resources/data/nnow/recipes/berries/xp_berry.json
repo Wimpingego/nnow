@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "xp_berry",
+  "pattern": [
+    "ICG",
+    "XBR",
+    "QDE"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:sweet_berries"
+    },
+    "I": {
+      "tag": "forge:storage_blocks/iron"
+    },
+    "C": {
+      "tag": "forge:storage_blocks/copper"
+    },
+    "G": {
+      "tag": "forge:storage_blocks/gold"
+    },
+    "X": {
+      "tag": "forge:storage_blocks/coal"
+    },
+    "R": {
+      "tag": "forge:storage_blocks/redstone"
+    },
+    "Q": {
+      "tag": "forge:storage_blocks/quartz"
+    },
+    "D": {
+      "tag": "forge:storage_blocks/diamond"
+    },
+    "E": {
+      "tag": "forge:storage_blocks/emerald"
+    }
+  },
+  "result": {
+    "item": "nnow:xp_berry"
+  }
+}

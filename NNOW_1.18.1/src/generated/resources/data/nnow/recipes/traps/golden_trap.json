@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "golden_trap",
+  "pattern": [
+    "S S",
+    "IBI",
+    "III"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:golden_sword"
+    },
+    "I": {
+      "tag": "forge:ingots/gold"
+    },
+    "B": {
+      "tag": "forge:storage_blocks/gold"
+    }
+  },
+  "result": {
+    "item": "nnow:golden_trap"
+  }
+}

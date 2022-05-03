@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "redstone_berry",
+  "pattern": [
+    "###",
+    "#B#",
+    "###"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:sweet_berries"
+    },
+    "#": {
+      "tag": "forge:dusts/redstone"
+    }
+  },
+  "result": {
+    "item": "nnow:redstone_berry"
+  }
+}

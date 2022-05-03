@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ci_helmet",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_helmet"
+    }
+  ],
+  "result": {
+    "item": "nnow:clear_iron_helmet"
+  }
+}

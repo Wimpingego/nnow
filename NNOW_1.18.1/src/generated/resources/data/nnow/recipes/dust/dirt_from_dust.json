@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "dirt_dust",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/dirt"
+    },
+    {
+      "tag": "forge:dusts/dirt"
+    },
+    {
+      "tag": "forge:dusts/dirt"
+    },
+    {
+      "tag": "forge:dusts/dirt"
+    }
+  ],
+  "result": {
+    "item": "minecraft:dirt"
+  }
+}

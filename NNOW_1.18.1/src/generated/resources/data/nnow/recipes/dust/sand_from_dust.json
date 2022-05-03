@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "sand_dust",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/sand"
+    },
+    {
+      "tag": "forge:dusts/sand"
+    },
+    {
+      "tag": "forge:dusts/sand"
+    },
+    {
+      "tag": "forge:dusts/sand"
+    }
+  ],
+  "result": {
+    "item": "minecraft:sand"
+  }
+}

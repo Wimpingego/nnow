@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "snow",
+  "ingredients": [
+    {
+      "tag": "forge:nuggets/ice"
+    },
+    {
+      "tag": "forge:nuggets/ice"
+    },
+    {
+      "tag": "forge:nuggets/ice"
+    },
+    {
+      "tag": "forge:nuggets/ice"
+    }
+  ],
+  "result": {
+    "item": "minecraft:snow_block"
+  }
+}

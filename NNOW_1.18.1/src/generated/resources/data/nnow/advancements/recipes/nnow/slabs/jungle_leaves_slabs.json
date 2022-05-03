@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nnow:slabs/jungle_leaves_slabs"
+    ]
+  },
+  "criteria": {
+    "has_jungle_leaves": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:jungle_leaves"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "nnow:slabs/jungle_leaves_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_jungle_leaves",
+      "has_the_recipe"
+    ]
+  ]
+}

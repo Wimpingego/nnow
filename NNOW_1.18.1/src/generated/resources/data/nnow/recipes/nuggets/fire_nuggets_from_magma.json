@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "fire_nugget",
+  "ingredients": [
+    {
+      "item": "minecraft:magma_block"
+    }
+  ],
+  "result": {
+    "item": "nnow:fire_nugget",
+    "count": 9
+  }
+}
