@@ -98,6 +98,14 @@ public class NNOWItemModels extends ItemModelProvider {
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/leaf_hemp_rope"));
 
+        singleTexture(Registration.VIAGRA.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/viagra"));
+
+        singleTexture(Registration.VIAGRA_ULTRA.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/viagra_ultra"));
+
         //Bowls
         singleTexture(Registration. BOWL_OF_WATER.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
@@ -388,5 +396,14 @@ public class NNOWItemModels extends ItemModelProvider {
         singleTexture(Registration.CLAY_DUST.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/dusts/clay_dust"));
+
+//        singleTexture(Registration.TEST_BERRY.get().getRegistryName().getPath(),
+//                mcLoc("item/generated"),
+//                "layer0", modLoc("item/berries/xp_berry"));
+
+//        singleTexture(Registration.TEST_BERRY_BUSH2_ITEM.get().getRegistryName().getPath(),
+//                mcLoc("item/generated"),
+//                "layer0", modLoc("item/berries/silver_berry"));
+
     }
 }

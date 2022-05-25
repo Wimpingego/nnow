@@ -44,18 +44,18 @@ public class CobbleGen extends Block
     int ncost = Configs.N_COST.get();
     int nreturn = Configs.N_RETURN.get();
 
-    int shcost = Configs.SH_COST.get();
-    int shreturn = Configs.SH_RETURN.get();
-    int ihcost = Configs.IH_COST.get();
-    int ihreturn = Configs.IH_RETURN.get();
-    int ghcost = Configs.GH_COST.get();
-    int ghreturn = Configs.GH_RETURN.get();
-    int dhcost = Configs.DH_COST.get();
-    int dhreturn = Configs.DH_RETURN.get();
-    int nhcost = Configs.NH_COST.get();
-    int nhreturn = Configs.NH_RETURN.get();
-    int ehcost = Configs.EH_COST.get();
-    int ehreturn = Configs.EH_RETURN.get();
+//    int shcost = Configs.SH_COST.get();
+//    int shreturn = Configs.SH_RETURN.get();
+//    int ihcost = Configs.IH_COST.get();
+//    int ihreturn = Configs.IH_RETURN.get();
+//    int ghcost = Configs.GH_COST.get();
+//    int ghreturn = Configs.GH_RETURN.get();
+//    int dhcost = Configs.DH_COST.get();
+//    int dhreturn = Configs.DH_RETURN.get();
+//    int nhcost = Configs.NH_COST.get();
+//    int nhreturn = Configs.NH_RETURN.get();
+//    int ehcost = Configs.EH_COST.get();
+//    int ehreturn = Configs.EH_RETURN.get();
 
     public CobbleGen() {
         super(Properties.of(Material.METAL, MaterialColor.METAL).sound(SoundType.METAL).strength(5.0F, 6.0F).requiresCorrectToolForDrops());
@@ -174,114 +174,114 @@ public class CobbleGen extends Block
             }
         }
 
-    //Tagged Hammers
-        if (Registration.TAG_STONE_HAMMER.contains(itemstack.getItem())  && !player.getAbilities().instabuild) {
-            itemstack.hurtAndBreak(shcost, player, (p_220038_0_) -> {
-                p_220038_0_.broadcastBreakEvent(EquipmentSlot.MAINHAND);});
-            ItemStack itemback;
-            itemback = new ItemStack(Items.COBBLESTONE, shreturn);
-
-            if (itemstack.isEmpty())
-            {
-                player.setItemInHand(handIn, itemback);
-                return InteractionResult.SUCCESS;
-            }
-            else if (!player.getInventory().add(itemback))
-            {
-                player.drop(itemstack, false);
-                return InteractionResult.SUCCESS;
-            }
-        }
-
-        if (Registration.TAG_IRON_HAMMER.contains(itemstack.getItem())  && !player.getAbilities().instabuild) {
-            itemstack.hurtAndBreak(ihcost, player, (p_220038_0_) -> {
-                p_220038_0_.broadcastBreakEvent(EquipmentSlot.MAINHAND);});
-            ItemStack itemback;
-            itemback = new ItemStack(Items.COBBLESTONE, ihreturn);
-
-            if (itemstack.isEmpty())
-            {
-                player.setItemInHand(handIn, itemback);
-                return InteractionResult.SUCCESS;
-            }
-            else if (!player.getInventory().add(itemback))
-            {
-                player.drop(itemstack, false);
-                return InteractionResult.SUCCESS;
-            }
-        }
-
-        if (Registration.TAG_GOLDEN_HAMMER.contains(itemstack.getItem())  && !player.getAbilities().instabuild) {
-            itemstack.hurtAndBreak(ghcost, player, (p_220038_0_) -> {
-                p_220038_0_.broadcastBreakEvent(EquipmentSlot.MAINHAND);});
-            ItemStack itemback;
-            itemback = new ItemStack(Items.COBBLESTONE, ghreturn);
-
-            if (itemstack.isEmpty())
-            {
-                player.setItemInHand(handIn, itemback);
-                return InteractionResult.SUCCESS;
-            }
-            else if (!player.getInventory().add(itemback))
-            {
-                player.drop(itemstack, false);
-                return InteractionResult.SUCCESS;
-            }
-        }
-
-        if (Registration.TAG_DIAMOND_HAMMER.contains(itemstack.getItem())  && !player.getAbilities().instabuild) {
-            itemstack.hurtAndBreak(dhcost, player, (p_220038_0_) -> {
-                p_220038_0_.broadcastBreakEvent(EquipmentSlot.MAINHAND);});
-            ItemStack itemback;
-            itemback = new ItemStack(Items.COBBLESTONE, dhreturn);
-
-            if (itemstack.isEmpty())
-            {
-                player.setItemInHand(handIn, itemback);
-                return InteractionResult.SUCCESS;
-            }
-            else if (!player.getInventory().add(itemback))
-            {
-                player.drop(itemstack, false);
-                return InteractionResult.SUCCESS;
-            }
-        }
-
-        if (Registration.TAG_EMERALD_HAMMER.contains(itemstack.getItem())  && !player.getAbilities().instabuild) {
-            itemstack.hurtAndBreak(ehcost, player, (p_220038_0_) -> {
-                p_220038_0_.broadcastBreakEvent(EquipmentSlot.MAINHAND);});
-            ItemStack itemback;
-            itemback = new ItemStack(Items.COBBLESTONE, ehreturn);
-
-            if (itemstack.isEmpty())
-            {
-                player.setItemInHand(handIn, itemback);
-                return InteractionResult.SUCCESS;
-            }
-            else if (!player.getInventory().add(itemback))
-            {
-                player.drop(itemstack, false);
-                return InteractionResult.SUCCESS;
-            }
-        }
-
-        if (Registration.TAG_NETHERITE_HAMMER.contains(itemstack.getItem())  && !player.getAbilities().instabuild) {
-            itemstack.hurtAndBreak(nhcost, player, (p_220038_0_) -> {
-                p_220038_0_.broadcastBreakEvent(EquipmentSlot.MAINHAND);});
-            ItemStack itemback;
-            itemback = new ItemStack(Items.COBBLESTONE, nhreturn);
-
-            if (itemstack.isEmpty())
-            {
-                player.setItemInHand(handIn, itemback);
-                return InteractionResult.SUCCESS;
-            }
-            else if (!player.getInventory().add(itemback))
-            {
-                player.drop(itemstack, false);
-                return InteractionResult.SUCCESS;
-            }
-        }
+//    //Tagged Hammers
+//        if (Registration.TAG_STONE_HAMMER.contains(itemstack.getItem())  && !player.getAbilities().instabuild) {
+//            itemstack.hurtAndBreak(shcost, player, (p_220038_0_) -> {
+//                p_220038_0_.broadcastBreakEvent(EquipmentSlot.MAINHAND);});
+//            ItemStack itemback;
+//            itemback = new ItemStack(Items.COBBLESTONE, shreturn);
+//
+//            if (itemstack.isEmpty())
+//            {
+//                player.setItemInHand(handIn, itemback);
+//                return InteractionResult.SUCCESS;
+//            }
+//            else if (!player.getInventory().add(itemback))
+//            {
+//                player.drop(itemstack, false);
+//                return InteractionResult.SUCCESS;
+//            }
+//        }
+//
+//        if (Registration.TAG_IRON_HAMMER.contains(itemstack.getItem())  && !player.getAbilities().instabuild) {
+//            itemstack.hurtAndBreak(ihcost, player, (p_220038_0_) -> {
+//                p_220038_0_.broadcastBreakEvent(EquipmentSlot.MAINHAND);});
+//            ItemStack itemback;
+//            itemback = new ItemStack(Items.COBBLESTONE, ihreturn);
+//
+//            if (itemstack.isEmpty())
+//            {
+//                player.setItemInHand(handIn, itemback);
+//                return InteractionResult.SUCCESS;
+//            }
+//            else if (!player.getInventory().add(itemback))
+//            {
+//                player.drop(itemstack, false);
+//                return InteractionResult.SUCCESS;
+//            }
+//        }
+//
+//        if (Registration.TAG_GOLDEN_HAMMER.contains(itemstack.getItem())  && !player.getAbilities().instabuild) {
+//            itemstack.hurtAndBreak(ghcost, player, (p_220038_0_) -> {
+//                p_220038_0_.broadcastBreakEvent(EquipmentSlot.MAINHAND);});
+//            ItemStack itemback;
+//            itemback = new ItemStack(Items.COBBLESTONE, ghreturn);
+//
+//            if (itemstack.isEmpty())
+//            {
+//                player.setItemInHand(handIn, itemback);
+//                return InteractionResult.SUCCESS;
+//            }
+//            else if (!player.getInventory().add(itemback))
+//            {
+//                player.drop(itemstack, false);
+//                return InteractionResult.SUCCESS;
+//            }
+//        }
+//
+//        if (Registration.TAG_DIAMOND_HAMMER.contains(itemstack.getItem())  && !player.getAbilities().instabuild) {
+//            itemstack.hurtAndBreak(dhcost, player, (p_220038_0_) -> {
+//                p_220038_0_.broadcastBreakEvent(EquipmentSlot.MAINHAND);});
+//            ItemStack itemback;
+//            itemback = new ItemStack(Items.COBBLESTONE, dhreturn);
+//
+//            if (itemstack.isEmpty())
+//            {
+//                player.setItemInHand(handIn, itemback);
+//                return InteractionResult.SUCCESS;
+//            }
+//            else if (!player.getInventory().add(itemback))
+//            {
+//                player.drop(itemstack, false);
+//                return InteractionResult.SUCCESS;
+//            }
+//        }
+//
+//        if (Registration.TAG_EMERALD_HAMMER.contains(itemstack.getItem())  && !player.getAbilities().instabuild) {
+//            itemstack.hurtAndBreak(ehcost, player, (p_220038_0_) -> {
+//                p_220038_0_.broadcastBreakEvent(EquipmentSlot.MAINHAND);});
+//            ItemStack itemback;
+//            itemback = new ItemStack(Items.COBBLESTONE, ehreturn);
+//
+//            if (itemstack.isEmpty())
+//            {
+//                player.setItemInHand(handIn, itemback);
+//                return InteractionResult.SUCCESS;
+//            }
+//            else if (!player.getInventory().add(itemback))
+//            {
+//                player.drop(itemstack, false);
+//                return InteractionResult.SUCCESS;
+//            }
+//        }
+//
+//        if (Registration.TAG_NETHERITE_HAMMER.contains(itemstack.getItem())  && !player.getAbilities().instabuild) {
+//            itemstack.hurtAndBreak(nhcost, player, (p_220038_0_) -> {
+//                p_220038_0_.broadcastBreakEvent(EquipmentSlot.MAINHAND);});
+//            ItemStack itemback;
+//            itemback = new ItemStack(Items.COBBLESTONE, nhreturn);
+//
+//            if (itemstack.isEmpty())
+//            {
+//                player.setItemInHand(handIn, itemback);
+//                return InteractionResult.SUCCESS;
+//            }
+//            else if (!player.getInventory().add(itemback))
+//            {
+//                player.drop(itemstack, false);
+//                return InteractionResult.SUCCESS;
+//            }
+//        }
 
         return super.use(state, worldIn, pos, player, handIn, hit);
     }

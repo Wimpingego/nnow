@@ -77,6 +77,5 @@ public class BlockColorsSetup
 
         itemColors.register(itemBlockColourHandler, Registration.HYDROTANK.get());
         itemColors.register(itemBlockColourHandler, Registration.HYDROTANK_LIGHT.get());
-
     }
 }

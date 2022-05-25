@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nnow:nnow_items/viagra_ultra"
+    ]
+  },
+  "criteria": {
+    "has_viagra": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nnow:viagra"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "nnow:nnow_items/viagra_ultra"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_viagra",
+      "has_the_recipe"
+    ]
+  ]
+}

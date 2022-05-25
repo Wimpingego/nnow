@@ -1,4 +1,4 @@
-package com.github.wimpingego.nnow.bushes.element;
+package com.github.wimpingego.nnow.bushes.Tier3;
 
 import com.github.wimpingego.nnow.bushes.base.BaseBush;
 import com.github.wimpingego.nnow.bushes.base.BushType;
@@ -16,13 +16,14 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 
-public class FireBerryBush extends BaseBush
+public class TinBerryBush extends BaseBush
 {
 	private final BushType type;
-	   public FireBerryBush(Block.Properties properties, BushType type) {
-	      super(properties);
+	   
+	   public TinBerryBush(Block.Properties properties, BushType type) {
+		   super(properties);
 		   this.type = type;
-	      this.registerDefaultState(this.stateDefinition.any().setValue(AGE, 0));
+		   this.registerDefaultState(this.stateDefinition.any().setValue(AGE, 0));
 	   }
 	   
 	   @Override
@@ -32,8 +33,8 @@ public class FireBerryBush extends BaseBush
 		      if (!flag && p_225533_4_.getItemInHand(p_225533_5_).getItem() == Items.BONE_MEAL) {
 		         return InteractionResult.PASS;
 		      } else if (i > 1) {
-		    	 int j = (int) (type.nuggets + p_225533_2_.random.nextInt(2));
-		         popResource(p_225533_2_, p_225533_3_, new ItemStack(Registration.FIRE_NUGGET.get(), j + (flag ? 1 : 0)));
+				  int j = (int) (type.nuggets + p_225533_2_.random.nextInt(2));
+		         popResource(p_225533_2_, p_225533_3_, new ItemStack(Registration.TIN_NUGGET.get(), j + (flag ? 1 : 0)));
 		         p_225533_2_.playSound((Player)null, p_225533_3_, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + p_225533_2_.random.nextFloat() * 0.4F);
 		         p_225533_2_.setBlock(p_225533_3_, p_225533_1_.setValue(AGE, 1), 2);
 		         return InteractionResult.SUCCESS;
@@ -42,7 +43,3 @@ public class FireBerryBush extends BaseBush
 		      }
 		   }
 }
-	   
-	   
-	   
-

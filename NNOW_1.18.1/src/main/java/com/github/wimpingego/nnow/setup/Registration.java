@@ -5,13 +5,20 @@ import com.github.wimpingego.nnow.blocks.*;
 import com.github.wimpingego.nnow.blocks.slabs.*;
 import com.github.wimpingego.nnow.blocks.stairs.*;
 import com.github.wimpingego.nnow.blocks.traps.*;
+import com.github.wimpingego.nnow.bushes.Tier3.BismuthBerryBush;
+import com.github.wimpingego.nnow.bushes.Tier1.*;
+import com.github.wimpingego.nnow.bushes.Tier3.*;
+import com.github.wimpingego.nnow.bushes.Tier5.*;
+import com.github.wimpingego.nnow.bushes.base.BushType;
 import com.github.wimpingego.nnow.bushes.ExperienceBerryBush;
+import com.github.wimpingego.nnow.bushes.Tier2.AluminumBerryBush;
+import com.github.wimpingego.nnow.bushes.Tier2.CoalBerryBush;
+import com.github.wimpingego.nnow.bushes.Tier4.GoldBerryBush;
+import com.github.wimpingego.nnow.bushes.Tier4.LapisBerryBush;
+import com.github.wimpingego.nnow.bushes.Tier4.NickelBerryBush;
+import com.github.wimpingego.nnow.bushes.Tier4.UraniumBerryBush;
 import com.github.wimpingego.nnow.bushes.element.FireBerryBush;
 import com.github.wimpingego.nnow.bushes.element.IceBerryBush;
-import com.github.wimpingego.nnow.bushes.base.WoodenBerryBush;
-import com.github.wimpingego.nnow.bushes.base.*;
-import com.github.wimpingego.nnow.bushes.metals.*;
-import com.github.wimpingego.nnow.bushes.ores.*;
 import com.github.wimpingego.nnow.items.*;
 import com.github.wimpingego.nnow.items.pokingsticks.*;
 import com.github.wimpingego.nnow.items.shears.DiamondShears;
@@ -39,6 +46,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.lwjgl.system.CallbackI;
 
 import static com.github.wimpingego.nnow.NNOW.MODID;
 
@@ -50,8 +58,8 @@ public class Registration {
 
     public static void init() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-        BLOCKS.register(bus);
         ITEMS.register(bus);
+        BLOCKS.register(bus);
         NO_ITEM_BLOCK.register(bus);
     }
 
@@ -178,6 +186,8 @@ public class Registration {
     public static final RegistryObject<Item> ENDER_BAG = ITEMS.register("ender_bag", () -> new EnderBag (new Item.Properties().tab(ModSetup.ITEM_GROUP).stacksTo(1)));
     public static final RegistryObject<Item> BITO_EGG = ITEMS.register("bun_in_the_oven", () -> new Item(new Item.Properties().tab(ModSetup.ITEM_GROUP)));
     public static final RegistryObject<Item> MAGNET = ITEMS.register("magnet", () -> new Magnet(new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> VIAGRA = ITEMS.register("viagra", () -> new Viagra(new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> VIAGRA_ULTRA = ITEMS.register("viagra_ultra", () -> new Viagra_Ultra(new Item.Properties().tab(ModSetup.ITEM_GROUP)));
     //Poking Stick
     public static final RegistryObject<Item> POKING_STICK = ITEMS.register("poking_stick", () -> new PS_Wood(new Item.Properties().tab(ModSetup.ITEM_GROUP).stacksTo(1)));
     public static final RegistryObject<Item> STONE_POKING_STICK = ITEMS.register("stone_poking_stick", () -> new PS_Stone(new Item.Properties().tab(ModSetup.ITEM_GROUP).stacksTo(1)));
@@ -250,79 +260,78 @@ public class Registration {
     public static final RegistryObject<Item> PLATINUM_INGOT = ITEMS.register("platinum_ingot", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> IRIDIUM_INGOT = ITEMS.register("iridium_ingot", () -> new Item(ITEM_PROPERTIES));
 
-    //Base Berries
-    public static final RegistryObject<Item> STONE_BERRY = ITEMS.register("stone_berry", () -> new BlockItem(Registration.STONE_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> GRAVEL_BERRY = ITEMS.register("gravel_berry", () -> new BlockItem(Registration.GRAVEL_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> SAND_BERRY = ITEMS.register("sand_berry", () -> new BlockItem(Registration.SAND_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> DIRT_BERRY = ITEMS.register("dirt_berry", () -> new BlockItem(Registration.DIRT_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> CLAY_BERRY = ITEMS.register("clay_berry", () -> new BlockItem(Registration.CLAY_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> WOODEN_BERRY = ITEMS.register("wooden_berry", () -> new BlockItem(Registration.WOODEN_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    //Ore Berries
-    public static final RegistryObject<Item> XP_BERRY = ITEMS.register("xp_berry", () -> new BlockItem(Registration.XP_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> IRON_BERRY = ITEMS.register("iron_berry", () -> new BlockItem(Registration.IRON_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> COPPER_BERRY = ITEMS.register("copper_berry", () -> new BlockItem(Registration.COPPER_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> GOLD_BERRY = ITEMS.register("gold_berry", () -> new BlockItem(Registration.GOLD_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> COAL_BERRY = ITEMS.register("coal_berry", () -> new BlockItem(Registration.COAL_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> REDSTONE_BERRY = ITEMS.register("redstone_berry", () -> new BlockItem(Registration.REDSTONE_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> GLOWSTONE_BERRY = ITEMS.register("glowstone_berry", () -> new BlockItem(Registration.GLOWSTONE_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> QUARTZ_BERRY = ITEMS.register("quartz_berry", () -> new BlockItem(Registration.QUARTZ_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> DIAMOND_BERRY = ITEMS.register("diamond_berry", () -> new BlockItem(Registration.DIAMOND_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> EMERALD_BERRY = ITEMS.register("emerald_berry", () -> new BlockItem(Registration.EMERALD_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> LAPIS_BERRY = ITEMS.register("lapis_berry", () -> new BlockItem(Registration.LAPIS_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> NETHERITE_BERRY = ITEMS.register("netherite_berry", () -> new BlockItem(Registration.NETHERITE_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP).fireResistant()));
-    //Elements Berries
+//Berries
+//Elements
+    public static final RegistryObject<Block> ICE_BERRY_BUSH = NO_ITEM_BLOCK.register("ice_berry_bush",() -> new IceBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.TE));
     public static final RegistryObject<Item> ICE_BERRY = ITEMS.register("ice_berry", () -> new BlockItem(Registration.ICE_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> FIRE_BERRY_BUSH = NO_ITEM_BLOCK.register("fire_berry_bush",() -> new FireBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.TE));
     public static final RegistryObject<Item> FIRE_BERRY = ITEMS.register("fire_berry", () -> new BlockItem(Registration.FIRE_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    //Metal Berries
-    public static final RegistryObject<Item> NICKEL_BERRY = ITEMS.register("nickel_berry", () -> new BlockItem(Registration.NICKEL_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> SILVER_BERRY = ITEMS.register("silver_berry", () -> new BlockItem(Registration.SILVER_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> URANIUM_BERRY = ITEMS.register("uranium_berry", () -> new BlockItem(Registration.URANIUM_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> LEAD_BERRY = ITEMS.register("lead_berry", () -> new BlockItem(Registration.LEAD_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+//Tier 1
+    public static final RegistryObject<Block> CLAY_BERRY_BUSH = NO_ITEM_BLOCK.register("clay_berry_bush",() -> new ClayBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.T1));
+    public static final RegistryObject<Item> CLAY_BERRY = ITEMS.register("clay_berry", () -> new BlockItem(Registration.CLAY_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> DIRT_BERRY_BUSH = NO_ITEM_BLOCK.register("dirt_berry_bush",() -> new DirtBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.T1));
+    public static final RegistryObject<Item> DIRT_BERRY = ITEMS.register("dirt_berry", () -> new BlockItem(Registration.DIRT_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> GRAVEL_BERRY_BUSH = NO_ITEM_BLOCK.register("gravel_berry_bush",() -> new GravelBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.T1));
+    public static final RegistryObject<Item> GRAVEL_BERRY = ITEMS.register("gravel_berry", () -> new BlockItem(Registration.GRAVEL_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> SAND_BERRY_BUSH = NO_ITEM_BLOCK.register("sand_berry_bush",() -> new SandBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.T1));
+    public static final RegistryObject<Item> SAND_BERRY = ITEMS.register("sand_berry", () -> new BlockItem(Registration.SAND_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> STONE_BERRY_BUSH = NO_ITEM_BLOCK.register("stone_berry_bush",() -> new StoneBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.T1));
+    public static final RegistryObject<Item> STONE_BERRY = ITEMS.register("stone_berry", () -> new BlockItem(Registration.STONE_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> WOODEN_BERRY_BUSH = NO_ITEM_BLOCK.register("wooden_berry_bush",() -> new WoodenBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.T1));
+    public static final RegistryObject<Item> WOODEN_BERRY = ITEMS.register("wooden_berry", () -> new BlockItem(Registration.WOODEN_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+//Tier 2
+    public static final RegistryObject<Block> ALUMINUM_BERRY_BUSH = NO_ITEM_BLOCK.register("aluminum_berry_bush",() -> new AluminumBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.T2));
     public static final RegistryObject<Item> ALUMINUM_BERRY = ITEMS.register("aluminum_berry", () -> new BlockItem(Registration.ALUMINUM_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> TIN_BERRY = ITEMS.register("tin_berry", () -> new BlockItem(Registration.TIN_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> OSMIUM_BERRY = ITEMS.register("osmium_berry", () -> new BlockItem(Registration.OSMIUM_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> COAL_BERRY_BUSH = NO_ITEM_BLOCK.register("coal_berry_bush",() -> new CoalBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.T2));
+    public static final RegistryObject<Item> COAL_BERRY = ITEMS.register("coal_berry", () -> new BlockItem(Registration.COAL_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+//Tier 3
+    public static final RegistryObject<Block> BISMUTH_BERRY_BUSH = NO_ITEM_BLOCK.register("bismuth_berry_bush",() -> new BismuthBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.T3));
     public static final RegistryObject<Item> BISMUTH_BERRY = ITEMS.register("bismuth_berry", () -> new BlockItem(Registration.BISMUTH_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> COPPER_BERRY_BUSH = NO_ITEM_BLOCK.register("copper_berry_bush",() -> new CopperBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.T3));
+    public static final RegistryObject<Item> COPPER_BERRY = ITEMS.register("copper_berry", () -> new BlockItem(Registration.COPPER_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> GLOWSTONE_BERRY_BUSH = NO_ITEM_BLOCK.register("glowstone_berry_bush",() -> new GlowstoneBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.T3));
+    public static final RegistryObject<Item> GLOWSTONE_BERRY = ITEMS.register("glowstone_berry", () -> new BlockItem(Registration.GLOWSTONE_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> IRON_BERRY_BUSH = NO_ITEM_BLOCK.register("iron_berry_bush",() -> new IronBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.T3));
+    public static final RegistryObject<Item> IRON_BERRY = ITEMS.register("iron_berry", () -> new BlockItem(Registration.IRON_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> LEAD_BERRY_BUSH = NO_ITEM_BLOCK.register("lead_berry_bush",() -> new LeadBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.T3));
+    public static final RegistryObject<Item> LEAD_BERRY = ITEMS.register("lead_berry", () -> new BlockItem(Registration.LEAD_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> OSMIUM_BERRY_BUSH = NO_ITEM_BLOCK.register("osmium_berry_bush",() -> new OsmiumBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.T3));
+    public static final RegistryObject<Item> OSMIUM_BERRY = ITEMS.register("osmium_berry", () -> new BlockItem(Registration.OSMIUM_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> QUARTZ_BERRY_BUSH = NO_ITEM_BLOCK.register("quartz_berry_bush",() -> new QuartzBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.T3));
+    public static final RegistryObject<Item> QUARTZ_BERRY = ITEMS.register("quartz_berry", () -> new BlockItem(Registration.QUARTZ_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> REDSTONE_BERRY_BUSH = NO_ITEM_BLOCK.register("redstone_berry_bush",() -> new RedstoneBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.T3));
+    public static final RegistryObject<Item> REDSTONE_BERRY = ITEMS.register("redstone_berry", () -> new BlockItem(Registration.REDSTONE_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> SILVER_BERRY_BUSH = NO_ITEM_BLOCK.register("silver_berry_bush",() -> new SilverBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.T3));
+    public static final RegistryObject<Item> SILVER_BERRY = ITEMS.register("silver_berry", () -> new BlockItem(Registration.SILVER_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> TIN_BERRY_BUSH = NO_ITEM_BLOCK.register("tin_berry_bush",() -> new TinBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH), BushType.T3));
+    public static final RegistryObject<Item> TIN_BERRY = ITEMS.register("tin_berry", () -> new BlockItem(Registration.TIN_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> ZINC_BERRY_BUSH = NO_ITEM_BLOCK.register("zinc_berry_bush",() -> new ZincBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH),BushType.T3));
     public static final RegistryObject<Item> ZINC_BERRY = ITEMS.register("zinc_berry", () -> new BlockItem(Registration.ZINC_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
-    public static final RegistryObject<Item> PLATINUM_BERRY = ITEMS.register("platinum_berry", () -> new BlockItem(Registration.PLATINUM_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+//Tier 4
+    public static final RegistryObject<Block> GOLD_BERRY_BUSH = NO_ITEM_BLOCK.register("gold_berry_bush",() -> new GoldBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH),BushType.T4));
+    public static final RegistryObject<Item> GOLD_BERRY = ITEMS.register("gold_berry", () -> new BlockItem(Registration.GOLD_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> LAPIS_BERRY_BUSH = NO_ITEM_BLOCK.register("lapis_berry_bush",() -> new LapisBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH),BushType.T4));
+    public static final RegistryObject<Item> LAPIS_BERRY = ITEMS.register("lapis_berry", () -> new BlockItem(Registration.LAPIS_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> NICKEL_BERRY_BUSH = NO_ITEM_BLOCK.register("nickel_berry_bush",() -> new NickelBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH),BushType.T4));
+    public static final RegistryObject<Item> NICKEL_BERRY = ITEMS.register("nickel_berry", () -> new BlockItem(Registration.NICKEL_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> URANIUM_BERRY_BUSH = NO_ITEM_BLOCK.register("uranium_berry_bush",() -> new UraniumBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH),BushType.T4));
+    public static final RegistryObject<Item> URANIUM_BERRY = ITEMS.register("uranium_berry", () -> new BlockItem(Registration.URANIUM_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+//Tier 5
+    public static final RegistryObject<Block> DIAMOND_BERRY_BUSH = NO_ITEM_BLOCK.register("diamond_berry_bush",() -> new DiamondBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH),BushType.T5));
+    public static final RegistryObject<Item> DIAMOND_BERRY = ITEMS.register("diamond_berry", () -> new BlockItem(Registration.DIAMOND_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> EMERALD_BERRY_BUSH = NO_ITEM_BLOCK.register("emerald_berry_bush",() -> new EmeraldBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH),BushType.T5));
+    public static final RegistryObject<Item> EMERALD_BERRY = ITEMS.register("emerald_berry", () -> new BlockItem(Registration.EMERALD_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> IRIDIUM_BERRY_BUSH = NO_ITEM_BLOCK.register("iridium_berry_bush",() -> new IridiumBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH),BushType.T5));
     public static final RegistryObject<Item> IRIDIUM_BERRY = ITEMS.register("iridium_berry", () -> new BlockItem(Registration.IRIDIUM_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Block> NETHERITE_BERRY_BUSH = NO_ITEM_BLOCK.register("netherite_berry_bush",() -> new NetheriteBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH),BushType.T5));
+    public static final RegistryObject<Item> NETHERITE_BERRY = ITEMS.register("netherite_berry", () -> new BlockItem(Registration.NETHERITE_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP).fireResistant()));
+    public static final RegistryObject<Block> PLATINUM_BERRY_BUSH = NO_ITEM_BLOCK.register("platinum_berry_bush",() -> new PlatinumBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH),BushType.T5));
+    public static final RegistryObject<Item> PLATINUM_BERRY = ITEMS.register("platinum_berry", () -> new BlockItem(Registration.PLATINUM_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
+//Other
+    public static final RegistryObject<Block> XP_BERRY_BUSH = NO_ITEM_BLOCK.register("xp_berry_bush",() -> new ExperienceBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH),BushType.XP));
+    public static final RegistryObject<Item> XP_BERRY = ITEMS.register("xp_berry", () -> new BlockItem(Registration.XP_BERRY_BUSH.get(), new Item.Properties().tab(ModSetup.ITEM_GROUP)));
 
-    //Base Berries Blocks
-    public static final RegistryObject<Block> STONE_BERRY_BUSH = NO_ITEM_BLOCK.register("stone_berry_bush",() -> new StoneBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> GRAVEL_BERRY_BUSH = NO_ITEM_BLOCK.register("gravel_berry_bush",() -> new GravelBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> SAND_BERRY_BUSH = NO_ITEM_BLOCK.register("sand_berry_bush",() -> new SandBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> DIRT_BERRY_BUSH = NO_ITEM_BLOCK.register("dirt_berry_bush",() -> new DirtBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> CLAY_BERRY_BUSH = NO_ITEM_BLOCK.register("clay_berry_bush",() -> new ClayBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> WOODEN_BERRY_BUSH = NO_ITEM_BLOCK.register("wooden_berry_bush",() -> new WoodenBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    //Ore Berries Block
-    public static final RegistryObject<Block> XP_BERRY_BUSH = NO_ITEM_BLOCK.register("xp_berry_bush",() -> new ExperienceBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> IRON_BERRY_BUSH = NO_ITEM_BLOCK.register("iron_berry_bush",() -> new IronBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> COPPER_BERRY_BUSH = NO_ITEM_BLOCK.register("copper_berry_bush",() -> new CopperBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> GOLD_BERRY_BUSH = NO_ITEM_BLOCK.register("gold_berry_bush",() -> new GoldBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> COAL_BERRY_BUSH = NO_ITEM_BLOCK.register("coal_berry_bush",() -> new CoalBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> REDSTONE_BERRY_BUSH = NO_ITEM_BLOCK.register("redstone_berry_bush",() -> new RedstoneBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> GLOWSTONE_BERRY_BUSH = NO_ITEM_BLOCK.register("glowstone_berry_bush",() -> new GlowstoneBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> QUARTZ_BERRY_BUSH = NO_ITEM_BLOCK.register("quartz_berry_bush",() -> new QuartzBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> DIAMOND_BERRY_BUSH = NO_ITEM_BLOCK.register("diamond_berry_bush",() -> new DiamondBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> EMERALD_BERRY_BUSH = NO_ITEM_BLOCK.register("emerald_berry_bush",() -> new EmeraldBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> LAPIS_BERRY_BUSH = NO_ITEM_BLOCK.register("lapis_berry_bush",() -> new LapisBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> NETHERITE_BERRY_BUSH = NO_ITEM_BLOCK.register("netherite_berry_bush",() -> new NetheriteBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    //Elements Berries Block
-    public static final RegistryObject<Block> ICE_BERRY_BUSH = NO_ITEM_BLOCK.register("ice_berry_bush",() -> new IceBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> FIRE_BERRY_BUSH = NO_ITEM_BLOCK.register("fire_berry_bush",() -> new FireBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    //Metal Berries Block
-    public static final RegistryObject<Block> NICKEL_BERRY_BUSH = NO_ITEM_BLOCK.register("nickel_berry_bush",() -> new NickelBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> SILVER_BERRY_BUSH = NO_ITEM_BLOCK.register("silver_berry_bush",() -> new SilverBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> URANIUM_BERRY_BUSH = NO_ITEM_BLOCK.register("uranium_berry_bush",() -> new UraniumBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> LEAD_BERRY_BUSH = NO_ITEM_BLOCK.register("lead_berry_bush",() -> new LeadBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> ALUMINUM_BERRY_BUSH = NO_ITEM_BLOCK.register("aluminum_berry_bush",() -> new AluminumBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> TIN_BERRY_BUSH = NO_ITEM_BLOCK.register("tin_berry_bush",() -> new TinBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> OSMIUM_BERRY_BUSH = NO_ITEM_BLOCK.register("osmium_berry_bush",() -> new OsmiumBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> BISMUTH_BERRY_BUSH = NO_ITEM_BLOCK.register("bismuth_berry_bush",() -> new BismuthBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> ZINC_BERRY_BUSH = NO_ITEM_BLOCK.register("zinc_berry_bush",() -> new ZincBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> PLATINUM_BERRY_BUSH = NO_ITEM_BLOCK.register("platinum_berry_bush",() -> new PlatinumBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-    public static final RegistryObject<Block> IRIDIUM_BERRY_BUSH = NO_ITEM_BLOCK.register("iridium_berry_bush",() -> new IridiumBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()));
-
-    //Tags
+//Tags
     //Dusts
     public static final Tags.IOptionalNamedTag<Item> TAGS_STONE_DUST= ItemTags.createOptional(new ResourceLocation("forge", "dusts/stone"));
     public static final Tags.IOptionalNamedTag<Item> TAGS_SAND_DUST= ItemTags.createOptional(new ResourceLocation("forge", "dusts/sand"));

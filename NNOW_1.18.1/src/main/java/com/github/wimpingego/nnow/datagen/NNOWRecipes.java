@@ -446,6 +446,28 @@ public class NNOWRecipes extends RecipeProvider {
                 .unlockedBy("has_copper_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(Items.COPPER_INGOT))
                 .save(consumer,toRL("nnow_items/magnet"));
 
+        ShapedRecipeBuilder.shaped(Registration.VIAGRA.get(), 1)
+                .pattern("#E#")
+                .pattern("EVE")
+                .pattern("#E#")
+                .define('#', Items.BONE_BLOCK)
+                .define('E', Items.EMERALD_BLOCK)
+                .define('V',Items.DIAMOND_BLOCK)
+                .group("viagra")
+                .unlockedBy("has_bone_block", InventoryChangeTrigger.TriggerInstance.hasItems(Items.BONE_BLOCK))
+                .save(consumer,toRL("nnow_items/viagra"));
+
+        ShapedRecipeBuilder.shaped(Registration.VIAGRA_ULTRA.get(), 1)
+                .pattern("#E#")
+                .pattern("EVE")
+                .pattern("#E#")
+                .define('#', Registration.VIAGRA.get())
+                .define('E', Items.EMERALD_BLOCK)
+                .define('V',Items.NETHER_STAR)
+                .group("viagra_ultra")
+                .unlockedBy("has_viagra", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.VIAGRA.get()))
+                .save(consumer,toRL("nnow_items/viagra_ultra"));
+
         ShapelessRecipeBuilder.shapeless(Registration.BUNDLE_LEAVES.get(), 3)
                 .requires(ItemTags.LEAVES)
                 .requires(ItemTags.LEAVES)

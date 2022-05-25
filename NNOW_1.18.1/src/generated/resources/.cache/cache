@@ -30,7 +30,7 @@ fbe2cdf96b1597261d04d2c690855789175d5dce assets/nnow/blockstates/lavawell.json
 f261a911420bd3f64103eefdd202126e2d600928 assets/nnow/blockstates/uranium_block.json
 5e8403300dc9877721c49520b7d2a5910713e18c assets/nnow/blockstates/waterwell.json
 fd6f37b31fa645a66038def3a7b5c2deb20ba981 assets/nnow/blockstates/zinc_block.json
-38e4fcf61eb9320e5eb5f38d0a8e6f9ccc97d849 assets/nnow/lang/en_us.json
+acdaee0fc0f56124c74940557c46eb9531d45fd0 assets/nnow/lang/en_us.json
 31c1ea973324e118d7a74592cffd0271768fe843 assets/nnow/models/block/aluminum_block.json
 a87496615150ca15e257540b4aa670e92e4a0fb6 assets/nnow/models/block/bismuth_block.json
 9ee6d0b13523ccb00c64837f6e57b1ffdb5984e3 assets/nnow/models/block/bookshelf_slab.json
@@ -223,6 +223,8 @@ b12dee38fc3ad1676934b10eeadfab83b17fe594 assets/nnow/models/item/tin_nugget.json
 7e69eb3b1a3bd3aa5db80c968fb9f0040d81e31d assets/nnow/models/item/uranium_block.json
 cbb27e3d2b413978c74b40e898465bffe56723ca assets/nnow/models/item/uranium_ingot.json
 4d00e365a1cd4a5c7ca16ab43b47b0c31d60e54c assets/nnow/models/item/uranium_nugget.json
+d2b6596ba12bd3d98f39b445ce5a258fa83a58ed assets/nnow/models/item/viagra.json
+ec80864af213e0a728ee9087fc4b62ba495bfbe6 assets/nnow/models/item/viagra_ultra.json
 332e6367e7284bae7e682448545c53d86a4db123 assets/nnow/models/item/waterwell.json
 4fec2d1673f80ff0a2567c2d0d8af24f01e0777d assets/nnow/models/item/wither_trap.json
 0553215249e7894ed8af951b8d63574e07d388d2 assets/nnow/models/item/wooden_berry.json
@@ -432,6 +434,8 @@ dcf438a1b47c94800cba2bbf1c9147b36d922c69 data/nnow/advancements/recipes/nnow/nno
 8e2b954ab687b91103e4c7a01b64b8693da3d0cc data/nnow/advancements/recipes/nnow/nnow_items/leaf_hemp_rope.json
 c2b46111710b42539640379d2b34e528b7e79342 data/nnow/advancements/recipes/nnow/nnow_items/magnet.json
 e73289c2ae5d9167f1b723da02346410038cb132 data/nnow/advancements/recipes/nnow/nnow_items/stone_lined_bowl.json
+b5b0c4fffe32777712dee580643b185afb036e1e data/nnow/advancements/recipes/nnow/nnow_items/viagra.json
+a4636c183df491056053ee950c8e092462afc07e data/nnow/advancements/recipes/nnow/nnow_items/viagra_ultra.json
 d3191fdaa08233748d0714a54ac9a6de3c45d4af data/nnow/advancements/recipes/nnow/nuggets/aluminum_nuggets_from_ingot.json
 57b0660affd59040907066800bb5af900b9ca88b data/nnow/advancements/recipes/nnow/nuggets/bismuth_nuggets_from_ingot.json
 8d776674df85c633f5c3db3818a0271e8eedc402 data/nnow/advancements/recipes/nnow/nuggets/coal_nuggets_from_coal.json
@@ -658,6 +662,8 @@ d9e384a531bf5cb625a8f3a94235556551849079 data/nnow/recipes/nnow_items/green_wool
 caeb1002ec1039a081b2097950767ec5c2b34ad7 data/nnow/recipes/nnow_items/leaf_hemp_rope.json
 86f073cc3077673e90c119979d34e67fe920329a data/nnow/recipes/nnow_items/magnet.json
 5847c92496561d3e2990bf5d482b0f0b524762ce data/nnow/recipes/nnow_items/stone_lined_bowl.json
+a92e8d63803f90ae7f8742a42742c11ce2c3e4f9 data/nnow/recipes/nnow_items/viagra.json
+5dcb0e15c4dedc6849948cab9ffe38951a960ad6 data/nnow/recipes/nnow_items/viagra_ultra.json
 298d71b38bf8dc276320122077e7cb46abb7b413 data/nnow/recipes/nnow_items/villager_spawn_egg_from_smelting.json
 0d1219b04dc73c473466f2a573e79d5c20d9acab data/nnow/recipes/nuggets/aluminum_nuggets_from_ingot.json
 f9f6f63352c915cc4858b371e8371f4ff97fb833 data/nnow/recipes/nuggets/bismuth_nuggets_from_ingot.json

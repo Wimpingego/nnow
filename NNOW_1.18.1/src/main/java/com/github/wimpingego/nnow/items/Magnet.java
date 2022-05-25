@@ -7,6 +7,8 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
@@ -85,10 +87,11 @@ public class Magnet extends Item
     {
         ItemStack stack = player.getItemInHand(hand);
 
-        if(!world.isClientSide && !(player.isShiftKeyDown()))
+        if(player.isShiftKeyDown() && !world.isClientSide)
         {
             EnableUtil.changeEnabled(player, hand);
             player.sendMessage(new TranslatableComponent(MESSAGE_MAGNET_IS, EnableUtil.isEnabled(stack)), null);
+            player.level.playSound(null, player.blockPosition(), SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.PLAYERS, 0.1f,0.9f);
             return new InteractionResultHolder<ItemStack>(InteractionResult.SUCCESS, player.getItemInHand(hand));
         }
 

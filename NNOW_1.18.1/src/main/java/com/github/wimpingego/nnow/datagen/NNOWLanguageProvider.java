@@ -18,6 +18,9 @@ import static com.github.wimpingego.nnow.blocks.traps.IronTrap.*;
 import static com.github.wimpingego.nnow.blocks.traps.WitherTrap.*;
 import static com.github.wimpingego.nnow.integration.jei.NNOWJEIPlugin.*;
 import static com.github.wimpingego.nnow.items.Magnet.*;
+import static com.github.wimpingego.nnow.items.Viagra.*;
+import static com.github.wimpingego.nnow.items.Viagra.MESSAGE_MORE_INFO_VIAGRA_1;
+import static com.github.wimpingego.nnow.items.Viagra_Ultra.*;
 import static com.github.wimpingego.nnow.items.pokingsticks.PS_Base_Info.MESSAGE_POKING_STICK_1;
 import static com.github.wimpingego.nnow.items.EnderBag.SCREEN_ENDER_BAG_TITLE;
 import static com.github.wimpingego.nnow.setup.ModSetup.TAB_NAME;
@@ -71,14 +74,22 @@ public class NNOWLanguageProvider extends LanguageProvider {
         add(MESSAGE_MORE_INFO_MAGNET_1, "Attraction range set to: %s");
         add(MESSAGE_MAGNET_IS, "Magnet is active: %s");
 
+        add(MESSAGE_MORE_INFO_VIAGRA_1, "Effect range is: %s");
+        add(MESSAGE_VIAGRA_IS, "Mood Enhancer is active: %s");
+        add(MESSAGE_VIAGRA_ULTRA_IS, "Ultra Mood Enhancer is active: %s");
+
 //JEI Info Tab
 
         add(MESSAGE_INFO_POKING_STICK, "A §3magic stick §0with many uses. Right-clicking on blocks to beat the dust out of it, and mining with it may even give you extra drops. With all the §3magic §0that surrounds the Poking Stick who really knows if there is anything else it can do.");
+        add(MESSAGE_INFO_VIAGRA, "This Magical item has the power to §3“enhance” §0the §3“mood” §0of most crops within its range, Rumour has it that villager scientists have even found a way to make an ever lasting version.");
+        add(MESSAGE_INFO_VIAGRA_ULTRA, "Well they did it, The villager scientists after years of trying have made the §2Ultra Mood Enhancer §0the ever lasting & better version of the §3Derpy Mood Enhancer §0.");
 
 //Items
         add(Registration.ENDER_BAG.get(), "Ender Chest Bag");
         add(Registration.BITO_EGG.get(),"Bun In The Oven");
         add(Registration.MAGNET.get(), "Derpy Magnet");
+        add(Registration.VIAGRA.get(), "§3Derpy Mood Enhancer");
+        add(Registration.VIAGRA_ULTRA.get(), "§2Ultra Mood Enhancer");
         add(Registration.POKING_STICK.get(), "Poking Stick");
         add(Registration.STONE_POKING_STICK.get(), "Stone Poking Stick");
         add(Registration.IRON_POKING_STICK.get(), "Iron Poking Stick");
@@ -241,6 +252,8 @@ public class NNOWLanguageProvider extends LanguageProvider {
         add(Registration.GOLDEN_TRAP.get(), "Golden Trap");
         add(Registration.DIAMOND_TRAP.get(), "Diamond Trap");
         add(Registration.WITHER_TRAP.get(), "Wither Killer Trap");
+
+        //add(Registration.TEST_BERRY.get(),"Test Berry");
 
     }
 }

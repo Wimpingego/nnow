@@ -124,6 +124,7 @@
   "item.nnow.info.shift": "Hold Shift",
   "item.nnow.info.wither_trap.dmg": "Damage done by the trap per tick is set to: %s",
   "item.nnow.info_magnet_1": "Attraction range set to: %s",
+  "item.nnow.info_viagra_1": "Effect range is: %s",
   "item.nnow.iridium_ingot": "Iridium Ingot",
   "item.nnow.iridium_nugget": "Iridium Nugget",
   "item.nnow.iron_poking_stick": "Iron Poking Stick",
@@ -155,6 +156,10 @@
   "item.nnow.tin_nugget": "Tin Nugget",
   "item.nnow.uranium_ingot": "Uranium Ingot",
   "item.nnow.uranium_nugget": "Uranium Nugget",
+  "item.nnow.viagra": "\u00A73Derpy Mood Enhancer",
+  "item.nnow.viagra.line1": "Mood Enhancer is active: %s",
+  "item.nnow.viagra_ultra": "\u00A72Ultra Mood Enhancer",
+  "item.nnow.viagra_ultra.line1": "Ultra Mood Enhancer is active: %s",
   "item.nnow.wooden_nugget": "Wooden Nugget",
   "item.nnow.wooden_shears": "Wooden Shears",
   "item.nnow.zinc_ingot": "Zinc Ingot",
@@ -178,5 +183,7 @@
   "message.wither_trap_no_player_drops": "Will drop player kill loot",
   "message.wither_trap_no_xp": "Will drop Xp",
   "screen.nnow.ender_bag": "Ender Chest Bag",
-  "wiki.nnow.poking_stick": "A \u00A73magic stick \u00A70with many uses. Right-clicking on blocks to beat the dust out of it, and mining with it may even give you extra drops. With all the \u00A73magic \u00A70that surrounds the Poking Stick who really knows if there is anything else it can do."
+  "wiki.nnow.poking_stick": "A \u00A73magic stick \u00A70with many uses. Right-clicking on blocks to beat the dust out of it, and mining with it may even give you extra drops. With all the \u00A73magic \u00A70that surrounds the Poking Stick who really knows if there is anything else it can do.",
+  "wiki.nnow.viagra": "This Magical item has the power to \u00A73\u201Cenhance\u201D \u00A70the \u00A73\u201Cmood\u201D \u00A70of most crops within its range, Rumour has it that villager scientists have even found a way to make an ever lasting version.",
+  "wiki.nnow.viagra_ultra": "Well they did it, The villager scientists after years of trying have made the \u00A72Ultra Mood Enhancer \u00A70the ever lasting & better version of the \u00A73Derpy Mood Enhancer \u00A70."
 }

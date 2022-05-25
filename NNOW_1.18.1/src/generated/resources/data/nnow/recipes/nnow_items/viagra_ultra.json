@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "viagra_ultra",
+  "pattern": [
+    "#E#",
+    "EVE",
+    "#E#"
+  ],
+  "key": {
+    "#": {
+      "item": "nnow:viagra"
+    },
+    "E": {
+      "item": "minecraft:emerald_block"
+    },
+    "V": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "item": "nnow:viagra_ultra"
+  }
+}
